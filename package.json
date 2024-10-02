@@ -1,0 +1,22 @@
+{
+  "name": "mediveda",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel src/index.html src/pages/about.html src/pages/main.html",
+    "build": "parcel build src/index.html src/pages/about.html src/pages/main.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "aos": "^2.3.4",
+    "tailwindcss-animated": "^1.1.2"
+  }
+}

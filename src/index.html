@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" href="./logo/logo-png.png" type="image/png" />
+    <title>Mediveda</title>
+  </head>
+  <body class="overflow-x-hidden lg:overflow-x-hidden bg-[#ebe8e8]">
+    <!--header component-->
+    <header>
+      <div class="hidden md:hidden lg:block">
+        <div class="bg-slate-200 flex justify-around p-4">
+          <h3 class="text-[#176264]">
+            <i class="fa fa-location-dot pr-2"></i>Mediveda address:
+          </h3>
+          <h3>
+            <i class="text-[#176264] fa fa-envelope pr-2"></i>info@mediveda.in
+          </h3>
+        </div>
+        <nav class="bg-[#2e8585] flex flex-wrap justify-around items-center">
+          <img src="./logo/logo-png.png" height="150" width="300" />
+          <div class="text-white font-verdana text-[17px]">
+            <a><span class="p-4"><a href="#">Home</a></span></a>
+            <a><span class="p-4"><a href="#">Diseases</a></span></a>
+            <a><span class="p-4"><a href="#about">About Us</a></span></a>
+            <a><span class="p-4"><a href="">Payment</a></span></a>
+          </div>
+          <div class="flex">
+            <div
+              class="rounded-[50%] bg-[#fbb85b] pb-3 pt-3 pr-4 pl-4 text-[20px]"
+            >
+              <i class="fa-solid fa-phone-volume text-white"></i>
+            </div>
+            <div class="ml-1">
+              <span class="text-white font-bold text-[20px]">Call Us</span
+              ><br />
+              <span class="text-white">9821373578</span>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="block md:block lg:hidden">
+        <div class="w-[100vw] p-2 flex bg-[#2e8585] justify-between">
+          <img src="./logo/logo-png.png" height="180px" width="180px" />
+          <button
+            area-hidden
+            id="menu_btn"
+            class="fa fa-bars text-[25px] text-white"
+          ></button>
+        </div>
+        <div
+          class="bg-[#2e8585] fixed z-10 transition-[2s] w-[100vw] hidden animate-flip-down animate-duration-500"
+          id="menu"
+        >
+          <div class="navigation pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
+            <span>Home</span>
+          </div>
+          <div class="navigation pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
+            <span>Diseases</span>
+          </div>
+          <div class="navigation pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
+            <span>Payment</span>
+          </div>
+          <div class="navigation pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
+            <span>About Us</span>
+          </div>
+          <div class="navigation pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
+            <span>Contact Us</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="content">
+    
+    </section>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
