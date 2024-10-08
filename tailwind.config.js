@@ -8,8 +8,10 @@ module.exports = {
       fontFamily:{
         "verdana":"verdana",
         "cursive":"cursive"
-      }
-    },
+      },
+      transitionDuration: {
+        'custom': '1s', // You can set this to any duration you need
+      },    },
   },
   plugins: [
     require('tailwindcss-animated')
