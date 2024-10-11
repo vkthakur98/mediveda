@@ -139,7 +139,6 @@ function startScrolling() {
   const slider = document.querySelector("#slider");
   slider.addEventListener("touchstart", (e) => {
     startX = e.touches[0].clientX;
-    console.log(`this is startx ${startX}`);
   });
 
 
@@ -151,8 +150,6 @@ function startScrolling() {
     if (difference > 0) {
       if (i < 2) {
         t_width = t_width + 90;
-        console.log("width:", t_width);
-        console.log("slider index", i);
         document.getElementsByClassName("slide")[
           i
         ].style.transform = `translateX(-${t_width}vw)`;
@@ -161,8 +158,6 @@ function startScrolling() {
         ].style.transform = `translateX(-${t_width}vw)`;
         if (i < 2) {
           i++;
-          console.log("width", t_width);
-          console.log("index", i);
         }
       }
     } else {
@@ -175,7 +170,7 @@ function startScrolling() {
         document.getElementsByClassName("slide")[
           i - 1
         ].style.transform = `translateX(-${t_width}vw)`;
-        console.log("index-p", i);
+        
         if(i>0)
         {
             i--;
