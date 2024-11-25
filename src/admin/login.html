@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+<header>
+  <div class="hidden md:hidden lg:block">
+    <nav class="bg-[#006d77] flex flex-wrap justify-between items-center" id="desk_menu">
+      <a href="#">
+        <img src="../logo/logo-png.jpg" height="150" width="300"/>
+      </a>
+      <div class="flex">
+        <h1 class="italic text-[25px] text-white p-2">AdminLogin</h1>
+      </div>
+    </nav>
+  </div> 
+  <div class="block md:block lg:hidden">
+    <div class="w-[100vw] p-2 flex bg-[#006d77] justify-between">
+      <a href="#">
+        <img src="../logo/logo-png.jpg" height="180px" width="180px" />
+      </a>
+      <button aria-hidden id="menu_btn" class="fa fa-bars text-[25px] text-white"></button>
+    </div>
+    <div class="bg-[#006d77] fixed z-10 transition-[2s] w-[100vw] hidden animate-flip-down animate-duration-500" id="menu">
+      <div class="navigation pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
+        <span>Home</span>
+      </div>
+      <div class="navigation pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
+        <span>Diseases</span>
+      </div>
+      <div class="navigation pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
+        <span>Payment</span>
+      </div>
+      <div class="navigation pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
+        <span>About Us</span>
+      </div>
+      <div class="navigation pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
+        <span>Contact Us</span>
+      </div>
+    </div>
+  </div>
+</header>
+<div id="loader" class="hidden justify-center items-center w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.5)] absolute top-0 left-0 ">
+  <img src="../images/loader.gif" class="h-[500px] w-[650px]"/>
+</div>
+<div class="flex items-center justify-center h-[80vh]">
+  <div class="bg-white bg-opacity-80 p-6 md:p-10 rounded-lg shadow-2xl max-w-md w-full">
+    <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Admin Login</h2>
+    <div id="login-error-message" class="hidden text-red-500 mb-4  text-center border border-red-500 bg-red-100 rounded-md p-2 ">Error</div>
+    <form id="registration-form" method="post">
+      <div class="mb-4">
+        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+        <div class="flex items-center border border-gray-300 rounded-lg shadow-sm">
+          <span class="p-3 bg-gray-200 text-gray-600 rounded-l-lg">
+            <i class="fas fa-user"></i>
+          </span>
+          <input type="text" id="username" name="username" required class="flex-1 p-3 rounded-r-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"/>
+        </div>
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <div class="flex items-center border border-gray-300 rounded-lg shadow-sm">
+          <span class="p-3 bg-gray-200 text-gray-600 rounded-l-lg">
+            <i class="fas fa-lock"></i>
+          </span>
+          <input type="password" id="password" name="password" required class="flex-1 p-3 rounded-r-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"/>
+        </div>
+      </div>
+      <button type="button" id="login-button" class="w-full bg-[#006d77] text-white font-semibold py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-200">Login</button>
+    </form>
+  </div>
+</div>
+<script>
+ async function handleLogin(event) {
+    event.preventDefault(); // Prevent the default form submission
+    
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    console.log('Username:', username);
+    console.log('Password:', password);
+
+    try {
+        const response = await fetch('http://localhost/mediveda/login.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ username, password }),
+        });
+
+        console.log('Response status:', response.status);
+        const data = await response.json(); // Assuming the server returns JSON
+        
+        if (response.ok) {
+            alert('Login successful!');
+            window.location.href = 'dashboard.html'; // Replace with your desired path
+        } else {
+            alert(data.message || 'Login failed. Please try again.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('An error occurred. Please try again.');
+    }
+}
+
+</script>
+
+</body>
+</html>

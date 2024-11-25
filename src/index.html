@@ -7,7 +7,7 @@
     <link rel="icon" href="./logo/logo-png.png" type="image/png" />
     <title>Mediveda-homepage</title>
   </head>
-  <body class="overflow-x-hidden bg-[#E5E5E5]">
+  <body class="overflow-x-hidden bg-[#E5E5E5] scroll-smooth">
     <!--header component-->
     <header>
       <div class="hidden md:hidden lg:block">
@@ -16,16 +16,34 @@
             <i class="fa fa-location-dot pr-2"></i>Mediveda address:
           </h3>
           <h3>
-            <i class="text-[#176264] fa fa-envelope pr-2"></i><span><a href="mailto:info@mediveda.in">info@mediveda</a></span>
+            <i class="text-[#176264] fa fa-envelope pr-2"></i
+            ><span><a href="mailto:info@mediveda.in">info@mediveda</a></span>
           </h3>
         </div>
-        <nav class="bg-[#006d77] flex flex-wrap justify-around items-center">
-          <a href="#"><img src="./logo/logo-png.jpg" height="150" width="300" /></a>
+        <nav
+          class="bg-[#006d77] flex flex-wrap justify-around items-center"
+          id="desk_menu"
+        >
+          <a href="#">
+            <img src="./logo/logo-png.jpg" height="150" width="300"
+          /></a>
           <div class="text-white font-verdana text-[17px]">
-            <a data-page=""><span class="p-4"><a href="#">Home</a></span></a>
-            <a><span class="p-4"><a href="#">Diseases</a></span></a>
-            <a data-page="about"><span class="p-4"><a href="#about">About Us</a></span></a>
-            <a><span class="p-4"><a href="">Payment</a></span></a>
+            <a data-page=""
+              ><span class="p-4"><a href="#">Home</a></span></a
+            >
+            <a data-page="diseases"
+              ><span class="p-4"
+                ><a
+                  class="cursor-pointer hover:text-[#ffa16f]"
+                  id="disease_menu"
+                  >Diseases<i class="fa fa-angle-down pl-2"></i> </a></span
+            ></a>
+            <a data-page="about"
+              ><span class="p-4"><a href="#about">About Us</a></span></a
+            >
+            <a
+              ><span class="p-4"><a href="">Payment</a></span></a
+            >
           </div>
           <div class="flex">
             <div
@@ -36,14 +54,16 @@
             <div class="ml-1">
               <span class="text-white font-bold text-[20px]">Call Us</span
               ><br />
-              <span class="text-white">9821373578</span>
+              <span class="text-white">0000000000</span>
             </div>
           </div>
         </nav>
       </div>
       <div class="block md:block lg:hidden">
         <div class="w-[100vw] p-2 flex bg-[#006d77] justify-between">
-          <img src="./logo/logo-png.jpg" height="180px" width="180px" />
+          <a href="#">
+            <img src="./logo/logo-png.jpg" height="180px" width="180px" />
+          </a>
           <button
             area-hidden
             id="menu_btn"
@@ -51,15 +71,116 @@
           ></button>
         </div>
         <div
-          class="bg-[#006d77] fixed z-10 transition-[2s] w-[100vw] hidden animate-flip-down animate-duration-500"
+          class="bg-[#006d77] -mt-1 fixed z-10 transition-[2s] w-[100vw] hidden animate-flip-down animate-duration-500"
           id="menu"
         >
           <div class="navigation pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
             <span>Home</span>
           </div>
-          <div class="navigation pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
-            <span>Diseases</span>
+          <div
+            class="navigation pl-3 pt-2 pb-2 pr-3 text-white font-verdana"
+            id="mobile-disease-menu"
+          >
+            <span class="flex justify-between"
+              ><span>Diseases</span
+              ><span>
+                <i
+                  class="fa fa-angle-down pl-2"
+                  id="mobile-disease-menu-icon"
+                ></i></span
+            ></span>
           </div>
+          <div
+            id="disease-menu-mobile"
+            class="bg-[#006D77] hidden animate-flip-down pl-2"
+          >
+            <div class="pl-3 pt-2 pb-2 pr-3 text-white font-verdana disease-category">
+              <span class="flex justify-between"
+              ><span>Male Infertility</span
+              ><span>
+                <i
+                  class="fa fa-angle-down pl-2 disease-sub-menu-icon"
+                ></i></span
+            ></span>
+            <div class="pl-3 pt-2 pr-3 hidden text-white font-verdana disease-sub-menu animate-flip-down">
+              <div class="pb-2 disease-link"><a href="#diseases/maleinfertility/azoospermia">Azoospermia</a></div>
+              <div class="pb-2 disease-link">Oligospermia</div>
+              <div class="pb-2 disease-link">Epididymitis</div>
+              <div class="pb-2 disease-link">Orchitis</div>
+              <div class="pb-2 disease-link">Funiculitis</div>
+              <div class="pb-2 disease-link">Retrograde Ejaculation</div>
+              <div class="pb-2 disease-link">Undescended Testicles</div>
+              <div class="pb-2 disease-link">Hormonal Imbalance</div>
+            </div>
+            </div>
+            <div class="pl-3 pt-2 pb-2 pr-3 text-white font-verdana disease-category">
+              <span class="flex justify-between"
+              ><span>Liver Disorders</span
+              ><span>
+                <i
+                  class="fa fa-angle-down pl-2 disease-sub-menu-icon"
+                ></i></span
+            ></span>
+            <div class="pl-3 pt-2 pr-3 hidden text-white font-verdana disease-sub-menu animate-flip-down">
+              <div class="pb-2">CLD(Chronic Liver Disease)</div>
+              <div class="pb-2">Fatty Liver</div>
+              <div class="pb-2">Liver Fibrosis</div>
+              <div class="pb-2"></div>
+              <div class="pb-2">Funiculitis</div>
+              <div class="pb-2">Retrograde Ejaculation</div>
+              <div class="pb-2">Undescended Testicles</div>
+              <div class="pb-2">Hormonal Imbalance</div>  
+            </div>
+            </div>
+            <div class="pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
+              <span class="flex justify-between"
+              ><span>Join/Neural Pain</span
+              ><span>
+                <i
+                  class="fa fa-angle-down pl-2"
+                ></i></span
+            ></span>
+            </div>
+            <div class="pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
+              <span class="flex justify-between"
+              ><span>Skin Disorders</span
+              ><span>
+                <i
+                  class="fa fa-angle-down pl-2"
+                ></i></span
+            ></span>
+            </div>
+            <div class="pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
+              <span class="flex justify-between"
+              ><span>Skin Disorders</span
+              ><span>
+                <i
+                  class="fa fa-angle-down pl-2"
+                ></i></span
+            ></span>
+            </div>
+            <div class="pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
+              <span class="flex justify-between"
+              ><span>Female Infertility</span
+              ><span>
+                <i
+                  class="fa fa-angle-down pl-2"
+                  id="mobile-disease-menu-icon"
+                ></i></span
+            ></span>
+            </div>
+            <div class="pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
+              <span class="flex justify-between"
+              ><span>Lifestyle Disorders</span
+              ><span>
+                <i
+                  class="fa fa-angle-down pl-2"
+                  id="mobile-disease-menu-icon"
+                ></i></span
+            ></span>
+            </div>
+          </div>
+
           <div class="navigation pl-3 pt-2 pb-2 pr-3 text-white font-verdana">
             <span>Payment</span>
           </div>
@@ -72,10 +193,343 @@
         </div>
       </div>
     </header>
-    <section id="content">
-    
-    </section>
-    <span id="counter"></span>
+    <div id="disease_menu_overlay" class="z-50 relative hidden">
+      <div
+        id="disease_menu_item"
+        class="flex justify-start p-2 absolute w-[100vw] bg-[#E5E5E5] cursor-pointer"
+      >
+        <div class="p-[10px]">
+          <h1 class="text-[20px] font-bold text-orange-600">
+            Male Infertility
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            <a href="#diseases/maleinfertility/azoospermia">Azoospermia</a>
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            <a href="#diseases/maleinfertility/oligospermia">Oligospermia</a>
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            <a href="#diseases/maleinfertility/epididymitis">Epididymitis</a>
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            <a href="#diseases/maleinfertility/orchitis">Orchitis</a>
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            <a href="#diseases/maleinfertility/funiculitis">Funiculitis</a>
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            <a href="#diseases/maleinfertility/retrograde-ejaculation"
+              >Retrograde Ejaculation</a
+            >
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            <a href="#diseases/maleinfertility/undescended-testicles"
+              >Undescended Testicles</a
+            >
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            <a href="#diseases/maleinfertility/hormonal-imbalance"
+              >Hormonal Imbalance</a
+            >
+          </h1>
+        </div>
+
+        <div class="p-[10px]">
+          <h1 class="text-[20px] font-bold text-orange-600">Liver Disorders</h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            <a href="#diseases/liverdisorders/chronicliverdisease"
+              >CLD(Chronic Liver Disease)</a
+            >
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            <a href="#diseases/liverdisorders/fattyliver">Fatty Liver</a>
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            <a href="#diseases/liverdisorders/liverfibrosis">Liver Fibrosis</a>
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            <a href="#diseases/liverdisorders/livercirrhosis"
+              >Liver Cirrhosis</a
+            >
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            <a href="#diseases/liverdisorders/jaundice"
+              >Juandice(Gibert Syndrome)</a
+            >
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            <a href="#diseases/liverdisorders/hepatitis">Hepatitis</a>
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            <a href="#diseases/liverdisorders/heaptomegaly">Heaptomegaly</a>
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            <a href="#diseases/liverdisorders/liverabscess">Liver Abscess</a>
+          </h1>
+        </div>
+
+        <div class="p-[10px]">
+          <h1 class="text-[20px] font-bold text-orange-600">
+            Joint/Neural Pain
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Arthritis
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Gout
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Rheumatoid Arthritis
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Sciatica
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Osteoarthritis
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Cervical
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Spondylitis
+          </h1>
+        </div>
+
+        <div class="p-[10px]">
+          <h1 class="text-[20px] font-bold text-orange-600">Skin Disorders</h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Psoriasis
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Vitiligo
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Acne
+          </h1>
+          <h1
+            class="disease p-[2px] disease text-gray-500 hover:text-orange-600"
+          >
+            Dermatitis
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Urticaria/Hives
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Warts
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Eczema
+          </h1>
+        </div>
+
+        <div class="p-[10px]">
+          <h1 class="text-[20px] font-bold text-orange-600">
+            Kidney Disorders
+          </h1>
+          <h1 class="p-[2px] text-gray-500 hover:text-orange-600">
+            PKD(Polycystic Kidney Disease)
+          </h1>
+          <h1 class="p-[2px] text-gray-500 hover:text-orange-600">
+            CKD(Chronic Kidney Disease)
+          </h1>
+          <h1 class="p-[2px] text-gray-500 hover:text-orange-600">
+            AKD(Acute Kidney Disease)
+          </h1>
+          <h1 class="p-[2px] text-gray-500 hover:text-orange-600">
+            IgA Nephropathy
+          </h1>
+          <h1 class="p-[2px] text-gray-500 hover:text-orange-600">
+            Kidney Stones
+          </h1>
+          <h1 class="p-[2px] text-gray-500 hover:text-orange-600">
+            Urinary Track Obstruction
+          </h1>
+          <h1 class="p-[2px] text-gray-500 hover:text-orange-600">
+            Proteinurea
+          </h1>
+        </div>
+        <div class="p-[10px]">
+          <h1 class="text-[20px] font-bold text-orange-600">
+            Female Infertility
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            PCOD/PCOS
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Endometriosis
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Hormonal Imbalance
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Irregular Menstruation
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Uterine Fibroids
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Ovulation Problems
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            White Discharge(Leucorrhea)
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Pelvic Inflammatory Disease(PID)
+          </h1>
+        </div>
+        <div class="p-[10px]">
+          <h1 class="text-[20px] font-bold text-orange-600">
+            Lifestyle Disorders
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Varicocele
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Hydrocele
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Erectile Dysfunction
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Premature Ejaculation
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Diabetes
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            High Blood Pressure(HTN)
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Infections
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            UTI's
+          </h1>
+          <h1 class="disease p-[2px] text-gray-500 hover:text-orange-600">
+            Obesity(Overweight)
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <section id="content" class="scroll-smooth"></section>
+
+    <!--footer component-->
+    <footer class="bg-[#006d77]">
+      <section
+        class="block p-5 lg:w-[100vw] lg:h-[400px] lg:flex lg:justify-around lg:p-20"
+      >
+        <section class="w-[90vw] lg:w-[500px] p-4 text-white">
+          <a href="#"
+            ><img
+              src="./logo/logo-png.jpg"
+              height="170"
+              width="340"
+              alt="mediveda's logo"
+          /></a>
+          <p>
+            We, "Mediveda", are well trusted Ayurvedic sanatorium that is
+            preeminent for treating patients affected by all kinds of kidney
+            problems everywhere in the world. We provide a 100% herbal medicines
+            and proper balance weight loss plan to our patients.
+          </p>
+        </section>
+        <section class="text-white h-[320px]">
+          <h1 class="font-bold text-[20px] p-1">Quick Links</h1>
+          <div class="p-2">
+            <i class="fa fa-angle-right pr-4 text-[#ffa16f]"></i
+            ><a href="">Home</a>
+          </div>
+          <div class="p-2">
+            <i class="fa fa-angle-right pr-4 text-[#ffa16f]"></i
+            ><a href="#aboutus">About Us</a>
+          </div>
+          <div class="p-2">
+            <i class="fa fa-angle-right pr-4 text-[#ffa16f]"></i
+            ><a href="">Services</a>
+          </div>
+          <div class="p-2">
+            <i class="fa fa-angle-right pr-4 text-[#ffa16f]"></i
+            ><a href="">Contact Us</a>
+          </div>
+          <div class="p-2">
+            <i class="fa fa-angle-right pr-4 text-[#ffa16f]"></i
+            ><a href="">Payment</a>
+          </div>
+          <div class="p-2">
+            <i class="fa fa-angle-right pr-4 text-[#ffa16f]"></i
+            ><a href="#diseases">Diseases we cure</a>
+          </div>
+        </section>
+        <section class="text-white h-[230px]">
+          <h1 class="font-bold text-[20px] p-1">Services</h1>
+          <div class="p-2">
+            <i class="fa fa-angle-right pr-4 text-[#ffa16f]"></i
+            ><a href="">Service1</a>
+          </div>
+          <div class="p-2">
+            <i class="fa fa-angle-right pr-4 text-[#ffa16f]"></i
+            ><a href="">Service2</a>
+          </div>
+          <div class="p-2">
+            <i class="fa fa-angle-right pr-4 text-[#ffa16f]"></i
+            ><a href="">Service3</a>
+          </div>
+          <div class="p-2">
+            <i class="fa fa-angle-right pr-4 text-[#ffa16f]"></i
+            ><a href="">Service4</a>
+          </div>
+        </section>
+        <section>
+          <h1 class="text-white font-bold text-[20px]">Information</h1>
+          <div class="pt-0 pr-4 pl-3 pb-4">
+            <div class="flex justify-start items-center mt-7">
+              <div
+                class="w-[50px] h-[50px] flex justify-center items-center bg-[#ffa16f] text-[25px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3"
+              >
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="ml-2">
+                <h1 class="font-bold text-[18px] text-white">Phone</h1>
+                <span class="text-white text-[15px] lg:text-[16px]"
+                  >+91 1234567890</span
+                >
+              </div>
+            </div>
+            <div class="flex justify-start items-center mt-7">
+              <div
+                class="w-[50px] h-[50px] flex justify-center items-center bg-[#ffa16f] text-[25px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="ml-2">
+                <h1 class="font-bold text-[18px] text-white">Email</h1>
+                <span class="text-[15px] lg:text-[16px] text-white"
+                  ><a href="mailto:info@mediveda.in">info@mediveda</a></span
+                >
+              </div>
+            </div>
+            <div class="flex justify-start items-center mt-7">
+              <div
+                class="w-[50px] h-[50px] flex justify-center items-center bg-[#ffa16f] text-[25px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3"
+              >
+                <i class="fa fa-location-dot"></i>
+              </div>
+              <div class="ml-2">
+                <h1 class="font-bold text-[18px] text-white">Address</h1>
+                <span class="text-[15px] lg:text-[16px] text-white"
+                  >Mediveda's Address</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="pt-5 pl-10 pr-10 pb-10">
+        <hr class="" />
+        <p class="text-white text-center pt-5 pb-5" id="copyright-content"></p>
+      </div>
+    </footer>
     <script type="module" src="index.js"></script>
   </body>
 </html>

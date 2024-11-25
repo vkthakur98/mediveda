@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch HTML Form</title>
+</head>
+<body>
+    <h1>Fetch and Display Form</h1>
+    <button id="fetch-button" class="border border-red-700">Fetch Form</button>
+    <div id="form-container"></div>
+
+    <script>
+        document.getElementById('fetch-button').addEventListener('click', () => {
+            console.log("clicked");
+            fetch('http://localhost/mediveda/echo.php')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text(); // Get the response as text
+                })
+                .then(html => {
+                    // Inject the fetched HTML into the container
+                    document.getElementById('form-container').innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('There has been a problem with your fetch operation:', error);
+                });
+        });
+    </script>
+</body>
+</html>

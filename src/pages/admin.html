@@ -1,0 +1,69 @@
+
+<div class="flex">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-800 text-white h-screen">
+        <div class="p-4">
+            <h2 class="text-lg font-semibold">Admin Panel</h2>
+        </div>
+        <nav>
+            <ul>
+                <li class="hover:bg-gray-700">
+                    <a href="#" class="block px-4 py-2">Appointments</a>
+                </li>
+                <li class="hover:bg-gray-700">
+                    <a href="#" class="block px-4 py-2">Create New Admin</a>
+                </li>
+                <li class="hover:bg-gray-700">
+                    <a href="#" class="block px-4 py-2">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+        <header class="bg-white shadow-md p-4 rounded mb-6">
+            <h1 class="text-2xl font-semibold">Manage Appointments</h1>
+        </header>
+
+        <!-- Appointments Table -->
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-300">
+                <thead>
+                    <tr class="bg-gray-200">
+                        <th class="py-2 px-4 border-b">Date</th>
+                        <th class="py-2 px-4 border-b">FirstName</th>
+                        <th class="py-2 px-4 border-b">LastName</th>
+                        <th class="py-2 px-4 border-b">City</th>
+                        <th class="py-2 px-4 border-b">Phone</th>
+                        <th class="py-2 px-4 border-b">Eamil</th>
+                        <th class="py-2 px-4 border-b">Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-2 px-4 border-b">2024-10-22</td>
+                        <td class="py-2 px-4 border-b">10:00 AM</td>
+                        <td class="py-2 px-4 border-b">John Doe</td>
+                        <td class="py-2 px-4 border-b">Scheduled</td>
+                        <td class="py-2 px-4 border-b">
+                            <button class="text-blue-500 hover:underline">Edit</button>
+                            <button class="text-red-500 hover:underline">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="py-2 px-4 border-b">2024-10-23</td>
+                        <td class="py-2 px-4 border-b">1:00 PM</td>
+                        <td class="py-2 px-4 border-b">Jane Smith</td>
+                        <td class="py-2 px-4 border-b">Completed</td>
+                        <td class="py-2 px-4 border-b">
+                            <button class="text-blue-500 hover:underline">Edit</button>
+                            <button class="text-red-500 hover:underline">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
