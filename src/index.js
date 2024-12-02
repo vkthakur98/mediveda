@@ -1,11 +1,13 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "@fortawesome/fontawesome-free/css/all.css";
-import { showGoToTop } from "./scripts/script.js";
+import { goToDiseaseLink, showGoToTop } from "./scripts/script.js";
+import { bookAppointment } from "./scripts/book_appointment.js";
 
 AOS.init({
   duration: 2000,
 });
+
 
 let menuexpand = false;
 menu_btn.addEventListener("click", (e) => {
@@ -60,10 +62,10 @@ function loadContent(page) {
             });
 
             console.log("Response status:", response.status);
-            const data = await response.json(); // Assuming the server returns JSON
+            const data = await response.json(); 
 
             if (response.ok) {
-              window.location.href = data.redirect; // Replace with your desired path
+              window.location.href = data.redirect; 
             } else {
               document
                 .getElementById("login-error-message")
@@ -93,28 +95,32 @@ function loadContent(page) {
   } else if (page == "diseases/maleinfertility/azoospermia") {
     fetch("./diseases/male-infertility/azoospermia.html")
       .then((response) => response.text())
-      .then((data) => {
+      .then((data) => {document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
       });
   } else if (page == "diseases/maleinfertility/oligospermia") {
     fetch("./diseases/male-infertility/oligo.html")
       .then((response) => response.text())
-      .then((data) => {
+      .then((data) => {document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
       });
   } else if (page == "diseases/maleinfertility/epididymitis") {
     fetch("./diseases/male-infertility/epididymitis.html")
       .then((response) => response.text())
-      .then((data) => {
+      .then((data) => {document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
       });
   } else if (page == "diseases/maleinfertility/orchitis") {
     fetch("./diseases/male-infertility/orchitis.html")
       .then((response) => response.text())
-      .then((data) => {
+      .then((data) => {document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
       });
@@ -122,13 +128,19 @@ function loadContent(page) {
     fetch("./diseases/male-infertility/funiculitis.html")
       .then((response) => response.text())
       .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
       });
+      document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
   } else if (page == "diseases/maleinfertility/retrograde-ejaculation") {
     fetch("./diseases/male-infertility/retrograde-ejaculation.html")
       .then((response) => response.text())
       .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
       });
@@ -157,6 +169,8 @@ function loadContent(page) {
     fetch("./diseases/liver-disorders/fattyliver.html")
       .then((response) => response.text())
       .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
       });
@@ -164,6 +178,8 @@ function loadContent(page) {
     fetch("./diseases/liver-disorders/liverfibrosis.html")
       .then((response) => response.text())
       .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
       });
@@ -171,6 +187,8 @@ function loadContent(page) {
     fetch("./diseases/liver-disorders/livercirrhosis.html")
       .then((response) => response.text())
       .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
       });
@@ -178,13 +196,18 @@ function loadContent(page) {
     fetch("./diseases/liver-disorders/jaundice.html")
       .then((response) => response.text())
       .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
       });
   } else if (page == "diseases/liverdisorders/hepatitis") {
     fetch("./diseases/liver-disorders/Hepatitis.html")
+    
       .then((response) => response.text())
       .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
       });
@@ -192,6 +215,8 @@ function loadContent(page) {
     fetch("./diseases/liver-disorders/Hepatomegaly.html")
       .then((response) => response.text())
       .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
       });
@@ -199,19 +224,166 @@ function loadContent(page) {
     fetch("./diseases/liver-disorders/liverabscess.html")
       .then((response) => response.text())
       .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
       });
-  } else {
+  }else if (page == "diseases/skindisorders/psoriasis") {
+    fetch("./diseases/skin-disorders/Psoriasis.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
+        contentDiv.innerHTML = data;
+        document.documentElement.scrollTop = 0;
+      });
+  }
+  else if (page == "diseases/skindisorders/vitiligo") {
+    fetch("./diseases/skin-disorders/Vitiligo.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
+        contentDiv.innerHTML = data;
+        document.documentElement.scrollTop = 0;
+      });
+  }
+  else if (page == "diseases/skindisorders/acne") {
+    fetch("./diseases/skin-disorders/Acne.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
+        contentDiv.innerHTML = data;
+        document.documentElement.scrollTop = 0;
+      });
+  }
+  else if (page == "diseases/skindisorders/dermatitis") {
+    fetch("./diseases/skin-disorders/Dermatitis.html")
+      .then((response) => response.text())
+      .then((data) => {document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
+        contentDiv.innerHTML = data;
+        document.documentElement.scrollTop = 0;
+      });
+  }
+  else if (page == "diseases/skindisorders/hives") {
+    fetch("./diseases/skin-disorders/hives.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
+        contentDiv.innerHTML = data;
+        document.documentElement.scrollTop = 0;
+      });
+  }
+  else if (page == "diseases/skindisorders/warts") {
+    document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
+    fetch("./diseases/skin-disorders/Warts.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
+        contentDiv.innerHTML = data;
+        document.documentElement.scrollTop = 0;
+      });
+  }
+  else if (page == "diseases/skindisorders/eczema") {
+    fetch("./diseases/skin-disorders/Eczema.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
+        contentDiv.innerHTML = data;
+        document.documentElement.scrollTop = 0;
+      });
+  }
+  else if (page == "diseases/kidneydisorders/pkd") {
+    fetch("./diseases/kidney-disorders/PKD.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
+        contentDiv.innerHTML = data;
+        document.documentElement.scrollTop = 0;
+      });
+  }
+  else if (page == "diseases/kidneydisorders/ckd") {
+    fetch("./diseases/kidney-disorders/CKD.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
+        contentDiv.innerHTML = data;
+        document.documentElement.scrollTop = 0;
+      });
+  }
+  else if (page == "diseases/kidneydisorders/akd") {
+    fetch("./diseases/kidney-disorders/AKD.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
+        contentDiv.innerHTML = data;
+        document.documentElement.scrollTop = 0;
+      });
+  }
+  else if (page == "diseases/kidneydisorders/iga") {
+    fetch("./diseases/kidney-disorders/igA.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
+        contentDiv.innerHTML = data;
+        document.documentElement.scrollTop = 0;
+      });
+  }
+  else if (page == "diseases/kidneydisorders/kidneystones") {
+    fetch("./diseases/kidney-disorders/kidneystone.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
+        contentDiv.innerHTML = data;
+        document.documentElement.scrollTop = 0;
+      });
+  }
+  else if (page == "diseases/kidneydisorders/uto") {
+    fetch("./diseases/kidney-disorders/UTO.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
+        contentDiv.innerHTML = data;
+        document.documentElement.scrollTop = 0;
+      });
+  }
+  else if (page == "diseases/kidneydisorders/proteinuria") {
+    fetch("./diseases/kidney-disorders/Proteinuria.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
+        contentDiv.innerHTML = data;
+        document.documentElement.scrollTop = 0;
+      });
+  }
+  else {
     fetch("./pages/main.html")
       .then((response) => response.text())
       .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
+        document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         startCounter(document.getElementById("target"), patientCounter, 10000);
         startCounter(document.getElementById("target"), expCounter, 25);
         startScrolling();
         operateAppointmentWindow();
+        goToDiseaseLink()
         document.addEventListener("scroll", showGoToTop);
+        bookAppointment();
       });
   }
 }
@@ -264,12 +436,8 @@ function router() {
     case "admin":
       document.title = "Mediveda-Admin Login"; // Set to your desired title for contact
       break;
-    case "diseases/maleinfertility/azoospermia":
-      document.title = "Azoospermia"; // Set to your desired title for contact
-      break;
-    // Add more cases as needed
-    default:
-      document.title = "Page Not Found"; // Fallback title for unmatched routes
+      default:
+      document.title = "Mediveda-Diseases"; // Fallback title for unmatched routes
       break;
   }
 
