@@ -1,9 +1,21 @@
-<div id="message-window" class="animate-fade-down absolute hidden rounded-sm left-0 lg:left-[40vw] top-0 h-[110px] w-[100vw] lg:w-[auto] bg-gray-200 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]">
-  <div class="p-2 bg-[#006D77] text-white" id="message-window-header">
+<div id="message-window" class="animate-fade-down hidden fixed rounded-sm lg:rounded-xl left-0 lg:left-[40vw]  top-0 lg:top-1 h-[110px] w-[100vw] lg:w-[auto] bg-gray-200 z-30 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]">
+  <div class="rounded-none lg:rounded-tr-xl lg:rounded-tl-xl p-2 bg-[#006D77] text-white" id="message-window-header">
     Message
   </div>
   <div class="p-2">
-    <p><i id="message-icon" class="fa-solid fa-check p-2 bg-green-700 text-white rounded-[50%]"></i><span class="pl-2">Your appointment has been booked</span></p>
+    <p><i id="message-icon" class="fa-solid fa-check p-2 bg-green-700 text-white rounded-[50%]"></i><span class="pl-2" id="message-content">Your appointment has been booked.</span></p>
+  </div>
+</div>
+
+<div id="err-message-window" class="animate-fade-down hidden fixed rounded-sm lg:rounded-xl left-0 lg:left-[40vw]  top-0 lg:top-1 h-[140px] w-[100vw] lg:w-[auto] bg-gray-200 z-30 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]">
+  <div class="rounded-none lg:rounded-tr-xl lg:rounded-tl-xl p-2 bg-red-500 text-white" id="message-window-header">
+    Message
+  </div>
+  <div class="p-2">
+    <p><i id="message-icon" class=" fa-solid fa-xmark pl-[10px] pr-[10px] pt-[8px] pb-[8px] bg-red-500 text-white rounded-[50%]"></i><span class="pl-2 text-red-500" id="err-message-content">Error</span></p>
+    <div class="flex justify-center">
+      <button class="mt-2 bg-red-500 text-white p-2 rounded-md hover:bg-red-600" id="err-message-window-closer">Close</button>
+    </div>
   </div>
 </div>
 
@@ -131,7 +143,7 @@
         <p class="w-[100vw] lg:w-[50vw] text-center pl-4 pr-4 pt-1 pb-2 lg:pl-0 lg:pr-0 lg:pt-0 lg:pb-0 ">Ayurvedic medicine offers a range of services to promote health and treat various health conditions. Here are some diseases listed below we cure:</p></div>
       <div class="grid grid-cols-2 lg:grid-cols-7 p-0 lg:p-4 overflow-hidden">
          
-          <div link="azoospermia" data-aos-delay="2000" data-aos="slide-right" data-aos-once="true" class="disease-link-list bg-[#006D77] cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
+          <div link="azoospermia" data-aos="slide-right" data-aos-once="true" class="disease-link-list bg-[#006D77] cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
             <div class="p-4 ">
               <div class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center">
                 <img src="../images/services/mi.webp" class="w-[70px] h-[70px]" alt="">
@@ -141,7 +153,7 @@
           </div>
           
         
-        <div link="chronicliverdisease" data-aos-delay="1000" data-aos="slide-right" data-aos-once="true" class="disease-link-list bg-[#006D77]  cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
+        <div link="chronicliverdisease" data-aos="slide-right" data-aos-once="true" class="disease-link-list bg-[#006D77]  cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
           <div class="p-4 ">
             <div class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center">
               <img src="../images/services/ls.webp" class="w-[70px] h-[70px]" alt="">
@@ -149,7 +161,7 @@
             <div class="text-center text-white">Liver <br> Disorders</div>
           </div> 
       </div>
-      <div  data-aos="slide-right" data-aos-delay="500" data-aos-once="true" class="bg-[#006D77]  cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
+      <div  data-aos="slide-right" data-aos-once="true" class="bg-[#006D77]  cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
         <div class="p-4 ">
           <div class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center">
             <img src="../images/services/at.webp" class="w-[70px] h-[70px]" alt="">
@@ -165,7 +177,7 @@
         <div class="text-center text-white">Skin <br> Disorders</div>
       </div> 
   </div>
-  <div  data-aos="slide-left" data-aos-delay="500" data-aos-once="true" class="bg-[#006D77]  cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
+  <div  data-aos="slide-left"  data-aos-once="true" class="bg-[#006D77]  cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
     <div class="p-4 ">
       <div class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center">
         <img src="../images/services/kd.webp" class="w-[70px] h-[70px]" alt="">
@@ -173,7 +185,7 @@
       <div class="text-center text-white">Kidney<br> Disorders</div>
     </div> 
 </div>
-<div  data-aos="slide-left" data-aos-delay="1000" data-aos-once="true" class="bg-[#006D77]  cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
+<div  data-aos="slide-left"  data-aos-once="true" class="bg-[#006D77]  cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
   <div class="p-4 ">
     <div class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center">
       <img src="../images/services/fi.webp" class="w-[70px] h-[70px]" alt="">
@@ -181,7 +193,7 @@
     <div class="text-center text-white">Female <br> Infertility</div>
   </div> 
 </div>
-<div data-aos="slide-left"  data-aos-delay="2000" data-aos-once="true" class="bg-[#006D77]  cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
+<div data-aos="slide-left"  data-aos-once="true" class="bg-[#006D77]  cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
   <div class="p-4 ">
     <div class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center">
       <img src="../images/services/ld.webp" class="w-[70px] h-[70px]" alt="">
@@ -431,7 +443,7 @@
           Make sure to note down the appointment date, time, and location provided by the clinic. Set reminders on your calendar or set an alarm to ensure you are punctual and do not miss your appointment.
         </span>
       </div>
-      <div class="pt-0 pr-4 pl-3 pb-4">
+      <div class="pt-0 pr-4 pl-3 pb-4" id="contact-us">
       <div class="flex justify-start items-center mt-7" data-aos="zoom-in" data-aos-once="true">
         <div class="w-[60px] h-[60px] flex justify-center items-center bg-[#ffa16f] text-[30px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3">
           <i class="fa-solid fa-headset"></i>
@@ -615,7 +627,7 @@
     <a href="#top"><i class="fa-solid fa-arrow-up text-white text-[20px]"></i></a>
 </section>
 <section id="appointment-window" class="hidden   justify-center items-center w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.5)] top-0 left-0 fixed">
-  <section class="animate-fade-down -mt-[80px]">
+  <section class="animate-fade-down -mt-[70px]">
     <div class="p-3 bg-[#006D77] flex items-center justify-between text-2xl rounded-tl-lg rounded-tr-lg text-white ">
       <span>Book an Appointment</span><span class="cursor-pointer" id="apmnt-window-closer">&times;</span>
     </div>
@@ -625,19 +637,19 @@
           <div>
             <div class="p-2">
               <label for="name" class="hidden lg:block text-sm font-medium text-gray-600">First Name</label>
-              <input type="text" id="first_name" placeholder="Enter your First Name" name="FirstName" required class=" mt-1 block w-full lg:w-[400px] p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+              <input type="text" id="first_name" placeholder="Enter your First Name" name="FirstName" required class=" mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
           </div>
           <div class="p-2">
             <label for="name" class="hidden lg:block text-sm font-medium text-gray-600">Last Name</label>
-            <input type="text" id="last_name" placeholder="Enter your Last Name" name="LastName" required class="mt-1 block w-full lg:w-[400px] p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+            <input type="text" id="last_name" placeholder="Enter your Last Name" name="LastName" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
         </div>
           <div class="p-2">
               <label for="email" class="hidden lg:block text-sm font-medium text-gray-600">Email</label>
-              <input type="email" id="email" placeholder="Enter your Email" name="Email" required class="mt-1 block w-full lg:w-[400px] p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+              <input  id="email" placeholder="Enter your Email" name="Email" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
           </div>
           <div class="p-2">
               <label for="phone" class="hidden lg:block text-sm font-medium text-gray-600">Phone Number</label>
-              <input type="number" id="phone" placeholder="Enter your Phone Number" name="PhoneNumber" required class="mt-1 block w-full lg:w-[400px] p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+              <input type="number" id="phone" placeholder="Enter your Phone Number" name="PhoneNumber" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
           </div>
           </div>
           <div>
@@ -647,15 +659,15 @@
           </div> -->
           <div class="p-2">
             <label for="State" class="hidden lg:block text-sm font-medium text-gray-600">State</label>
-            <input type="text" id="state" placeholder="Enter your State"   name="State" required class="mt-1 block w-full lg:w-[400px] p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+            <input type="text" id="state" placeholder="Enter your State"   name="State" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
         </div>
         <div class="p-2">
           <label for="Country" class="hidden lg:block text-sm font-medium text-gray-600">Country</label>
-          <input type="text" id="country" placeholder="Enter your Country" name="Country" required class="mt-1 block w-full lg:w-[400px] p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+          <input type="text" id="country" placeholder="Enter your Country" name="Country" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
         </div>
           <div class="p-2">
               <label for="message" class="hidden lg:block text-sm font-medium text-gray-600">Message</label>
-              <textarea id="message" placeholder="Enter your Message" name="Message" rows="4"  class="mt-1 block w-full lg:w-[400px] p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent"></textarea>
+              <textarea id="message" placeholder="Enter your Message" name="Message" rows="4"  class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent"></textarea>
           </div>
           </div>
         </div>

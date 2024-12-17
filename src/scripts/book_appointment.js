@@ -46,7 +46,9 @@ export function bookAppointment() {
             // Optionally, you can clear the form or redirect
             if(data.errors)
             {
-                alert(data.errors);
+                document.getElementById("err-message-window").classList.remove("hidden");
+                document.getElementById("err-message-window").classList.add("block");
+                document.getElementById("err-message-content").innerHTML = data.errors;
             }
             else
             {
@@ -67,4 +69,11 @@ export function bookAppointment() {
             alert('There was an error creating the sub-admin. Please try again.');
         });
     });   
+
+    document.getElementById("err-message-window-closer").addEventListener("click", () => {
+        document.getElementById('err-message-window').classList.add("hidden");
+        document.getElementById('err-message-window').classList.remove("block");         
+    })
 }
+
+
