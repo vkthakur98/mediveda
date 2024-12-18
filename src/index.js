@@ -5,6 +5,8 @@ import { showGoToTop } from "./scripts/gtp.js";
 import { bookAppointment } from "./scripts/book_appointment.js";
 import { mobile_navigation } from "./scripts/mobile_navigation.js";
 import { patientCounter, expCounter, startCounter} from "./scripts/counter.js"
+import disease_router from "./scripts/disease_router.js";
+
 
 AOS.init({
   duration: 2000,
@@ -672,9 +674,11 @@ else if (page == "diseases/jointneuralpain/sciatica") {
         startCounter(document.getElementById("target"), patientCounter, 10000);
         startCounter(document.getElementById("target"), expCounter, 25);
         startScrolling();
+        disease_router();
         operateAppointmentWindow();
         document.addEventListener("scroll", showGoToTop);
         bookAppointment();
+        document.getElementsByClassName("disease")
       });
   }
 }
