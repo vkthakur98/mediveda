@@ -1,128 +1,241 @@
 <section>
-    <section>
-      <div
-        class="lg:h-[400px] h-[250px] w-full bg-cover bg-center"
-        style="background-image: url('https://s3.ap-south-1.amazonaws.com/awsimages.imagesbazaar.com/1200x1800-new/16952/SM736353.jpg')"
-      >
-        <div class="bg-[rgba(0,0,0,0.5)] lg:h-[400px] h-[250px] p-5 lg:p-20">
-          <div data-aos="slide-right" data-aos-once="true" class="mt-16">
-            <h1 class="text-[40px] lg:text-[65px] w-auto lg:w-[1000px] font-verdana font-bold text-white">
-              Acute Kidney Disease (AKD)
-            </h1>
+  <div id="message-window" class="animate-fade-down hidden fixed rounded-sm lg:rounded-xl left-0 lg:left-[40vw]  top-0 lg:top-1 h-[110px] w-[100vw] lg:w-[auto] bg-gray-200 z-30 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]">
+    <div class="rounded-none lg:rounded-tr-xl lg:rounded-tl-xl p-2 bg-[#006D77] text-white" id="message-window-header">
+      Message
+    </div>
+    <div class="p-2">
+      <p><i id="message-icon" class="fa-solid fa-check p-2 bg-green-700 text-white rounded-[50%]"></i><span class="pl-2" id="message-content">Your appointment has been booked.</span></p>
+    </div>
+  </div>
+  <div id="err-message-window" class="animate-fade-down hidden fixed rounded-sm lg:rounded-xl left-0 lg:left-[40vw]  top-0 lg:top-1 h-[140px] w-[100vw] lg:w-[auto] bg-gray-200 z-30 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]">
+    <div class="rounded-none lg:rounded-tr-xl lg:rounded-tl-xl p-2 bg-red-500 text-white" id="message-window-header">
+      Message
+    </div>
+    <div class="p-2">
+      <p><i id="message-icon" class=" fa-solid fa-xmark pl-[10px] pr-[10px] pt-[8px] pb-[8px] bg-red-500 text-white rounded-[50%]"></i><span class="pl-2 text-red-500" id="err-message-content">Something went wrong.</span></p>
+      <div class="flex justify-center">
+        <button class="mt-2 bg-red-500 text-white p-2 rounded-md hover:bg-red-600" id="err-message-window-closer">Close</button>
+      </div>
+    </div>
+  </div>
+  <section class="flex justify-center items-center p-[10px]">
+      <div class="bg-[url('https://sriaas.com/wp-content/uploads/2023/12/kidney_disorders_bg.jpg')]  w-[90vw] rounded-lg bg-cover">
+          <div class="block  lg:flex lg:justify-start lg:items-center p-5 bg-gradient-to-r from-[#774EA5] to-[transparent] rounded-lg">
             <div>
-              <br />
+              <h1 class="text-[30px] lg:text-[50px] font-bold text-white">Acute Kidney Disease (AKD)</h1>
+              <p class=" text-white w-[85vw] lg:w-[50vw]">
+                Acute Kidney Disease (AKD), also referred to as Acute Kidney Injury (AKI), is a rapid decline in kidney function that occurs over a period of hours to days. It results in an inability of the kidneys to filter waste products and regulate fluid, electrolyte, and acid-base balance. AKD is characterized by a sudden reduction in glomerular filtration rate (GFR), which leads to the buildup of waste products, electrolytes, and fluid in the body.
+                While AKD can often be reversed with appropriate medical treatment, if not managed promptly, it can progress to chronic kidney disease (CKD) or even end-stage renal disease (ESRD), which may require dialysis or a kidney transplant.
+              </p>
+            </div>
+            <div>
+              <button
+              aria-hidden 006d77
+              class="ml-[30px] mt-[10px] lg:mt-0 lg:ml-[200px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)] p-4 rounded-md bg-[#006d77] text-white tracking-[2px] text-[15px] hover:bg-[#fbb85b] transition-[6s]"
+              id="appointment-btn"
+              >
+              BOOK AN APPOINTMENT
+            </button>                      
+          </div>  
+          </div>
+      </div>
+  </section>
+  <section class="block lg:flex lg:justify-center">
+    <aside>  
+      <section class="lg:p-10 p-4">
+        <div class="block lg:flex lg:justify-center lg:items-center">
+          <div>
+            <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Physiology of Acute Kidney Disease</h1>
+            <p class="text-gray-600">
+              The kidneys play a crucial role in filtering waste products, balancing electrolytes, regulating blood pressure, and maintaining fluid balance. AKD occurs when this filtration function is suddenly impaired, leading to the accumulation of toxins and fluid in the body.
+            </p>
+            <ul class="list-disc pl-5 text-gray-600">
+              <li><span class="font-bold">Kidney Filtration:</span> The kidneys filter waste and excess fluid through millions of tiny structures called nephrons, which consist of glomeruli (filters) and tubules (which reabsorb or excrete substances). In AKD, the glomerular filtration rate (GFR) decreases, impairing waste elimination.</li>
+              <li><span class="font-bold">Fluid and Electrolyte Imbalance:</span> As kidney function declines, the body may experience fluid retention (edema), elevated blood pressure, and disturbances in electrolyte balance (especially potassium, sodium, and calcium), which can lead to dangerous complications.</li>
+              <li><span class="font-bold">Uremia:</span> In severe cases, the buildup of waste products like urea and creatinine in the blood can result in a condition called uremia, which is associated with nausea, fatigue, confusion, and in extreme cases, coma.</li>
+            </ul>
+    
+            <h1 class="lg:text-[30px] text-[25px] font-bold mt-5 text-[#006d77]">Causes of Acute Kidney Disease</h1>
+            <p class="text-gray-600">
+              The primary causes of AKD are categorized into three main groups based on the underlying origin of the injury:
+            </p>
+          </div>
+          <div class="p-3 ">
+            <img  src="../../images/diseases/kidney.jpg" class="rounded-lg w-[900px]" alt="">
+          </div>
+        </div>
+        
+        <h2 class="text-[#006d77] lg:text-[25px] text-[20px] font-bold mt-5">Prerenal Causes (Decreased Blood Flow to the Kidneys):</h2>
+        <ul class="list-disc pl-5 text-gray-600">
+          <li><span class="font-bold">Hypovolemia:</span> Severe dehydration, blood loss, or shock can reduce the amount of blood reaching the kidneys, impairing filtration.</li>
+          <li><span class="font-bold">Heart Failure:</span> Reduced cardiac output due to heart failure can lead to inadequate kidney perfusion.</li>
+          <li><span class="font-bold">Severe Burns or Infection:</span> Can lead to a decrease in circulating blood volume or cause systemic inflammation, affecting kidney function.</li>
+        </ul>
+
+        <h2 class="text-[#006d77] lg:text-[25px] text-[20px] font-bold mt-5">Intrinsic Renal Causes (Direct Damage to the Kidney Tissue):</h2>
+        <ul class="list-disc pl-5 text-gray-600">
+          <li><span class="font-bold">Acute Tubular Necrosis (ATN):</span> The most common cause of intrinsic AKI, often resulting from prolonged prerenal conditions (e.g., dehydration, hypotension), toxins, or medications.</li>
+          <li><span class="font-bold">Glomerulonephritis:</span> Inflammation of the glomeruli, often due to infections (e.g., streptococcal infections), autoimmune diseases (e.g., lupus), or other systemic conditions.</li>
+          <li><span class="font-bold">Acute Interstitial Nephritis (AIN):</span> An inflammation of the kidney's interstitial tissue, often due to allergic reactions to drugs, infections, or autoimmune conditions.</li>
+        </ul>
+
+        <h2 class="text-[#006d77] lg:text-[25px] text-[20px] font-bold mt-5">Postrenal Causes (Obstruction of Urine Flow):</h2>
+        <ul class="list-disc pl-5 text-gray-600">
+          <li><span class="font-bold">Urinary Tract Obstruction:</span> Conditions like kidney stones, tumors, or enlarged prostate can block the flow of urine, causing kidney damage.</li>
+          <li><span class="font-bold">Bladder Outlet Obstruction:</span> Can occur in conditions like benign prostatic hyperplasia (BPH) or pelvic tumors.</li>
+        </ul>
+
+        <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Treatment for Acute Kidney Disease (AKD)</h1>
+        <p class="text-gray-600">
+          In Ayurveda, AKD is seen as a result of imbalances in the doshas (particularly Vata and Pitta) and the accumulation of ama (toxins) within the body. Ayurveda focuses on restoring balance, removing toxins, and nourishing the kidneys to support their detoxification and regenerative functions. The goal is to address the root cause, whether it be poor circulation, inflammation, or toxicity, and to promote healing of the kidneys.
+        </p>
+
+        <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Treatment Approaches</h1>
+        <ul class="list-disc pl-5 text-gray-600">
+          <li><span class="font-bold">Dietary Modifications:</span> Ayurveda recommends a Pitta-pacifying diet for individuals with AKD, including light, fresh, and easy-to-digest foods while avoiding spicy, oily, and heavy foods that can increase inflammation and stress on the kidneys. A diet rich in antioxidants and alkaline foods is encouraged.</li>
+          <li><span class="font-bold">Stress Management:</span> Techniques like pranayama (breathing exercises), meditation, and gentle yoga help reduce emotional and physical stress, crucial for supporting kidney function and overall health.</li>
+        </ul>
+
+        <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Conclusion</h1>
+        <p class="text-gray-600">
+          Acute Kidney Disease (AKD) is a serious condition that requires prompt medical intervention to prevent kidney failure. Ayurveda offers a holistic approach to treating AKD by focusing on detoxification, nourishing the kidneys, and reducing inflammation. Herbal remedies such as Punarnava, Gokshura, Ashwagandha, and Turmeric support kidney health, reduce swelling, and improve kidney function. In addition to herbal therapies, Ayurvedic treatments like Panchakarma, dietary modifications, and stress management can further enhance kidney healing and prevent further damage. Ayurvedic treatment can be a valuable complementary approach to conventional therapies in managing AKD.
+        </p>
+      </section>
+    </aside>
+  </section>
+</section>
+<section>
+  <div class="bg-white  h-[900px] lg:h-[450px]">
+    <div class="bg-[url('https://sriaas.com/wp-content/themes/srayurvedaone/build/img/Kidney-bg-2.webp')] bg-cover">
+      <div class="bg-[rgba(0,0,0,0.5)]">
+        <h1 class="text-center text-white text-[30px] lg:text-[60px] font-bold tracking-wide">KIDNEY DISORDERS</h1>
+        <div class="flex justify-center items-center">
+          <button
+          aria-hidden 006d77
+          class="mt-[10px] lg:mt-0  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)] p-4 rounded-md bg-[#006d77] text-white tracking-[2px] text-[15px] hover:bg-[#fbb85b] transition-[6s]"
+          id="appointment-btn2"
+          >
+          BOOK AN APPOINTMENT
+        </button>
+        </div>
+        
+        <div class="p-5 flex items-center justify-between flex-wrap">
+          <a href="#diseases/kidneydisorders/pkd">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/K1.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Polystic Kidney Disease</h1>
+              </div>
+            </div>
+          </a>
+          <a href="#diseases/kidneydisorders/ckd">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/K2.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Chronic Kidney Disease</h1>
+              </div>
+            </div>
+          </a>
+          <a href="#diseases/kidneydisorders/iga">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/K3.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">igA nephropathy</h1>
+              </div>
+            </div>
+          </a>
+          <a href="#diseases/kidneydisorders/kidneystones">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/K4.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Kidney Stones</h1>
+              </div>
+            </div>
+          </a>
+          <a href="#diseases/kidneydisorders/uto">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/K5.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Urinary Tract Obstruction</h1>
+              </div>
+            </div>
+          </a>
+          <a href="#diseases/kidneydisorders/proteinuria">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/K6.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Proteninuria</h1>
+              </div>
+            </div>
+          </a>                                     
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <section id="appointment-window" class="hidden justify-center items-center w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.5)] top-0 left-0 fixed">
+    <section class="animate-fade-down -mt-[70px]">
+      <div class="p-3 bg-[#d8590a] flex items-center justify-between text-2xl rounded-tl-lg rounded-tr-lg text-white ">
+        <span>Book an Appointment</span><span class="cursor-pointer" id="apmnt-window-closer">&times;</span>
+      </div>
+      <div class="bg-[#006D77]  shadow-lg p-2  transition-transform transform rounded-bl-lg rounded-br-lg">
+        <form id="appointment-form" class="space-y-4" action="SaveAppointment.php"  method="Post">
+          <div class=" block lg:flex lg:justify-center w-[90vw] lg:w-[55vw]">
+            <div>
+              <div class="p-2">
+                <label for="name" class="hidden lg:block text-sm font-medium text-white">First Name</label>
+                <input type="text" id="first_name" placeholder="Enter your First Name" name="FirstName" required class=" mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] bg-white rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+            </div>
+            <div class="p-2">
+              <label for="name" class="hidden lg:block text-sm font-medium text-white">Last Name</label>
+              <input type="text" id="last_name" placeholder="Enter your Last Name" name="LastName" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] bg-white rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+          </div>
+            <div class="p-2">
+                <label for="email" class="hidden lg:block text-sm font-medium text-white">Email</label>
+                <input  id="email" placeholder="Enter your Email" name="Email" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
+            </div>
+            <div class="p-2">
+                <label for="phone" class="hidden lg:block text-sm font-medium text-white">Phone Number</label>
+                <input type="number" id="phone" placeholder="Enter your Phone Number" name="PhoneNumber" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
+            </div>
+            </div>
+            <div>
+            <!-- <div>
+                <label for="date" class="block text-sm font-medium text-gray-700">Appointment Date</label>
+                <input type="date" id="date" name="date" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500" />
+            </div> -->
+            <div class="p-2">
+              <label for="State" class="hidden lg:block text-sm font-medium text-white">State</label>
+              <input type="text" id="state" placeholder="Enter your State"   name="State" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
+          </div>
+          <div class="p-2">
+            <label for="Country" class="hidden lg:block text-sm font-medium text-white">Country</label>
+            <input type="text" id="country" placeholder="Enter your Country" name="Country" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
+          </div>
+            <div class="p-2">
+                <label for="message" class="hidden lg:block text-sm font-medium text-white">Message</label>
+                <textarea id="message" placeholder="Enter your Message" name="Message" rows="4"  class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white"></textarea>
+            </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="block lg:flex lg:justify-center">
-      <aside>
-        <section>
-          <div class="lg:p-10 p-4">
-            <img
-              src="../../images/diseases/akd.webp"
-              class="w-full h-auto lg:w-[800px] lg:h-[550px]"
-              alt="Image depicting the anatomy related to Acute Kidney Disease"
-            />
-          </div>
-        </section>
-        <section class="lg:p-10 p-4">
-          <h1 class="lg:text-[40px] text-[30px] font-bold">Acute Kidney Disease (AKD): A Brief Overview</h1>
-          <p class="text-gray-600">
-            Acute Kidney Disease (AKD), also referred to as Acute Kidney Injury (AKI), is a rapid decline in kidney function that occurs over a period of hours to days. It results in an inability of the kidneys to filter waste products and regulate fluid, electrolyte, and acid-base balance. AKD is characterized by a sudden reduction in glomerular filtration rate (GFR), which leads to the buildup of waste products, electrolytes, and fluid in the body.
-          </p>
-          <p class="text-gray-600">
-            While AKD can often be reversed with appropriate medical treatment, if not managed promptly, it can progress to chronic kidney disease (CKD) or even end-stage renal disease (ESRD), which may require dialysis or a kidney transplant.
-          </p>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Physiology of Acute Kidney Disease</h1>
-          <p class="text-gray-600">
-            The kidneys play a crucial role in filtering waste products, balancing electrolytes, regulating blood pressure, and maintaining fluid balance. AKD occurs when this filtration function is suddenly impaired, leading to the accumulation of toxins and fluid in the body.
-          </p>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><span class="font-bold">Kidney Filtration:</span> The kidneys filter waste and excess fluid through millions of tiny structures called nephrons, which consist of glomeruli (filters) and tubules (which reabsorb or excrete substances). In AKD, the glomerular filtration rate (GFR) decreases, impairing waste elimination.</li>
-            <li><span class="font-bold">Fluid and Electrolyte Imbalance:</span> As kidney function declines, the body may experience fluid retention (edema), elevated blood pressure, and disturbances in electrolyte balance (especially potassium, sodium, and calcium), which can lead to dangerous complications.</li>
-            <li><span class="font-bold">Uremia:</span> In severe cases, the buildup of waste products like urea and creatinine in the blood can result in a condition called uremia, which is associated with nausea, fatigue, confusion, and in extreme cases, coma.</li>
-          </ul>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Causes of Acute Kidney Disease</h1>
-          <p class="text-gray-600">
-            The primary causes of AKD are categorized into three main groups based on the underlying origin of the injury:
-          </p>
-          <h2 class="lg:text-[25px] text-[20px] font-bold mt-5">Prerenal Causes (Decreased Blood Flow to the Kidneys):</h2>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><span class="font-bold">Hypovolemia:</span> Severe dehydration, blood loss, or shock can reduce the amount of blood reaching the kidneys, impairing filtration.</li>
-            <li><span class="font-bold">Heart Failure:</span> Reduced cardiac output due to heart failure can lead to inadequate kidney perfusion.</li>
-            <li><span class="font-bold">Severe Burns or Infection:</span> Can lead to a decrease in circulating blood volume or cause systemic inflammation, affecting kidney function.</li>
-          </ul>
-  
-          <h2 class="lg:text-[25px] text-[20px] font-bold mt-5">Intrinsic Renal Causes (Direct Damage to the Kidney Tissue):</h2>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><span class="font-bold">Acute Tubular Necrosis (ATN):</span> The most common cause of intrinsic AKI, often resulting from prolonged prerenal conditions (e.g., dehydration, hypotension), toxins, or medications.</li>
-            <li><span class="font-bold">Glomerulonephritis:</span> Inflammation of the glomeruli, often due to infections (e.g., streptococcal infections), autoimmune diseases (e.g., lupus), or other systemic conditions.</li>
-            <li><span class="font-bold">Acute Interstitial Nephritis (AIN):</span> An inflammation of the kidney's interstitial tissue, often due to allergic reactions to drugs, infections, or autoimmune conditions.</li>
-          </ul>
-  
-          <h2 class="lg:text-[25px] text-[20px] font-bold mt-5">Postrenal Causes (Obstruction of Urine Flow):</h2>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><span class="font-bold">Urinary Tract Obstruction:</span> Conditions like kidney stones, tumors, or enlarged prostate can block the flow of urine, causing kidney damage.</li>
-            <li><span class="font-bold">Bladder Outlet Obstruction:</span> Can occur in conditions like benign prostatic hyperplasia (BPH) or pelvic tumors.</li>
-          </ul>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Treatment for Acute Kidney Disease (AKD)</h1>
-          <p class="text-gray-600">
-            In Ayurveda, AKD is seen as a result of imbalances in the doshas (particularly Vata and Pitta) and the accumulation of ama (toxins) within the body. Ayurveda focuses on restoring balance, removing toxins, and nourishing the kidneys to support their detoxification and regenerative functions. The goal is to address the root cause, whether it be poor circulation, inflammation, or toxicity, and to promote healing of the kidneys.
-          </p>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Treatment Approaches</h1>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><span class="font-bold">Dietary Modifications:</span> Ayurveda recommends a Pitta-pacifying diet for individuals with AKD, including light, fresh, and easy-to-digest foods while avoiding spicy, oily, and heavy foods that can increase inflammation and stress on the kidneys. A diet rich in antioxidants and alkaline foods is encouraged.</li>
-            <li><span class="font-bold">Stress Management:</span> Techniques like pranayama (breathing exercises), meditation, and gentle yoga help reduce emotional and physical stress, crucial for supporting kidney function and overall health.</li>
-          </ul>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Conclusion</h1>
-          <p class="text-gray-600">
-            Acute Kidney Disease (AKD) is a serious condition that requires prompt medical intervention to prevent kidney failure. Ayurveda offers a holistic approach to treating AKD by focusing on detoxification, nourishing the kidneys, and reducing inflammation. Herbal remedies such as Punarnava, Gokshura, Ashwagandha, and Turmeric support kidney health, reduce swelling, and improve kidney function. In addition to herbal therapies, Ayurvedic treatments like Panchakarma, dietary modifications, and stress management can further enhance kidney healing and prevent further damage. Ayurvedic treatment can be a valuable complementary approach to conventional therapies in managing AKD.
-          </p>
-        </section>
-      </aside>
-      <aside>
-        <div class="p-4 lg:p-10 m-auto lg:m-0">
-          <div class="p-5 bg-white shadow-md w-full lg:w-[500px] border-l-2 border-orange-500">
-            <h1 class="text-[30px] font-bold">Kidney Disorders</h1>
-            <div>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/kidneydisorders/pkd">PKD(Polycystic Kidney Disease)</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/kidneydisorders/ckd">CKD(Acute Kidney Disease)</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/kidneydisorders/igA">Iga Nephropathy</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/kidneydisorders/kidneystones">Kidney Stones</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/kidneydisorders/uto">Urinary Tract Obstruction</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/kidneydisorders/proteinuria">Proteinuria</a>
-              </h1>
-            </div>            
-          </div>
-          <div class="mt-5 bg-cover bg-center w-full lg:w-[500px] h-[180px]" style="background-image: url('https://s3.ap-south-1.amazonaws.com/awsimages.imagesbazaar.com/1200x1800-new/16952/SM736353.jpg')">
-            <div class="bg-[rgba(0,0,0,0.5)] h-[180px] w-full lg:w-[500px] flex justify-center items-center"></div>
-          </div>
-        </div>
-      </aside>
-    </section>
+          <div class="flex justify-center items-center">
+            <button type="submit" id="book-appointment-btn" class="m-auto bg-orange-600 text-white p-3 rounded-md hover:bg-[#174f54] font-bold  transition duration-200">Schedule Appointment</button>
+          </div>    
+            
+        </form>
+    </div>
+    </section>  
   </section>
-  
+</section>

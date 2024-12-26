@@ -628,28 +628,28 @@
 </section>
 <section id="appointment-window" class="hidden   justify-center items-center w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.5)] top-0 left-0 fixed">
   <section class="animate-fade-down -mt-[70px]">
-    <div class="p-3 bg-[#006D77] flex items-center justify-between text-2xl rounded-tl-lg rounded-tr-lg text-white ">
+    <div class="p-3 bg-[#d8590a] flex items-center justify-between text-2xl rounded-tl-lg rounded-tr-lg text-white ">
       <span>Book an Appointment</span><span class="cursor-pointer" id="apmnt-window-closer">&times;</span>
     </div>
-    <div class="bg-white  shadow-lg p-2  transition-transform transform rounded-bl-lg rounded-br-lg">
+    <div class="bg-[#006D77]  shadow-lg p-2  transition-transform transform rounded-bl-lg rounded-br-lg">
       <form id="appointment-form" class="space-y-4" action="SaveAppointment.php"  method="Post">
         <div class=" block lg:flex lg:justify-center w-[90vw] lg:w-[55vw]">
           <div>
             <div class="p-2">
-              <label for="name" class="hidden lg:block text-sm font-medium text-gray-600">First Name</label>
-              <input type="text" id="first_name" placeholder="Enter your First Name" name="FirstName" required class=" mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+              <label for="name" class="hidden lg:block text-sm font-medium text-white">First Name</label>
+              <input type="text" id="first_name" placeholder="Enter your First Name" name="FirstName" required class=" mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] bg-white rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
           </div>
           <div class="p-2">
-            <label for="name" class="hidden lg:block text-sm font-medium text-gray-600">Last Name</label>
-            <input type="text" id="last_name" placeholder="Enter your Last Name" name="LastName" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+            <label for="name" class="hidden lg:block text-sm font-medium text-white">Last Name</label>
+            <input type="text" id="last_name" placeholder="Enter your Last Name" name="LastName" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] bg-white rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
         </div>
           <div class="p-2">
-              <label for="email" class="hidden lg:block text-sm font-medium text-gray-600">Email</label>
-              <input  id="email" placeholder="Enter your Email" name="Email" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+              <label for="email" class="hidden lg:block text-sm font-medium text-white">Email</label>
+              <input  id="email" placeholder="Enter your Email" name="Email" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
           </div>
           <div class="p-2">
-              <label for="phone" class="hidden lg:block text-sm font-medium text-gray-600">Phone Number</label>
-              <input type="number" id="phone" placeholder="Enter your Phone Number" name="PhoneNumber" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+              <label for="phone" class="hidden lg:block text-sm font-medium text-white">Phone Number</label>
+              <input type="number" id="phone" placeholder="Enter your Phone Number" name="PhoneNumber" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
           </div>
           </div>
           <div>
@@ -658,22 +658,23 @@
               <input type="date" id="date" name="date" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500" />
           </div> -->
           <div class="p-2">
-            <label for="State" class="hidden lg:block text-sm font-medium text-gray-600">State</label>
-            <input type="text" id="state" placeholder="Enter your State"   name="State" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+            <label for="State" class="hidden lg:block text-sm font-medium text-white">State</label>
+            <input type="text" id="state" placeholder="Enter your State"   name="State" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
         </div>
         <div class="p-2">
-          <label for="Country" class="hidden lg:block text-sm font-medium text-gray-600">Country</label>
-          <input type="text" id="country" placeholder="Enter your Country" name="Country" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+          <label for="Country" class="hidden lg:block text-sm font-medium text-white">Country</label>
+          <input type="text" id="country" placeholder="Enter your Country" name="Country" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
         </div>
           <div class="p-2">
-              <label for="message" class="hidden lg:block text-sm font-medium text-gray-600">Message</label>
-              <textarea id="message" placeholder="Enter your Message" name="Message" rows="4"  class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent"></textarea>
+              <label for="message" class="hidden lg:block text-sm font-medium text-white">Message</label>
+              <textarea id="message" placeholder="Enter your Message" name="Message" rows="4"  class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white"></textarea>
           </div>
           </div>
         </div>
+        <div class="flex justify-center items-center">
+          <button type="submit" id="book-appointment-btn" class="m-auto bg-orange-600 text-white p-3 rounded-md hover:bg-[#174f54] font-bold  transition duration-200">Schedule Appointment</button>
+        </div>    
           
-          
-                   <button type="submit" id="book-appointment-btn" class="w-full bg-[#006D77] text-white py-2 rounded-md hover:bg-[#174f54] transition duration-200">Schedule Appointment</button>
       </form>
   </div>
   </section>  

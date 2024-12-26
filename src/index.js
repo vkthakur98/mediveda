@@ -115,9 +115,12 @@ function loadContent(page) {
       });
   }
   else if (page == "payment/QR_MD76XLMNS3298SLLSIEMN7") {
+    document.getElementById("loader_main").classList.add("flex");
+    document.getElementById("loader_main").classList.remove("hidden");
     fetch("./pages/payment.html")
       .then((response) => response.text())
-      .then((data) => {document.getElementById("loader_main").classList.add("hidden");
+      .then((data) => {
+        document.getElementById("loader_main").classList.add("hidden");
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
@@ -342,6 +345,8 @@ function loadContent(page) {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/kidneydisorders/akd") {
@@ -352,6 +357,8 @@ function loadContent(page) {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/kidneydisorders/iga") {
@@ -362,6 +369,8 @@ function loadContent(page) {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/kidneydisorders/kidneystones") {

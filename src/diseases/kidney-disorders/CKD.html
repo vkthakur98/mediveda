@@ -1,124 +1,235 @@
 <section>
-    <section>
-      <div
-        class="lg:h-[400px] h-[250px] w-full bg-cover bg-center"
-        style="background-image: url('https://s3.ap-south-1.amazonaws.com/awsimages.imagesbazaar.com/1200x1800-new/16952/SM736353.jpg')"
-      >
-        <div class="bg-[rgba(0,0,0,0.5)] lg:h-[400px] h-[250px] p-5 lg:p-20">
-          <div data-aos="slide-right" data-aos-once="true" class="mt-16">
-            <h1 class="text-[40px] lg:text-[65px] w-auto lg:w-[1000px] font-verdana font-bold text-white">
-              Chronic Kidney Disease (CKD)
-            </h1>
+  <div id="message-window" class="animate-fade-down hidden fixed rounded-sm lg:rounded-xl left-0 lg:left-[40vw]  top-0 lg:top-1 h-[110px] w-[100vw] lg:w-[auto] bg-gray-200 z-30 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]">
+    <div class="rounded-none lg:rounded-tr-xl lg:rounded-tl-xl p-2 bg-[#006D77] text-white" id="message-window-header">
+      Message
+    </div>
+    <div class="p-2">
+      <p><i id="message-icon" class="fa-solid fa-check p-2 bg-green-700 text-white rounded-[50%]"></i><span class="pl-2" id="message-content">Your appointment has been booked.</span></p>
+    </div>
+  </div>
+  <div id="err-message-window" class="animate-fade-down hidden fixed rounded-sm lg:rounded-xl left-0 lg:left-[40vw]  top-0 lg:top-1 h-[140px] w-[100vw] lg:w-[auto] bg-gray-200 z-30 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]">
+    <div class="rounded-none lg:rounded-tr-xl lg:rounded-tl-xl p-2 bg-red-500 text-white" id="message-window-header">
+      Message
+    </div>
+    <div class="p-2">
+      <p><i id="message-icon" class=" fa-solid fa-xmark pl-[10px] pr-[10px] pt-[8px] pb-[8px] bg-red-500 text-white rounded-[50%]"></i><span class="pl-2 text-red-500" id="err-message-content">Something went wrong.</span></p>
+      <div class="flex justify-center">
+        <button class="mt-2 bg-red-500 text-white p-2 rounded-md hover:bg-red-600" id="err-message-window-closer">Close</button>
+      </div>
+    </div>
+  </div>
+  <section class="flex justify-center items-center p-[10px]">
+      <div class="bg-[url('https://media.istockphoto.com/id/1386446380/photo/human-kidney-cross-section-3d-illustration.jpg?s=612x612&w=0&k=20&c=V-fOyNI_E4Rlw-1A_jrgotgz8TpXP46xXsLapho0wUY=')]  w-[90vw] rounded-lg bg-cover">
+          <div class="block  lg:flex lg:justify-start lg:items-center p-5 bg-gradient-to-r from-[#774EA5] to-[transparent] rounded-lg">
             <div>
-              <br />
-            </div>
+              <h1 class="text-[30px] lg:text-[50px] font-bold text-white">Chronic Kidney Disease (CKD):</h1>
+              <p class=" text-white w-[85vw] lg:w-[50vw]">
+                  Chronic Kidney Disease (CKD) is a progressive condition characterized by the gradual loss of kidney function over time. The kidneys are responsible for filtering waste products, balancing electrolytes, regulating blood pressure, and producing urine. When kidney function deteriorates, waste products and fluids can build up in the body, leading to a range of complications. If left untreated, CKD can lead to end-stage renal disease (ESRD), where the kidneys can no longer function sufficiently, often requiring dialysis or a kidney transplant.
+              </p>
+            </div>  
+            <div>
+              <button
+              aria-hidden 006d77
+              class="ml-[30px] mt-[10px] lg:mt-0 lg:ml-[200px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)] p-4 rounded-md bg-[#006d77] text-white tracking-[2px] text-[15px] hover:bg-[#fbb85b] transition-[6s]"
+              id="appointment-btn"
+              >
+              BOOK AN APPOINTMENT
+            </button>                      
+          </div>              
           </div>
+      </div>
+  </section>
+  <section class="block lg:flex lg:justify-center">
+    <aside>  
+      <section class="lg:p-10 p-4">
+        <div class="block lg:flex lg:justify-center lg:items-center">
+          <div>
+            <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Physiology of Chronic Kidney Disease</h1>
+            <p class="text-gray-600">
+              The kidneys contain millions of tiny filtration units called nephrons, which remove waste, regulate fluid balance, and maintain electrolyte homeostasis. CKD develops when these nephrons become damaged over time, reducing the kidneys’ ability to perform these vital functions. This damage leads to the accumulation of waste products in the blood, resulting in uremia (elevated levels of urea and other waste products) and disruptions in fluid, electrolyte, and acid-base balance.
+            </p>
+            <p class="text-gray-600">
+              Over time, CKD leads to scarring and fibrosis of kidney tissue, impairing the kidneys' ability to filter waste and regulate fluid levels, leading to symptoms like high blood pressure, swelling (edema), fatigue, and eventually kidney failure.
+            </p>
+            
+            <h1 class="lg:text-[30px] text-[25px] font-bold mt-5 text-[#006d77]">Stages of CKD</h1>
+            <p class="text-gray-600">
+              CKD is classified into five stages based on the glomerular filtration rate (GFR), which measures kidney function. The stages range from stage 1 (mild kidney damage with normal or increased GFR) to stage 5 (kidney failure, requiring dialysis or a kidney transplant).
+            </p>
+          </div>
+          <div class="p-3 ">
+            <img src="../../images/diseases/CKD.jpg" class="rounded-lg w-[1500px]" alt="">
+          </div>
+        </div>
+        
+        <h2 class="text-[#006d77] lg:text-[25px] text-[20px] font-bold mt-5">Causes of Chronic Kidney Disease</h2>
+        <p class="text-gray-600">
+          The leading causes of CKD are chronic conditions that damage the kidneys over time. The most common causes include:
+        </p>
+
+        <ul class="list-disc pl-5 text-gray-600">
+          <li><span class="font-bold">Diabetes Mellitus:</span> Diabetic nephropathy is the most common cause of CKD, particularly in type 1 and type 2 diabetes. High blood sugar levels damage the blood vessels in the kidneys, impairing their ability to filter waste.</li>
+          <li><span class="font-bold">Hypertension (High Blood Pressure):</span> Uncontrolled high blood pressure is another leading cause of CKD. It damages the blood vessels in the kidneys, reducing their efficiency and leading to kidney dysfunction.</li>
+          <li><span class="font-bold">Glomerulonephritis:</span> Inflammation of the glomeruli (the tiny filters in the kidneys) caused by infections, autoimmune diseases, or other conditions, leading to progressive kidney damage.</li>
+          <li><span class="font-bold">Polycystic Kidney Disease (PKD):</span> PKD is a genetic disorder in which fluid-filled cysts grow in the kidneys, impairing their function over time.</li>
+          <li><span class="font-bold">Chronic Obstructive Uropathy:</span> Conditions like kidney stones, enlarged prostate, or tumors that obstruct urine flow can lead to CKD by causing a buildup of pressure in the kidneys and damaging their tissues.</li>
+          <li><span class="font-bold">Autoimmune Disorders:</span> Conditions like lupus nephritis and IgA nephropathy involve immune system dysfunction, where the body’s immune cells attack kidney tissue, leading to CKD.</li>
+          <li><span class="font-bold">Infections:</span> Chronic urinary tract infections (UTIs) and repeated kidney infections (pyelonephritis) can contribute to kidney damage.</li>
+          <li><span class="font-bold">Toxins and Medications:</span> Prolonged exposure to nephrotoxic drugs (e.g., NSAIDs, some antibiotics, and chemotherapy) or toxins (such as lead) can damage the kidneys.</li>
+          <li><span class="font-bold">Genetic Conditions:</span> Other genetic conditions, apart from PKD, like Alport syndrome and Fabry disease, can lead to CKD.</li>
+        </ul>
+
+        <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Treatment for Chronic Kidney Disease (CKD)</h1>
+        <p class="text-gray-600">
+          In Ayurveda, CKD is considered a result of imbalances in the Vata, Pitta, and Kapha doshas, with the primary aggravation of Vata (dryness, irregularity) and Pitta (heat, inflammation). The kidneys are viewed as crucial organs for detoxification and balancing the body’s fluids, and their dysfunction is often linked to accumulation of toxins (ama), fluid imbalances, and poor digestion (agni).
+        </p>
+
+        <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Treatment Approaches</h1>
+        <ul class="list-disc pl-5 text-gray-600">
+          <li><span class="font-bold">Dietary Modifications:</span> Ayurveda recommends a Pitta-pacifying diet for managing kidney disease. Foods that are fresh, light, and nourishing should be prioritized, while salty, spicy, and heavy foods should be minimized. A low-protein diet may be recommended in later stages of CKD to reduce the kidney's workload. Hydration is important, but excess fluid intake should be managed carefully in patients with fluid retention issues.</li>
+          <li><span class="font-bold">Yoga and Pranayama:</span> Gentle yoga and breathing exercises (pranayama) are used to reduce stress, enhance circulation, and improve kidney function. Practices like Surya Namaskar and pranayama (breath control) can help increase blood flow to the kidneys and improve renal health.</li>
+          <li><span class="font-bold">Stress Management:</span> Chronic stress can exacerbate CKD, so Ayurvedic treatments focus on stress reduction through meditation, deep breathing, and mind-body therapies to maintain balance and overall health.</li>
+        </ul>
+
+        <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Conclusion</h1>
+        <p class="text-gray-600">
+          Chronic Kidney Disease (CKD) is a progressive condition characterized by a gradual decline in kidney function. While conventional medicine focuses on managing symptoms and slowing down the progression of CKD, Ayurveda offers a holistic approach that focuses on detoxification, nourishing the kidneys, reducing inflammation, and balancing the doshas. Ayurvedic herbs such as Punarnava, Gokshura, Varuna, Turmeric, and Ashwagandha help improve kidney function, reduce swelling, and slow the progression of the disease. Ayurveda also emphasizes dietary changes, Panchakarma detox therapies, and stress management practices to promote kidney health and improve quality of life for CKD patients.
+        </p>
+      </section>
+    </aside>
+  </section>
+</section>
+
+<section>
+  <div class="bg-white h-[900px] lg:h-[450px]">
+    <div class="bg-[url('https://sriaas.com/wp-content/themes/srayurvedaone/build/img/Kidney-bg-2.webp')] bg-cover">
+      <div class="bg-[rgba(0,0,0,0.5)]">
+        <h1 class="text-center text-white text-[30px] lg:text-[60px] font-bold tracking-wide">KIDNEY DISORDERS</h1>
+        <div class="flex justify-center items-center">
+          <button
+          aria-hidden 006d77
+          class="mt-[10px] lg:mt-0  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)] p-4 rounded-md bg-[#006d77] text-white tracking-[2px] text-[15px] hover:bg-[#fbb85b] transition-[6s]"
+          id="appointment-btn2"
+          >
+          BOOK AN APPOINTMENT
+        </button>
+        </div>
+        <div class="p-5 flex items-center justify-between flex-wrap">
+          <a href="#diseases/kidneydisorders/pkd">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/K1.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Polystic Kidney Disease</h1>
+              </div>
+            </div>
+          </a>
+          <a href="#diseases/kidneydisorders/akd">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/K2.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Acute Kidney Disease</h1>
+              </div>
+            </div>
+          </a>
+          <a href="#diseases/kidneydisorders/iga">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/K3.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">igA nephropathy</h1>
+              </div>
+            </div>
+          </a>
+          <a href="#diseases/kidneydisorders/kidneystones">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/K4.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Kidney Stones</h1>
+              </div>
+            </div>
+          </a>
+          <a href="#diseases/kidneydisorders/uto">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/K5.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Urinary Tract Obstruction</h1>
+              </div>
+            </div>
+          </a>
+          <a href="#diseases/kidneydisorders/proteinuria">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/K6.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Proteninuria</h1>
+              </div>
+            </div>
+          </a> 
         </div>
       </div>
-    </section>
-    <section class="block lg:flex lg:justify-center">
-      <aside>
-        <section>
-          <div class="lg:p-10 p-4">
-            <img
-              src="../../images/diseases/CKD.jpg"
-              class="w-full h-auto lg:w-[800px] lg:h-[550px]"
-              alt="Image depicting the anatomy related to Chronic Kidney Disease"
-            />
-          </div>
-        </section>
-        <section class="lg:p-10 p-4">
-          <h1 class="lg:text-[40px] text-[30px] font-bold">Chronic Kidney Disease (CKD): A Brief Overview</h1>
-          <p class="text-gray-600">
-            Chronic Kidney Disease (CKD) is a progressive condition characterized by the gradual loss of kidney function over time. The kidneys are responsible for filtering waste products, balancing electrolytes, regulating blood pressure, and producing urine. When kidney function deteriorates, waste products and fluids can build up in the body, leading to a range of complications. If left untreated, CKD can lead to end-stage renal disease (ESRD), where the kidneys can no longer function sufficiently, often requiring dialysis or a kidney transplant.
-          </p>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Physiology of Chronic Kidney Disease</h1>
-          <p class="text-gray-600">
-            The kidneys contain millions of tiny filtration units called nephrons, which remove waste, regulate fluid balance, and maintain electrolyte homeostasis. CKD develops when these nephrons become damaged over time, reducing the kidneys’ ability to perform these vital functions. This damage leads to the accumulation of waste products in the blood, resulting in uremia (elevated levels of urea and other waste products) and disruptions in fluid, electrolyte, and acid-base balance.
-          </p>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Stages of CKD</h1>
-          <p class="text-gray-600">
-            CKD is typically classified into five stages based on the glomerular filtration rate (GFR), which measures how well the kidneys are filtering blood. The stages range from stage 1 (mild kidney damage with normal or increased GFR) to stage 5 (kidney failure, requiring dialysis or a kidney transplant).
-          </p>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Kidney Structure and Function</h1>
-          <p class="text-gray-600">
-            Over time, CKD leads to the scarring and fibrosis of kidney tissue, known as interstitial fibrosis. This damage impairs the kidneys' ability to filter waste and regulate fluid levels, leading to symptoms like high blood pressure, swelling (edema), fatigue, and eventually kidney failure.
-          </p>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Causes of Chronic Kidney Disease</h1>
-          <p class="text-gray-600">
-            The leading causes of CKD are chronic conditions that damage the kidneys over time. The most common causes include:
-          </p>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><span class="font-bold">Diabetes Mellitus:</span> Diabetic nephropathy is the most common cause of CKD, particularly in type 1 and type 2 diabetes. High blood sugar levels damage the blood vessels in the kidneys, impairing their ability to filter waste.</li>
-            <li><span class="font-bold">Hypertension (High Blood Pressure):</span> Uncontrolled high blood pressure is another leading cause of CKD. It damages the blood vessels in the kidneys, reducing their efficiency and leading to kidney dysfunction.</li>
-            <li><span class="font-bold">Glomerulonephritis:</span> This is an inflammation of the glomeruli (the tiny filters in the kidneys). It can be caused by infections, autoimmune diseases, or other conditions, leading to progressive kidney damage.</li>
-            <li><span class="font-bold">Polycystic Kidney Disease (PKD):</span> PKD is a genetic disorder in which fluid-filled cysts grow in the kidneys, impairing their function over time.</li>
-            <li><span class="font-bold">Chronic Obstructive Uropathy:</span> Conditions like kidney stones, enlarged prostate, or tumors that obstruct urine flow can lead to CKD by causing a buildup of pressure in the kidneys and damaging their tissues.</li>
-            <li><span class="font-bold">Autoimmune Disorders:</span> Conditions like lupus nephritis and IgA nephropathy involve immune system dysfunction, where the body’s immune cells attack kidney tissue, leading to CKD.</li>
-            <li><span class="font-bold">Infections:</span> Chronic urinary tract infections (UTIs) and repeated kidney infections (pyelonephritis) can contribute to kidney damage.</li>
-            <li><span class="font-bold">Toxins and Medications:</span> Prolonged exposure to nephrotoxic drugs (e.g., NSAIDs, some antibiotics, and chemotherapy) or toxins (such as lead) can damage the kidneys.</li>
-            <li><span class="font-bold">Genetic Conditions:</span> Other genetic conditions, apart from PKD, like Alport syndrome and Fabry disease, can lead to CKD.</li>
-          </ul>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Treatment for Chronic Kidney Disease (CKD)</h1>
-          <p class="text-gray-600">
-            In Ayurveda, CKD is considered a result of imbalances in the Vata, Pitta, and Kapha doshas, with the primary aggravation of Vata (dryness, irregularity) and Pitta (heat, inflammation). The kidneys are viewed as crucial organs for detoxification and balancing the body’s fluids, and their dysfunction is often linked to accumulation of toxins (ama), fluid imbalances, and poor digestion (agni).
-          </p>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Treatment Approaches</h1>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><span class="font-bold">Detoxification:</span> Detoxifying the body through Panchakarma (Ayurvedic cleansing therapies) helps to eliminate toxins and restore balance.</li>
-            <li><span class="font-bold">Dietary Modifications:</span> A Pitta-pacifying diet is recommended, with fresh, light, and nourishing foods to manage kidney disease and limit salt and spice intake.</li>
-            <li><span class="font-bold">Yoga and Pranayama:</span> Yoga and breathing exercises help reduce stress and enhance circulation, improving kidney function.</li>
-            <li><span class="font-bold">Stress Management:</span> Meditation and mind-body therapies are used to reduce stress and support kidney health.</li>
-          </ul>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Conclusion</h1>
-          <p class="text-gray-600">
-            Chronic Kidney Disease (CKD) is a progressive condition that leads to kidney failure if untreated. Ayurveda offers a holistic approach to manage CKD by detoxifying the body, nourishing the kidneys, reducing inflammation, and balancing the doshas. Ayurvedic herbs such as Punarnava, Gokshura, Varuna, Turmeric, and Ashwagandha help improve kidney function and slow disease progression. Additionally, dietary changes, Panchakarma detox, yoga, and stress management techniques enhance kidney health and overall well-being.
-          </p>
-        </section>
-      </aside>
-      <aside>
-        <div class="p-4 lg:p-10 m-auto lg:m-0">
-          <div class="p-5 bg-white shadow-md w-full lg:w-[500px] border-l-2 border-orange-500">
-            <h1 class="text-[30px] font-bold">Kidney Disorders</h1>
+    </div>
+  </div>
+  <section id="appointment-window" class="hidden justify-center items-center w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.5)] top-0 left-0 fixed">
+    <section class="animate-fade-down -mt-[70px]">
+      <div class="p-3 bg-[#d8590a] flex items-center justify-between text-2xl rounded-tl-lg rounded-tr-lg text-white ">
+        <span>Book an Appointment</span><span class="cursor-pointer" id="apmnt-window-closer">&times;</span>
+      </div>
+      <div class="bg-[#006D77]  shadow-lg p-2  transition-transform transform rounded-bl-lg rounded-br-lg">
+        <form id="appointment-form" class="space-y-4" action="SaveAppointment.php"  method="Post">
+          <div class=" block lg:flex lg:justify-center w-[90vw] lg:w-[55vw]">
             <div>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/kidneydisorders/pkd">PKD(Polycystic Kidney Disease)</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/kidneydisorders/akd">AKD(Acute Kidney Disease)</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/kidneydisorders/igA">Iga Nephropathy</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/kidneydisorders/kidneystones">Kidney Stones</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/kidneydisorders/uto">Urinary Tract Obstruction</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/kidneydisorders/proteinuria">Proteinuria</a>
-              </h1>
-            </div>            
+              <div class="p-2">
+                <label for="name" class="hidden lg:block text-sm font-medium text-white">First Name</label>
+                <input type="text" id="first_name" placeholder="Enter your First Name" name="FirstName" required class=" mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] bg-white rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+            </div>
+            <div class="p-2">
+              <label for="name" class="hidden lg:block text-sm font-medium text-white">Last Name</label>
+              <input type="text" id="last_name" placeholder="Enter your Last Name" name="LastName" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] bg-white rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
           </div>
-          <div class="mt-5 bg-cover bg-center w-full lg:w-[500px] h-[180px]" style="background-image: url('https://s3.ap-south-1.amazonaws.com/awsimages.imagesbazaar.com/1200x1800-new/16952/SM736353.jpg')">
-            <div class="bg-[rgba(0,0,0,0.5)] h-[180px] w-full lg:w-[500px] flex justify-center items-center"></div>
+            <div class="p-2">
+                <label for="email" class="hidden lg:block text-sm font-medium text-white">Email</label>
+                <input  id="email" placeholder="Enter your Email" name="Email" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
+            </div>
+            <div class="p-2">
+                <label for="phone" class="hidden lg:block text-sm font-medium text-white">Phone Number</label>
+                <input type="number" id="phone" placeholder="Enter your Phone Number" name="PhoneNumber" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
+            </div>
+            </div>
+            <div>
+            <!-- <div>
+                <label for="date" class="block text-sm font-medium text-gray-700">Appointment Date</label>
+                <input type="date" id="date" name="date" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500" />
+            </div> -->
+            <div class="p-2">
+              <label for="State" class="hidden lg:block text-sm font-medium text-white">State</label>
+              <input type="text" id="state" placeholder="Enter your State"   name="State" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
           </div>
-        </div>
-      </aside>
-    </section>
+          <div class="p-2">
+            <label for="Country" class="hidden lg:block text-sm font-medium text-white">Country</label>
+            <input type="text" id="country" placeholder="Enter your Country" name="Country" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
+          </div>
+            <div class="p-2">
+                <label for="message" class="hidden lg:block text-sm font-medium text-white">Message</label>
+                <textarea id="message" placeholder="Enter your Message" name="Message" rows="4"  class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white"></textarea>
+            </div>
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <button type="submit" id="book-appointment-btn" class="m-auto bg-orange-600 text-white p-3 rounded-md hover:bg-[#174f54] font-bold  transition duration-200">Schedule Appointment</button>
+          </div>    
+            
+        </form>
+    </div>
+    </section>  
   </section>
-  
+</section>
