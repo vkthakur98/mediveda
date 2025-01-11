@@ -1,156 +1,664 @@
 <section>
-    <section>
-      <div
-        class="lg:h-[400px] h-[250px] w-full bg-cover bg-center"
-        style="background-image: url('https://s3.ap-south-1.amazonaws.com/awsimages.imagesbazaar.com/1200x1800-new/16952/SM736382.jpg')"
-      >
-        <div class="bg-[rgba(0,0,0,0.5)] lg:h-[400px] h-[250px] p-5 lg:p-20">
-          <div data-aos="slide-right" data-aos-once="true" class="mt-16">
-            <h1 class="text-[40px] lg:text-[65px] w-auto lg:w-[1000px] font-verdana font-bold text-white">
-              PCOD/PCOS
-            </h1>
+  <div id="message-window" class="animate-fade-down hidden fixed rounded-sm lg:rounded-xl left-0 lg:left-[40vw]  top-0 lg:top-1 h-[110px] w-[100vw] lg:w-[auto] bg-gray-200 z-30 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]">
+    <div class="rounded-none lg:rounded-tr-xl lg:rounded-tl-xl p-2 bg-[#006D77] text-white" id="message-window-header">
+      Message
+    </div>
+    <div class="p-2">
+      <p><i id="message-icon" class="fa-solid fa-check p-2 bg-green-700 text-white rounded-[50%]"></i><span class="pl-2" id="message-content">Your appointment has been booked.</span></p>
+    </div>
+  </div>
+  <div id="err-message-window" class="animate-fade-down hidden fixed rounded-sm lg:rounded-xl left-0 lg:left-[40vw]  top-0 lg:top-1 h-[140px] w-[100vw] lg:w-[auto] bg-gray-200 z-30 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]">
+    <div class="rounded-none lg:rounded-tr-xl lg:rounded-tl-xl p-2 bg-red-500 text-white" id="message-window-header">
+      Message
+    </div>
+    <div class="p-2">
+      <p><i id="message-icon" class=" fa-solid fa-xmark pl-[10px] pr-[10px] pt-[8px] pb-[8px] bg-red-500 text-white rounded-[50%]"></i><span class="pl-2 text-red-500" id="err-message-content">Something went wrong.</span></p>
+      <div class="flex justify-center">
+        <button class="mt-2 bg-red-500 text-white p-2 rounded-md hover:bg-red-600" id="err-message-window-closer">Close</button>
+      </div>
+    </div>
+  </div>
+  <section class="flex justify-center items-center p-[10px]">
+      <div class="bg-[url('https://cdn.prod.website-files.com/5d9667bad4a41e222995e15b/63d30b2b0699f4f730a4f4b4_Msc%20diabetes%20copy.webp')] w-[90vw] rounded-lg bg-cover">
+          <div class="block  lg:flex lg:justify-start lg:items-center  p-5 bg-gradient-to-r from-[#774EA5] to-[transparent] rounded-lg">
             <div>
-              <br />
+              <h1 class="text-[30px] lg:text-[50px] font-bold text-white">PCOD/PCOS</h1>
+              <p class="text-white w-[85vw] lg:w-[50vw]">
+                  Polycystic Ovary Syndrome (PCOS), also known as Polycystic Ovary Disease (PCOD), is a common endocrine disorder affecting women of reproductive age. It is characterized by hormonal imbalances, irregular periods, and cyst formation in the ovaries. Ayurveda offers a holistic approach to managing PCOS by restoring hormonal balance and improving overall health.
+              </p>
+            </div>  
+            <div>
+              <button
+                aria-hidden 006d77
+                class="ml-[30px] mt-[10px] lg:mt-0 lg:ml-[200px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)] p-4 rounded-md bg-[#006d77] text-white tracking-[2px] text-[15px] hover:bg-[#fbb85b] transition-[6s]"
+                id="appointment-btn"
+                >
+                BOOK AN APPOINTMENT
+              </button>
             </div>
           </div>
+      </div>
+  </section>
+  <section class="block lg:flex lg:justify-center">
+      <aside>
+          <section class="lg:p-10 p-4">
+              <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Physiology of PCOS/PCOD</h1>
+              <p class="text-gray-600">
+                  PCOS is primarily a result of hormonal imbalances affecting the ovaries. This leads to several physiological changes, including hormonal imbalance, irregular ovulation, cyst formation, and insulin resistance.
+              </p>
+              <ul class="list-disc pl-5 text-gray-600">
+                  <li><span class="font-bold">Hormonal Imbalance:</span> Elevated androgen levels and insulin resistance contribute to PCOS symptoms like irregular periods and cyst formation.</li>
+                  <li><span class="font-bold">Irregular Ovulation:</span> Hormonal imbalances prevent the release of mature eggs, causing missed or irregular periods.</li>
+                  <li><span class="font-bold">Formation of Cysts:</span> Multiple cysts form in the ovaries due to hormonal dysfunction, affecting ovulation.</li>
+                  <li><span class="font-bold">Insulin Resistance:</span> Insulin resistance worsens hormonal imbalances, leading to symptoms like excess hair growth and acne.</li>
+              </ul>
+
+              <h1 class="lg:text-[30px] text-[25px] font-bold mt-5 text-[#006d77]">Causes of PCOS</h1>
+              <p class="text-gray-600">
+                  The causes of PCOS are still not fully understood, but several factors play a role, including genetics, insulin resistance, hormonal imbalances, and lifestyle factors.
+              </p>
+              <h2 class="text-[#006d77] lg:text-[25px] text-[20px] font-bold mt-5">Key Causes</h2>
+              <ul class="list-disc pl-5 text-gray-600">
+                  <li><span class="font-bold">Genetics:</span> PCOS tends to run in families, suggesting a genetic predisposition.</li>
+                  <li><span class="font-bold">Insulin Resistance:</span> High insulin levels contribute to androgen production, worsening symptoms.</li>
+                  <li><span class="font-bold">Hormonal Imbalances:</span> Elevated luteinizing hormone (LH) and low follicle-stimulating hormone (FSH) disrupt ovulation.</li>
+                  <li><span class="font-bold">Chronic Low-Grade Inflammation:</span> Inflammation plays a role in insulin resistance and ovarian dysfunction.</li>
+              </ul>
+
+              <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Symptoms of PCOS</h1>
+              <ul class="list-disc pl-5 text-gray-600">
+                  <li><span class="font-bold">Irregular Menstrual Cycles:</span> Infrequent or absent periods can cause difficulty in conception.</li>
+                  <li><span class="font-bold">Excess Androgens:</span> Symptoms include excessive hair growth, acne, and male-pattern baldness.</li>
+                  <li><span class="font-bold">Polycystic Ovaries:</span> Multiple cysts on the ovaries are often seen on an ultrasound.</li>
+                  <li><span class="font-bold">Infertility:</span> Difficulty conceiving due to irregular ovulation.</li>
+                  <li><span class="font-bold">Weight Gain:</span> Insulin resistance can lead to increased fat storage, especially in the abdominal area.</li>
+              </ul>
+
+              <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Perspective on PCOS</h1>
+              <p class="text-gray-600">
+                  Ayurveda views PCOS as a result of imbalances in the Vata and Kapha doshas. These imbalances disrupt the reproductive system, metabolism, and hormonal regulation. 
+              </p>
+
+              <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Treatments for PCOS</h1>
+              <span class="font-bold text-[#006d77]">Ayurvedic Herbs for PCOS:</span>
+              <ul class="list-disc pl-5 text-gray-600">
+                  <li><span class="font-bold">Shatavari:</span> Supports ovulation and hormonal balance.</li>
+                  <li><span class="font-bold">Ashwagandha:</span> Reduces stress and balances hormones.</li>
+                  <li><span class="font-bold">Turmeric:</span> Anti-inflammatory properties help reduce insulin resistance.</li>
+                  <li><span class="font-bold">Guduchi:</span> Enhances immunity and improves metabolic function.</li>
+                  <li><span class="font-bold">Fenugreek:</span> Helps regulate blood sugar levels.</li>
+                  <li><span class="font-bold">Cinnamon:</span> Balances insulin levels and improves ovarian function.</li>
+              </ul>
+
+              <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Detoxification and Panchakarma</h1>
+              <p class="text-gray-600">
+                  Panchakarma is a key Ayurvedic detoxification therapy used to cleanse the body of toxins (Ama) and restore balance. Key therapies include:
+              </p>
+              <ul class="list-disc pl-5 text-gray-600">
+                  <li><span class="font-bold">Abhyanga:</span> Oil massage that balances Vata and Kapha and reduces stress.</li>
+                  <li><span class="font-bold">Swedana:</span> Herbal steam therapy that promotes toxin elimination.</li>
+                  <li><span class="font-bold">Basti:</span> Medicated enemas that restore balance and cleanse the digestive system.</li>
+              </ul>
+
+              <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Diet and Lifestyle Recommendations</h1>
+              <ul class="list-disc pl-5 text-gray-600">
+                  <li><span class="font-bold">Vata and Kapha Balancing Diet:</span> Emphasize fresh fruits, vegetables, whole grains, and healthy fats.</li>
+                  <li><span class="font-bold">Avoid Processed Foods:</span> Minimize intake of sugary, fried, and processed foods.</li>
+                  <li><span class="font-bold">Regular Exercise:</span> Yoga, walking, and swimming to improve hormone regulation and metabolism.</li>
+                  <li><span class="font-bold">Stress-Relief Techniques:</span> Meditation, Pranayama, and mindfulness practices.</li>
+              </ul>
+
+              <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Conclusion</h1>
+              <p class="text-gray-600">
+                  Ayurveda treats PCOS holistically by addressing the root cause of hormonal imbalances, improving metabolic health, and restoring overall well-being. By combining herbal remedies, dietary changes, detox therapies, and lifestyle modifications, Ayurveda offers a natural and comprehensive approach to managing PCOS and promoting fertility.
+              </p>
+          </section>
+      </aside>
+  </section>
+  <section>
+    <div class="bg-white  h-[1100px] lg:h-[750px]">
+      <div class=" bg-[url('https://img.pikbest.com/ai/illus_our/20230529/db5c25acd5ae52b71d3a9ee320b2cc92.jpg!w700wp')] bg-cover">
+        <div class="bg-[rgba(0,0,0,0.5)] ">
+          <h1 class="text-center text-white text-[30px] lg:text-[60px] font-bold tracking-wide">FEMALE INFERTILITY</h1>
+          <div class="flex justify-center items-center">
+            <button
+            aria-hidden 006d77
+            class="mt-[10px] lg:mt-0  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)] p-4 rounded-md bg-[#006d77] text-white tracking-[2px] text-[15px] hover:bg-[#fbb85b] transition-[6s]"
+            id="appointment-btn2"
+            >
+            BOOK AN APPOINTMENT
+          </button>
+          </div>
+          
+          <div class="p-5 flex items-center justify-between flex-wrap">
+            <a href="#diseases/femaleinfertility/endometriosis">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/endometriosis.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Endometriosis</h1>
+                </div>
+              </div>
+            </a>
+            <a href="#diseases/femaleinfertility/hormonalimbalance">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/hormonal-imbalance.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Hormonal Imbalance</h1>
+                </div>
+              </div>
+            </a>
+            <a href="#diseases/femaleinfertility/uterinefibroids">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/fibroids.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Uterine Fibroids</h1>
+                </div>
+              </div>
+            </a>
+            <a href="#diseases/femaleinfertility/ovulationproblems">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/Ovoluation_prblm.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Ovulation Problems</h1>
+                </div>
+              </div>
+            </a>
+            <a href="#diseases/femaleinfertility/whitedischarge">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/white-discharge.webp" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">White Discharge(Leucorrhea)</h1>
+                </div>
+              </div>
+            </a>
+            <a href="#diseases/femaleinfertility/pelvicinflammatorydisease">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/PID.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Pelvic Inflammatory Disease(PID)</h1>
+                </div>
+              </div>
+            </a>                                      
+          </div>
+          <div class="p-5 flex items-center justify-center flex-wrap">
+            <a href="#diseases/femaleinfertility/endometriosis">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/endometriosis.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Endometriosis</h1>
+                </div>
+              </div>
+            </a>                                        
+          </div>
+          
         </div>
       </div>
-    </section>
-    <section class="block lg:flex lg:justify-center">
-      <aside>
-        <section>
-          <div class="lg:p-10 p-4">
-            <img
-              src="../../images/diseases/pcod.webp"
-              class="w-full h-auto lg:w-[800px] lg:h-[550px]"
-              alt="Image depicting the anatomy related to Polycystic Ovary Syndrome (PCOS)"
-            />
-          </div>
-        </section>
-        <section class="lg:p-10 p-4">
-          <h1 class="lg:text-[40px] text-[30px] font-bold">PCOS/PCOD: A Brief Overview</h1>
-          <p class="text-gray-600">
-            Polycystic Ovary Syndrome (PCOS), also known as Polycystic Ovary Disease (PCOD), is a common endocrine disorder that affects women of reproductive age. PCOS is characterized by hormonal imbalances, irregular periods, and the formation of cysts in the ovaries. It is one of the leading causes of infertility and can have a significant impact on a woman’s physical and emotional well-being.
-          </p>
-          <p class="text-gray-600">
-            Ayurveda, the traditional system of medicine, offers a holistic approach to managing PCOS by addressing the root causes, balancing hormonal levels, and restoring overall health.
-          </p>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Physiology of PCOS/PCOD</h1>
-          <p class="text-gray-600">
-            PCOS is primarily a result of hormonal imbalances that affect the ovaries, leading to the following physiological changes:
-          </p>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><span class="font-bold">Hormonal Imbalance:</span> Women with PCOS often have elevated levels of androgens (male hormones like testosterone), which interfere with the normal ovulation process. The imbalance also causes an increased production of insulin, leading to insulin resistance. Insulin resistance often leads to higher insulin levels in the blood, which can stimulate the ovaries to produce more androgens, further exacerbating the hormonal imbalance.</li>
-            <li><span class="font-bold">Irregular Ovulation:</span> The hormonal imbalances in PCOS disrupt the normal process of ovulation. Normally, a mature egg is released from the ovary each month, but in PCOS, the egg often fails to mature or be released. This results in irregular or absent menstrual cycles. This irregular ovulation makes it difficult for women to conceive and is a major cause of infertility in PCOS.</li>
-            <li><span class="font-bold">Formation of Cysts:</span> In PCOS, the ovaries may contain many small cysts (fluid-filled sacs) that fail to mature into eggs. These cysts are follicles that are unable to ovulate due to hormonal dysfunction. The presence of these cysts is not the primary cause of the condition, but they are a hallmark feature of PCOS.</li>
-            <li><span class="font-bold">Insulin Resistance:</span> Insulin resistance occurs when the body's cells become less responsive to insulin, causing the pancreas to produce more insulin to compensate. High insulin levels can stimulate the ovaries to produce more androgens, worsening symptoms like excess hair growth (hirsutism), acne, and scalp hair thinning.</li>
-          </ul>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Causes of PCOS</h1>
-          <p class="text-gray-600">
-            The exact cause of PCOS remains unclear, but several factors are thought to contribute to the development of the condition:
-          </p>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><span class="font-bold">Genetics:</span> PCOS tends to run in families, suggesting that genetic factors play a significant role in its development. Women with a family history of PCOS or related conditions (such as diabetes or infertility) are more likely to develop the condition.</li>
-            <li><span class="font-bold">Insulin Resistance:</span> Insulin resistance is a significant factor in the development of PCOS. It leads to higher insulin levels, which, in turn, increase the production of androgens in the ovaries, contributing to the hormonal imbalance.</li>
-            <li><span class="font-bold">Hormonal Imbalance:</span> Elevated levels of luteinizing hormone (LH) and low levels of follicle-stimulating hormone (FSH) can prevent the development of mature eggs and disrupt ovulation. High levels of androgens (male hormones) such as testosterone can cause symptoms like hirsutism, acne, and thinning of hair on the scalp.</li>
-            <li><span class="font-bold">Chronic Low-Grade Inflammation:</span> Women with PCOS often experience chronic low-grade inflammation, which is thought to play a role in the development of insulin resistance and the ovarian dysfunction seen in the condition.</li>
-            <li><span class="font-bold">Environmental Factors:</span> Lifestyle factors such as a poor diet, lack of exercise, and obesity can exacerbate insulin resistance and other symptoms of PCOS. Environmental stressors may also play a role in the condition’s development.</li>
-          </ul>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Symptoms of PCOS</h1>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li>Irregular or Absent Menstrual Cycles: Women with PCOS may have infrequent or no periods, making it difficult to conceive.</li>
-            <li>Excess Androgens (Male Hormones): Elevated androgen levels cause physical signs such as excess facial and body hair (hirsutism), acne, and male-pattern baldness.</li>
-            <li>Polycystic Ovaries: Multiple cysts may form on the ovaries, visible during an ultrasound scan.</li>
-            <li>Infertility: The absence of regular ovulation makes conception challenging for women with PCOS.</li>
-            <li>Weight Gain or Difficulty Losing Weight: Insulin resistance often leads to increased fat accumulation, particularly around the abdomen.</li>
-            <li>Thinning Hair: Women with PCOS often experience thinning or shedding of hair from the scalp.</li>
-            <li>Skin Changes: Women may develop dark patches of skin (acanthosis nigricans) or skin tags.</li>
-          </ul>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Perspective on PCOS</h1>
-          <p class="text-gray-600">
-            In Ayurveda, PCOS is considered a result of an imbalance in the Vata and Kapha doshas, which affects the body's reproductive and metabolic systems. Ayurveda views PCOS not just as a reproductive disorder but as a systemic issue that impacts the entire body, including digestion, metabolism, and hormonal regulation.
-          </p>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><span class="font-bold">Vata Imbalance:</span> Vata governs the movement and flow in the body. When Vata becomes aggravated, it can cause irregularities in the menstrual cycle, as well as dryness and imbalance in the reproductive tissues. This is often the root cause of the irregular ovulation seen in PCOS.</li>
-            <li><span class="font-bold">Kapha Imbalance:</span> Kapha is responsible for the body’s structure, lubrication, and metabolism. An imbalance in Kapha leads to weight gain, sluggish metabolism, and fluid retention, which can exacerbate the symptoms of PCOS, including obesity and cyst formation.</li>
-            <li><span class="font-bold">Ama (Toxins):</span> In Ayurveda, the accumulation of Ama (toxins) in the body is believed to obstruct the channels and affect the functioning of the ovaries, leading to cyst formation and hormonal imbalance. Ama is often a result of poor digestion, diet, and lifestyle.</li>
-            <li><span class="font-bold">Stress and Emotional Factors:</span> Ayurveda also emphasizes the mind-body connection. Stress, anxiety, and emotional disturbances can aggravate Vata and Kapha, worsening symptoms like irregular periods, weight gain, and infertility.</li>
-          </ul>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Treatment for PCOS</h1>
-          <p class="text-gray-600">
-            Ayurveda offers a multi-faceted approach to managing PCOS, which includes diet and lifestyle changes, herbal remedies, detox therapies, and stress management techniques. The goal is to restore hormonal balance, improve metabolism, detoxify the body, and promote overall health.
-          </p>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Detoxification and Panchakarma</h1>
-          <p class="text-gray-600">
-            Panchakarma, the Ayurvedic detoxification system, is often used to treat PCOS by eliminating Ama (toxins) from the body, improving digestion, and restoring balance. Some key Panchakarma treatments include:
-          </p>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><span class="font-bold">Abhyanga (Oil Massage):</span> Massaging the body with warm herbal oils helps stimulate circulation, balance Vata and Kapha doshas, and reduce stress.</li>
-            <li><span class="font-bold">Swedana (Steam Therapy):</span> Steam therapy helps open the channels of the body, allowing toxins to be eliminated more efficiently. It also promotes relaxation and reduces stiffness.</li>
-            <li><span class="font-bold">Basti (Enema Therapy):</span> Basti is used to clear the body of toxins and restore balance to the doshas, particularly Vata. It involves administering medicated oils or decoctions through the rectum.</li>
-          </ul>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Diet and Lifestyle Recommendations</h1>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><span class="font-bold">Eat a Vata and Kapha Balancing Diet:</span> Focus on warm, nourishing, and grounding foods that balance the Vata and Kapha doshas. A diet rich in fresh fruits, vegetables, whole grains, and healthy fats (like ghee) is recommended.</li>
-            <li><span class="font-bold">Avoid Processed Foods and Sugar:</span> Minimize the intake of processed, sugary, and fried foods, as they aggravate insulin resistance and Kapha dosha.</li>
-            <li><span class="font-bold">Maintain Healthy Weight:</span> Ayurveda encourages weight management through balanced eating and regular exercise. Weight loss can significantly improve insulin sensitivity and regulate menstrual cycles.</li>
-            <li><span class="font-bold">Engage in Regular Physical Activity:</span> Gentle exercises like yoga, walking, swimming, or dancing can help regulate hormone levels, reduce stress, and manage weight.</li>
-            <li><span class="font-bold">Practice Stress-Relief Techniques:</span> Meditation, Pranayama (breathing exercises), and mindfulness can help manage emotional stress and calm the mind, which, in turn, reduces Vata and Kapha imbalances.</li>
-          </ul>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Conclusion</h1>
-          <p class="text-gray-600">
-            PCOS is a complex hormonal disorder that affects a woman’s reproductive system, metabolism, and overall health. Ayurveda treats PCOS holistically, addressing not only the physical symptoms but also the underlying imbalances in the body’s doshas, digestion, and metabolism. By using a combination of herbal remedies, dietary changes, detoxification therapies, and lifestyle modifications, Ayurveda aims to restore hormonal balance, regulate the menstrual cycle, and improve fertility. This approach not only treats the symptoms of PCOS but also enhances overall well-being, promoting a healthy, balanced life.
-          </p>
-        </section>
-      </aside>
-      <aside>
-        <div class="p-4 lg:p-10 m-auto lg:m-0">
-          <div class="p-5 bg-white shadow-md w-full lg:w-[500px] border-l-2 border-orange-500">
-            <h1 class="text-[30px] font-bold">Female Infertility</h1>
-            <div>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/femaleinfertility/endometriosis">Endometriosis</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/femaleinfertility/hormonalimbalance">Hormonal Imbalance</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/femaleinfertility/irregularmenstruation">Irregular Menstruation</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/femaleinfertility/uterinefibroids">Uterine Fibroids</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/femaleinfertility/ovulationproblems">Ovoluation Problems</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/femaleinfertility/whitedischarge">White Discharge(Leucorrhea)</a>
-              </h1> 
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/femaleinfertility/pelvicinflammatorydisease">Pelvic Inflammatory Disease(PID)</a>
-              </h1>
-            </div>
-          </div>
-          <div class="mt-5 bg-cover bg-center w-full lg:w-[500px] h-[180px]" style="background-image: url('https://s3.ap-south-1.amazonaws.com/awsimages.imagesbazaar.com/1200x1800-new/16952/SM736382.jpg')">
-            <div class="bg-[rgba(0,0,0,0.5)] h-[180px] w-full lg:w-[500px] flex justify-center items-center"></div>
-          </div>
+    </div>
+    <section id="appointment-window" class="hidden   justify-center items-center w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.5)] top-0 left-0 fixed">
+      <section class="animate-fade-down -mt-[70px]">
+        <div class="p-3 bg-[#d8590a] flex items-center justify-between text-2xl rounded-tl-lg rounded-tr-lg text-white ">
+          <span>Book an Appointment</span><span class="cursor-pointer" id="apmnt-window-closer">&times;</span>
         </div>
-      </aside>
+        <div class="bg-[#006D77]  shadow-lg p-2  transition-transform transform rounded-bl-lg rounded-br-lg">
+          <form id="appointment-form" class="space-y-4" action="SaveAppointment.php"  method="Post">
+            <div class=" block lg:flex lg:justify-center w-[90vw] lg:w-[55vw]">
+              <div>
+                <div class="p-2">
+                  <label for="name" class="hidden lg:block text-sm font-medium text-white">First Name</label>
+                  <input type="text" id="first_name" placeholder="Enter your First Name" name="FirstName" required class=" mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] bg-white rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+              </div>
+              <div class="p-2">
+                <label for="name" class="hidden lg:block text-sm font-medium text-white">Last Name</label>
+                <input type="text" id="last_name" placeholder="Enter your Last Name" name="LastName" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] bg-white rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+            </div>
+              <div class="p-2">
+                  <label for="email" class="hidden lg:block text-sm font-medium text-white">Email</label>
+                  <input  id="email" placeholder="Enter your Email" name="Email" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
+              </div>
+              <div class="p-2">
+                  <label for="phone" class="hidden lg:block text-sm font-medium text-white">Phone Number</label>
+                  <div class="flex">
+                    <select class="p-2 mt-[5px] w-[70px] rounded-tl-md rounded-bl-md lg:w-[75px]" name="countries" id="isd-code">
+                      <option value="Select">+00</option>
+                      <option value="+93">(+93) Afghanistan</option>
+                      <option value="+355">(+355) Albania</option>
+                      <option value="+213">(+213) Algeria</option>
+                      <option value="+376">(+376) Andorra</option>
+                      <option value="+244">(+244) Angola</option>
+                      <option value="+1-268">(+1-268) Antigua and Barbuda</option>
+                      <option value="+54">(+54) Argentina</option>
+                      <option value="+374">(+374) Armenia</option>
+                      <option value="+61">(+61) Australia</option>
+                      <option value="+43">(+43) Austria</option>
+                      <option value="+994">(+994) Azerbaijan</option>
+                      <option value="+1-242">(+1-242) Bahamas</option>
+                      <option value="+973">(+973) Bahrain</option>
+                      <option value="+880">(+880) Bangladesh</option>
+                      <option value="+1-246">(+1-246) Barbados</option>
+                      <option value="+375">(+375) Belarus</option>
+                      <option value="+32">(+32) Belgium</option>
+                      <option value="+501">(+501) Belize</option>
+                      <option value="+229">(+229) Benin</option>
+                      <option value="+975">(+975) Bhutan</option>
+                      <option value="+591">(+591) Bolivia</option>
+                      <option value="+387">(+387) Bosnia and Herzegovina</option>
+                      <option value="+267">(+267) Botswana</option>
+                      <option value="+55">(+55) Brazil</option>
+                      <option value="+673">(+673) Brunei</option>
+                      <option value="+359">(+359) Bulgaria</option>
+                      <option value="+226">(+226) Burkina Faso</option>
+                      <option value="+257">(+257) Burundi</option>
+                      <option value="+238">(+238) Cabo Verde</option>
+                      <option value="+855">(+855) Cambodia</option>
+                      <option value="+237">(+237) Cameroon</option>
+                      <option value="+1">(+1) Canada</option>
+                      <option value="+236">(+236) Central African Republic</option>
+                      <option value="+56">(+56) Chile</option>
+                      <option value="+86">(+86) China</option>
+                      <option value="+57">(+57) Colombia</option>
+                      <option value="+269">(+269) Comoros</option>
+                      <option value="+242">(+242) Congo</option>
+                      <option value="+506">(+506) Costa Rica</option>
+                      <option value="+385">(+385) Croatia</option>
+                      <option value="+53">(+53) Cuba</option>
+                      <option value="+357">(+357) Cyprus</option>
+                      <option value="+420">(+420) Czech Republic</option>
+                      <option value="+243">(+243) Democratic Republic of the Congo</option>
+                      <option value="+45">(+45) Denmark</option>
+                      <option value="+253">(+253) Djibouti</option>
+                      <option value="+1-767">(+1-767) Dominica</option>
+                      <option value="+1-809">(+1-809) Dominican Republic</option>
+                      <option value="+593">(+593) Ecuador</option>
+                      <option value="+20">(+20) Egypt</option>
+                      <option value="+503">(+503) El Salvador</option>
+                      <option value="+240">(+240) Equatorial Guinea</option>
+                      <option value="+291">(+291) Eritrea</option>
+                      <option value="+372">(+372) Estonia</option>
+                      <option value="+268">(+268) Eswatini</option>
+                      <option value="+251">(+251) Ethiopia</option>
+                      <option value="+679">(+679) Fiji</option>
+                      <option value="+358">(+358) Finland</option>
+                      <option value="+33">(+33) France</option>
+                      <option value="+241">(+241) Gabon</option>
+                      <option value="+220">(+220) Gambia</option>
+                      <option value="+995">(+995) Georgia</option>
+                      <option value="+49">(+49) Germany</option>
+                      <option value="+233">(+233) Ghana</option>
+                      <option value="+30">(+30) Greece</option>
+                      <option value="+1-473">(+1-473) Grenada</option>
+                      <option value="+502">(+502) Guatemala</option>
+                      <option value="+224">(+224) Guinea</option>
+                      <option value="+245">(+245) Guinea-Bissau</option>
+                      <option value="+592">(+592) Guyana</option>
+                      <option value="+509">(+509) Haiti</option>
+                      <option value="+504">(+504) Honduras</option>
+                      <option value="+36">(+36) Hungary</option>
+                      <option value="+354">(+354) Iceland</option>
+                      <option value="+91">(+91) India</option>
+                      <option value="+62">(+62) Indonesia</option>
+                      <option value="+98">(+98) Iran</option>
+                      <option value="+964">(+964) Iraq</option>
+                      <option value="+353">(+353) Ireland</option>
+                      <option value="+972">(+972) Israel</option>
+                      <option value="+39">(+39) Italy</option>
+                      <option value="+225">(+225) Ivory Coast</option>
+                      <option value="+1-876">(+1-876) Jamaica</option>
+                      <option value="+81">(+81) Japan</option>
+                      <option value="+962">(+962) Jordan</option>
+                      <option value="+7">(+7) Kazakhstan</option>
+                      <option value="+254">(+254) Kenya</option>
+                      <option value="+686">(+686) Kiribati</option>
+                      <option value="+383">(+383) Kosovo</option>
+                      <option value="+965">(+965) Kuwait</option>
+                      <option value="+996">(+996) Kyrgyzstan</option>
+                      <option value="+856">(+856) Laos</option>
+                      <option value="+371">(+371) Latvia</option>
+                      <option value="+961">(+961) Lebanon</option>
+                      <option value="+266">(+266) Lesotho</option>
+                      <option value="+231">(+231) Liberia</option>
+                      <option value="+218">(+218) Libya</option>
+                      <option value="+423">(+423) Liechtenstein</option>
+                      <option value="+370">(+370) Lithuania</option>
+                      <option value="+352">(+352) Luxembourg</option>
+                      <option value="+261">(+261) Madagascar</option>
+                      <option value="+265">(+265) Malawi</option>
+                      <option value="+60">(+60) Malaysia</option>
+                      <option value="+960">(+960) Maldives</option>
+                      <option value="+223">(+223) Mali</option>
+                      <option value="+356">(+356) Malta</option>
+                      <option value="+692">(+692) Marshall Islands</option>
+                      <option value="+222">(+222) Mauritania</option>
+                      <option value="+230">(+230) Mauritius</option>
+                      <option value="+52">(+52) Mexico</option>
+                      <option value="+691">(+691) Micronesia</option>
+                      <option value="+373">(+373) Moldova</option>
+                      <option value="+377">(+377) Monaco</option>
+                      <option value="+976">(+976) Mongolia</option>
+                      <option value="+382">(+382) Montenegro</option>
+                      <option value="+212">(+212) Morocco</option>
+                      <option value="+258">(+258) Mozambique</option>
+                      <option value="+95">(+95) Myanmar</option>
+                      <option value="+264">(+264) Namibia</option>
+                      <option value="+674">(+674) Nauru</option>
+                      <option value="+977">(+977) Nepal</option>
+                      <option value="+31">(+31) Netherlands</option>
+                      <option value="+64">(+64) New Zealand</option>
+                      <option value="+505">(+505) Nicaragua</option>
+                      <option value="+227">(+227) Niger</option>
+                      <option value="+234">(+234) Nigeria</option>
+                      <option value="+850">(+850) North Korea</option>
+                      <option value="+389">(+389) North Macedonia</option>
+                      <option value="+47">(+47) Norway</option>
+                      <option value="+968">(+968) Oman</option>
+                      <option value="+92">(+92) Pakistan</option>
+                      <option value="+680">(+680) Palau</option>
+                      <option value="+507">(+507) Panama</option>
+                      <option value="+675">(+675) Papua New Guinea</option>
+                      <option value="+595">(+595) Paraguay</option>
+                      <option value="+51">(+51) Peru</option>
+                      <option value="+63">(+63) Philippines</option>
+                      <option value="+48">(+48) Poland</option>
+                      <option value="+351">(+351) Portugal</option>
+                      <option value="+974">(+974) Qatar</option>
+                      <option value="+40">(+40) Romania</option>
+                      <option value="+7">(+7) Russia</option>
+                      <option value="+250">(+250) Rwanda</option>
+                      <option value="+1-869">(+1-869) Saint Kitts and Nevis</option>
+                      <option value="+1-758">(+1-758) Saint Lucia</option>
+                      <option value="+1-784">(+1-784) Saint Vincent and the Grenadines</option>
+                      <option value="+685">(+685) Samoa</option>
+                      <option value="+378">(+378) San Marino</option>
+                      <option value="+239">(+239) Sao Tome and Principe</option>
+                      <option value="+966">(+966) Saudi Arabia</option>
+                      <option value="+221">(+221) Senegal</option>
+                      <option value="+381">(+381) Serbia</option>
+                      <option value="+248">(+248) Seychelles</option>
+                      <option value="+232">(+232) Sierra Leone</option>
+                      <option value="+65">(+65) Singapore</option>
+                      <option value="+421">(+421) Slovakia</option>
+                      <option value="+386">(+386) Slovenia</option>
+                      <option value="+677">(+677) Solomon Islands</option>
+                      <option value="+252">(+252) Somalia</option>
+                      <option value="+27">(+27) South Africa</option>
+                      <option value="+82">(+82) South Korea</option>
+                      <option value="+211">(+211) South Sudan</option>
+                      <option value="+34">(+34) Spain</option>
+                      <option value="+94">(+94) Sri Lanka</option>
+                      <option value="+249">(+249) Sudan</option>
+                      <option value="+597">(+597) Suriname</option>
+                      <option value="+46">(+46) Sweden</option>
+                      <option value="+41">(+41) Switzerland</option>
+                      <option value="+963">(+963) Syria</option>
+                      <option value="+886">(+886) Taiwan</option>
+                      <option value="+992">(+992) Tajikistan</option>
+                      <option value="+255">(+255) Tanzania</option>
+                      <option value="+66">(+66) Thailand</option>
+                      <option value="+670">(+670) Timor-Leste</option>
+                      <option value="+228">(+228) Togo</option>
+                      <option value="+676">(+676) Tonga</option>
+                      <option value="+1-868">(+1-868) Trinidad and Tobago</option>
+                      <option value="+216">(+216) Tunisia</option>
+                      <option value="+993">(+993) Turkmenistan</option>
+                      <option value="+90">(+90) Turkey</option>
+                      <option value="+688">(+688) Tuvalu</option>
+                      <option value="+256">(+256) Uganda</option>
+                      <option value="+380">(+380) Ukraine</option>
+                      <option value="+971">(+971) United Arab Emirates</option>
+                      <option value="+44">(+44) United Kingdom</option>
+                      <option value="+1">(+1) United States</option>
+                      <option value="+598">(+598) Uruguay</option>
+                      <option value="+998">(+998) Uzbekistan</option>
+                      <option value="+678">(+678) Vanuatu</option>
+                      <option value="+58">(+58) Venezuela</option>
+                      <option value="+84">(+84) Vietnam</option>
+                      <option value="+967">(+967) Yemen</option>
+                      <option value="+260">(+260) Zambia</option>
+                      <option value="+263">(+263) Zimbabwe</option>
+                  </select>
+                  
+                      <input type="number" id="phone" placeholder="Enter your Phone Number" name="PhoneNumber" required class="mt-1 block w-full lg:w-[330px] p-2 border border-[#006D77] rounded-tr-md rounded-br-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
+                  </div>              
+              </div>
+              </div>
+              <div>
+              <!-- <div>
+                  <label for="date" class="block text-sm font-medium text-gray-700">Appointment Date</label>
+                  <input type="date" id="date" name="date" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500" />
+              </div> -->
+              <div class="p-2">
+                <label for="State" class="hidden lg:block text-sm font-medium text-white">State</label>
+                <input type="text" id="state" placeholder="Enter your State"   name="State" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
+            </div>
+            <div class="p-2">
+              <label for="Country" class="hidden lg:block text-sm font-medium text-white">Country</label>
+              <!-- <input type="text" id="country" placeholder="Enter your Country" name="Country" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" /> -->
+              <select class="p-2 mt-[5px] w-full rounded-md lg:w-[400px]" name="countries" id="country">
+                <option value="Select">Select</option>
+                <option value="afghanistan">Afghanistan</option>
+                <option value="albania">Albania</option>
+                <option value="algeria">Algeria</option>
+                <option value="andorra">Andorra</option>
+                <option value="angola">Angola</option>
+                <option value="antigua-and-barbuda">Antigua and Barbuda</option>
+                <option value="argentina">Argentina</option>
+                <option value="armenia">Armenia</option>
+                <option value="australia">Australia</option>
+                <option value="austria">Austria</option>
+                <option value="azerbaijan">Azerbaijan</option>
+                <option value="bahamas">Bahamas</option>
+                <option value="bahrain">Bahrain</option>
+                <option value="bangladesh">Bangladesh</option>
+                <option value="barbados">Barbados</option>
+                <option value="belarus">Belarus</option>
+                <option value="belgium">Belgium</option>
+                <option value="belize">Belize</option>
+                <option value="benin">Benin</option>
+                <option value="bhutan">Bhutan</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="bosnia-and-herzegovina">Bosnia and Herzegovina</option>
+                <option value="botswana">Botswana</option>
+                <option value="brazil">Brazil</option>
+                <option value="brunei">Brunei</option>
+                <option value="bulgaria">Bulgaria</option>
+                <option value="burkina-faso">Burkina Faso</option>
+                <option value="burundi">Burundi</option>
+                <option value="cabo-verde">Cabo Verde</option>
+                <option value="cambodia">Cambodia</option>
+                <option value="cameroon">Cameroon</option>
+                <option value="canada">Canada</option>
+                <option value="central-african-republic">Central African Republic</option>
+                <option value="chile">Chile</option>
+                <option value="china">China</option>
+                <option value="colombia">Colombia</option>
+                <option value="comoros">Comoros</option>
+                <option value="congo">Congo</option>
+                <option value="costa-rica">Costa Rica</option>
+                <option value="croatia">Croatia</option>
+                <option value="cuba">Cuba</option>
+                <option value="cyprus">Cyprus</option>
+                <option value="czech-republic">Czech Republic</option>
+                <option value="democratic-republic-of-the-congo">Democratic Republic of the Congo</option>
+                <option value="denmark">Denmark</option>
+                <option value="djibouti">Djibouti</option>
+                <option value="dominica">Dominica</option>
+                <option value="dominican-republic">Dominican Republic</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="egypt">Egypt</option>
+                <option value="el-salvador">El Salvador</option>
+                <option value="equatorial-guinea">Equatorial Guinea</option>
+                <option value="eritrea">Eritrea</option>
+                <option value="estonia">Estonia</option>
+                <option value="eswatini">Eswatini</option>
+                <option value="ethiopia">Ethiopia</option>
+                <option value="fiji">Fiji</option>
+                <option value="finland">Finland</option>
+                <option value="france">France</option>
+                <option value="gabon">Gabon</option>
+                <option value="gambia">Gambia</option>
+                <option value="georgia">Georgia</option>
+                <option value="germany">Germany</option>
+                <option value="ghana">Ghana</option>
+                <option value="greece">Greece</option>
+                <option value="grenada">Grenada</option>
+                <option value="guatemala">Guatemala</option>
+                <option value="guinea">Guinea</option>
+                <option value="guinea-bissau">Guinea-Bissau</option>
+                <option value="guyana">Guyana</option>
+                <option value="haiti">Haiti</option>
+                <option value="honduras">Honduras</option>
+                <option value="hungary">Hungary</option>
+                <option value="iceland">Iceland</option>
+                <option value="india">India</option>
+                <option value="indonesia">Indonesia</option>
+                <option value="iran">Iran</option>
+                <option value="iraq">Iraq</option>
+                <option value="ireland">Ireland</option>
+                <option value="israel">Israel</option>
+                <option value="italy">Italy</option>
+                <option value="ivory-coast">Ivory Coast</option>
+                <option value="jamaica">Jamaica</option>
+                <option value="japan">Japan</option>
+                <option value="jordan">Jordan</option>
+                <option value="kazakhstan">Kazakhstan</option>
+                <option value="kenya">Kenya</option>
+                <option value="kiribati">Kiribati</option>
+                <option value="kosovo">Kosovo</option>
+                <option value="kuwait">Kuwait</option>
+                <option value="kyrgyzstan">Kyrgyzstan</option>
+                <option value="laos">Laos</option>
+                <option value="latvia">Latvia</option>
+                <option value="lebanon">Lebanon</option>
+                <option value="lesotho">Lesotho</option>
+                <option value="liberia">Liberia</option>
+                <option value="libya">Libya</option>
+                <option value="liechtenstein">Liechtenstein</option>
+                <option value="lithuania">Lithuania</option>
+                <option value="luxembourg">Luxembourg</option>
+                <option value="madagascar">Madagascar</option>
+                <option value="malawi">Malawi</option>
+                <option value="malaysia">Malaysia</option>
+                <option value="maldives">Maldives</option>
+                <option value="mali">Mali</option>
+                <option value="malta">Malta</option>
+                <option value="marshall-islands">Marshall Islands</option>
+                <option value="mauritania">Mauritania</option>
+                <option value="mauritius">Mauritius</option>
+                <option value="mexico">Mexico</option>
+                <option value="micronesia">Micronesia</option>
+                <option value="moldova">Moldova</option>
+                <option value="monaco">Monaco</option>
+                <option value="mongolia">Mongolia</option>
+                <option value="montenegro">Montenegro</option>
+                <option value="morocco">Morocco</option>
+                <option value="mozambique">Mozambique</option>
+                <option value="myanmar">Myanmar</option>
+                <option value="namibia">Namibia</option>
+                <option value="nauru">Nauru</option>
+                <option value="nepal">Nepal</option>
+                <option value="netherlands">Netherlands</option>
+                <option value="new-zealand">New Zealand</option>
+                <option value="nicaragua">Nicaragua</option>
+                <option value="niger">Niger</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="north-korea">North Korea</option>
+                <option value="north-macedonia">North Macedonia</option>
+                <option value="norway">Norway</option>
+                <option value="oman">Oman</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="palau">Palau</option>
+                <option value="panama">Panama</option>
+                <option value="papua-new-guinea">Papua New Guinea</option>
+                <option value="paraguay">Paraguay</option>
+                <option value="peru">Peru</option>
+                <option value="philippines">Philippines</option>
+                <option value="poland">Poland</option>
+                <option value="portugal">Portugal</option>
+                <option value="qatar">Qatar</option>
+                <option value="romania">Romania</option>
+                <option value="russia">Russia</option>
+                <option value="rwanda">Rwanda</option>
+                <option value="saint-kitts-and-nevis">Saint Kitts and Nevis</option>
+                <option value="saint-lucia">Saint Lucia</option>
+                <option value="saint-vincent-and-the-grenadines">Saint Vincent and the Grenadines</option>
+                <option value="samoa">Samoa</option>
+                <option value="san-marino">San Marino</option>
+                <option value="sao-tome-and-principe">Sao Tome and Principe</option>
+                <option value="saudi-arabia">Saudi Arabia</option>
+                <option value="senegal">Senegal</option>
+                <option value="serbia">Serbia</option>
+                <option value="seychelles">Seychelles</option>
+                <option value="sierra-leone">Sierra Leone</option>
+                <option value="singapore">Singapore</option>
+                <option value="slovakia">Slovakia</option>
+                <option value="slovenia">Slovenia</option>
+                <option value="solomon-islands">Solomon Islands</option>
+                <option value="somalia">Somalia</option>
+                <option value="south-africa">South Africa</option>
+                <option value="south-korea">South Korea</option>
+                <option value="south-sudan">South Sudan</option>
+                <option value="spain">Spain</option>
+                <option value="sri-lanka">Sri Lanka</option>
+                <option value="sudan">Sudan</option>
+                <option value="suriname">Suriname</option>
+                <option value="sweden">Sweden</option>
+                <option value="switzerland">Switzerland</option>
+                <option value="syria">Syria</option>
+                <option value="taiwan">Taiwan</option>
+                <option value="tajikistan">Tajikistan</option>
+                <option value="tanzania">Tanzania</option>
+                <option value="thailand">Thailand</option>
+                <option value="timor-leste">Timor-Leste</option>
+                <option value="togo">Togo</option>
+                <option value="tonga">Tonga</option>
+                <option value="trinidad-and-tobago">Trinidad and Tobago</option>
+                <option value="tunisia">Tunisia</option>
+                <option value="turkmenistan">Turkmenistan</option>
+                <option value="turkey">Turkey</option>
+                <option value="tuvalu">Tuvalu</option>
+                <option value="uganda">Uganda</option>
+                <option value="ukraine">Ukraine</option>
+                <option value="united-arab-emirates">United Arab Emirates</option>
+                <option value="united-kingdom">United Kingdom</option>
+                <option value="united-states">United States</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="uzbekistan">Uzbekistan</option>
+                <option value="vanuatu">Vanuatu</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="vietnam">Vietnam</option>
+                <option value="yemen">Yemen</option>
+                <option value="zambia">Zambia</option>
+                <option value="zimbabwe">Zimbabwe</option>
+            </select>
+            
+              
+            </div>
+              <div class="p-2">
+                  <label for="message" class="hidden lg:block text-sm font-medium text-white">Message</label>
+                  <textarea id="message" placeholder="Enter your Message" name="Message" rows="4"  class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white"></textarea>
+              </div>
+              </div>
+            </div>
+            <div class="flex justify-center items-center">
+              <button type="submit" id="book-appointment-btn" class="m-auto bg-orange-600 text-white p-3 rounded-md hover:bg-[#174f54] font-bold  transition duration-200">Book Appointment</button>
+            </div>    
+              
+          </form>
+      </div>
+      </section>  
     </section>
   </section>
-  
+</section>

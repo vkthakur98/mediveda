@@ -6,10 +6,14 @@ export function bookAppointment() {
         const first_name = document.getElementById('first_name').value;
         const last_name = document.getElementById('last_name').value;
         const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
+        const isd = document.getElementById("isd-code").value;       
+        const phone_number = document.getElementById('phone').value;
+        const phone = isd +" "+ phone_number;
         const state = document.getElementById('state').value;
         const country = document.getElementById('country').value;
         const message = document.getElementById('message').value;
+
+        console.log(phone)
 
     
         // Create a data object to send

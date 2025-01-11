@@ -1,158 +1,696 @@
 <section>
-    <section>
-      <div
-        class="lg:h-[400px] h-[250px] w-full bg-cover bg-center"
-        style="background-image: url('https://www.ayurwakeup.com/wp-content/uploads/2024/05/ayurwakeup-lung.jpg')"
-      >
-        <div class="bg-[rgba(0,0,0,0.5)] lg:h-[400px] h-[250px] p-5 lg:p-20">
-          <div data-aos="slide-right" data-aos-once="true" class="mt-16">
-            <h1 class="text-[40px] lg:text-[65px] w-auto lg:w-[1000px] font-verdana font-bold text-white">
-              Gall Bladder Stones
-            </h1>
-            <div>
-              <br />
-            </div>
-          </div>
-        </div>
+  <div id="message-window" class="animate-fade-down hidden fixed rounded-sm lg:rounded-xl left-0 lg:left-[40vw]  top-0 lg:top-1 h-[110px] w-[100vw] lg:w-[auto] bg-gray-200 z-30 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]">
+    <div class="rounded-none lg:rounded-tr-xl lg:rounded-tl-xl p-2 bg-[#006D77] text-white" id="message-window-header">
+      Message
+    </div>
+    <div class="p-2">
+      <p><i id="message-icon" class="fa-solid fa-check p-2 bg-green-700 text-white rounded-[50%]"></i><span class="pl-2" id="message-content">Your appointment has been booked.</span></p>
+    </div>
+  </div>
+  <div id="err-message-window" class="animate-fade-down hidden fixed rounded-sm lg:rounded-xl left-0 lg:left-[40vw]  top-0 lg:top-1 h-[140px] w-[100vw] lg:w-[auto] bg-gray-200 z-30 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]">
+    <div class="rounded-none lg:rounded-tr-xl lg:rounded-tl-xl p-2 bg-red-500 text-white" id="message-window-header">
+      Message
+    </div>
+    <div class="p-2">
+      <p><i id="message-icon" class=" fa-solid fa-xmark pl-[10px] pr-[10px] pt-[8px] pb-[8px] bg-red-500 text-white rounded-[50%]"></i><span class="pl-2 text-red-500" id="err-message-content">Something went wrong.</span></p>
+      <div class="flex justify-center">
+        <button class="mt-2 bg-red-500 text-white p-2 rounded-md hover:bg-red-600" id="err-message-window-closer">Close</button>
       </div>
-    </section>
-    <section class="block lg:flex lg:justify-center">
-      <aside>
-        <section>
-          <div class="lg:p-10 p-4">
-            <img
-              src="../../images/diseases/gall-stone.webp"
-              class="w-full h-auto lg:w-[800px] lg:h-[550px]"
-              alt="Image depicting the anatomy related to Gall Bladder Stones"
-            />
-          </div>
-        </section>
-        <section class="lg:p-10 p-4">
-          <h1 class="lg:text-[40px] text-[30px] font-bold">Gall Bladder Stones: A Brief Overview</h1>
-          <p class="text-gray-600">
-            Gall bladder stones, or gallstones, are hardened deposits that form in the gallbladder, a small organ located beneath the liver. These stones can vary in size and may cause significant pain, discomfort, and complications if not managed properly. Gallstones are a common health issue and affect millions of people worldwide. While conventional medicine offers treatments such as surgery or medication, Ayurveda provides a holistic, natural approach to managing and curing gallstones by addressing their root causes and balancing the body’s energies (doshas).
-          </p>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Physiology of Gall Bladder Stones</h1>
-          <p class="text-gray-600">
-            The gallbladder is a small, pear-shaped organ located under the liver. It stores bile, a digestive fluid produced by the liver that helps in breaking down fats during digestion. When you eat food, particularly fatty foods, the gallbladder contracts and releases bile into the small intestine to assist in digestion. The bile consists of water, cholesterol, bile salts, and other substances. When the balance of these substances is disturbed, it can lead to the formation of gallstones.
-          </p>
-          <p class="text-gray-600">
-            Gallstones are classified into two types:
-          </p>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><span class="font-bold">Cholesterol Stones:</span> These are the most common type of gallstones, forming when there is too much cholesterol in the bile. The excess cholesterol may crystallize and form stones. Cholesterol stones can be yellow-green in color.</li>
-            <li><span class="font-bold">Pigment Stones:</span> These stones are smaller and darker and form when there is excess bilirubin in the bile. Bilirubin is produced when the body breaks down red blood cells, and when it is not properly processed by the liver, it can combine with other substances to form stones.</li>
-          </ul>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Causes of Gall Bladder Stones</h1>
-          <p class="text-gray-600">
-            The formation of gallstones occurs due to an imbalance in the composition of bile. Several factors contribute to this imbalance, including:
-          </p>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><span class="font-bold">Excess Cholesterol in the Bile:</span> When the liver excretes too much cholesterol into the bile, it may overwhelm the ability of bile salts to dissolve it, leading to crystallization and the formation of cholesterol stones.</li>
-            <li><span class="font-bold">Imbalance of Bile Components:</span> When the liver fails to secrete the correct balance of bile salts and cholesterol, bile can become overly concentrated, promoting the formation of stones.</li>
-            <li><span class="font-bold">Obesity:</span> People who are overweight or obese are at a higher risk of developing gallstones. This is because excess fat in the body can lead to increased cholesterol levels, which in turn leads to stone formation.</li>
-            <li><span class="font-bold">Pregnancy:</span> Hormonal changes during pregnancy can increase the cholesterol levels in bile, which may lead to the formation of stones. Moreover, pregnancy can slow down the gallbladder’s ability to empty, further increasing the risk.</li>
-            <li><span class="font-bold">Diabetes:</span> People with diabetes may be more prone to gallstones, especially if they have high levels of cholesterol or are obese. Poor glucose control in diabetes can also affect bile production and gallbladder function.</li>
-            <li><span class="font-bold">Rapid Weight Loss:</span> Losing weight too quickly can lead to the liver releasing more cholesterol into the bile, which can contribute to gallstone formation. This is often seen in people who undergo bariatric surgery or extreme weight-loss diets.</li>
-            <li><span class="font-bold">Dietary Factors:</span> A diet high in fat, low in fiber, and rich in refined carbohydrates can increase the risk of gallstones. High-fat diets increase cholesterol levels, which are one of the primary contributors to gallstone formation.</li>
-            <li><span class="font-bold">Age and Gender:</span> Gallstones are more common in women than men and tend to increase in frequency as people age. This is due to hormonal changes in women, particularly an increase in estrogen and progesterone, which affect bile composition.</li>
-            <li><span class="font-bold">Genetics:</span> A family history of gallstones can increase the likelihood of developing them. Genetic factors can influence cholesterol levels and how the liver processes bile.</li>
-            <li><span class="font-bold">Other Conditions:</span> Certain medical conditions, such as cirrhosis, biliary tract infections, and Crohn’s disease, can increase the risk of developing gallstones due to their effects on the liver, bile ducts, and gallbladder.</li>
-          </ul>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Perspective on Gall Bladder Stones</h1>
-          <p class="text-gray-600">
-            In Ayurveda, gallstones are seen as a result of an imbalance in the body’s doshas, particularly Pitta dosha, which governs heat, metabolism, and digestion. According to Ayurvedic principles, excess Pitta in the body leads to an overproduction of bile, which can result in the formation of stones in the gallbladder. In addition, Ama, the toxic byproduct of undigested food, is believed to contribute to the formation of gallstones when it accumulates in the liver or digestive tract.
-          </p>
-          <p class="text-gray-600">
-            The goal of Ayurvedic treatment for gallstones is to restore balance to the Pitta dosha, detoxify the body, and improve the function of the digestive system. Ayurveda uses a combination of dietary changes, herbal remedies, Panchakarma (detoxification therapies), and lifestyle modifications to manage and potentially dissolve gallstones naturally.
-          </p>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Treatment for Gall Bladder Stones</h1>
-          <p class="text-gray-600">
-            <span class="font-bold">Dietary Modifications:</span> Ayurveda recommends avoiding fried, greasy, and fatty foods, which can exacerbate gallstone formation by increasing the cholesterol content in bile. A diet rich in fiber, particularly from fruits, vegetables, and whole grains, can aid digestion, prevent constipation, and reduce the strain on the gallbladder.
-          </p>
-          <p class="text-gray-600">
-            Drinking warm water throughout the day is encouraged in Ayurveda, as it helps to keep the digestive system clean and promotes healthy bile flow. Ayurveda also suggests avoiding heavy, spicy foods and consuming cooling and light foods such as cucumbers, melons, and leafy greens. Herbal teas made from peppermint, ginger, or chamomile can help to soothe the digestive system and improve bile flow.
-          </p>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Panchakarma Detoxification</h1>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><span class="font-bold">Virechana (Purgation Therapy):</span> This therapy involves using specific herbal preparations to induce controlled purgation, which helps to remove toxins (Ama) and reduce Pitta dosha from the digestive system.</li>
-            <li><span class="font-bold">Basti (Medicated Enema):</span> Basti therapy can be used to cleanse the colon and remove toxins that may be contributing to liver and gallbladder dysfunction. It helps to restore balance to the digestive system.</li>
-            <li><span class="font-bold">Udvartana (Herbal Powder Massage):</span> This therapeutic massage using herbal powders helps to improve circulation, stimulate bile production, and detoxify the body.</li>
-          </ul>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Lifestyle Modifications</h1>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><span class="font-bold">Regular Exercise:</span> Physical activity such as yoga or walking helps improve digestion, reduce obesity, and promote healthy bile flow. Yoga poses like Setu Bandhasana (Bridge Pose) and Bhujangasana (Cobra Pose) can help stimulate the digestive organs.</li>
-            <li><span class="font-bold">Stress Management:</span> Stress is known to aggravate Pitta dosha, leading to bile imbalances. Ayurvedic practices such as meditation, deep breathing, and relaxation techniques help reduce stress and support overall well-being.</li>
-            <li><span class="font-bold">Hydration:</span> Drinking plenty of water throughout the day helps keep the digestive system functioning properly and prevents the formation of concentrated bile.</li>
-          </ul>
-  
-          <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Conclusion</h1>
-          <p class="text-gray-600">
-            Gallstones can be a painful and disruptive condition, but Ayurveda offers a natural and holistic approach to both managing and potentially dissolving gallstones. By focusing on restoring balance in the body’s doshas, promoting healthy digestion, and using targeted herbal remedies, Ayurveda can help address the root causes of gallstone formation and alleviate associated symptoms.
-          </p>
-          <p class="text-gray-600">
-            In addition to herbal treatments, Ayurvedic practices such as Panchakarma detoxification, dietary modifications, and lifestyle changes can provide long-term relief and support overall liver and gallbladder health. For individuals struggling with gallstones, seeking guidance from a qualified Ayurvedic practitioner can help develop a personalized treatment plan for effective management and healing.
-          </p>
-        </section>
-      </aside>
-      <aside>
-        <div class="p-4 lg:p-10 m-auto lg:m-0">
-          <div class="p-5 bg-white shadow-md w-full lg:w-[500px] border-l-2 border-orange-500">
-            <h1 class="text-[30px] font-bold">Lifestyle Disorders</h1>
+    </div>
+  </div>
+  <section class="flex justify-center items-center p-[10px]">
+      <div class="bg-[url('https://img.freepik.com/premium-photo/vibrant-glowing-representation-liver-highlighting-its-importance-human-anatomy-biology-against-dark-background_983055-26072.jpg')] w-[90vw] rounded-lg bg-cover">
+          <div class="block  lg:flex lg:justify-start lg:items-center p-5 bg-gradient-to-r from-[#774EA5] to-[transparent] rounded-lg">
             <div>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/lifestyledisorders/varicocele">Varicocele</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/lifestyledisorders/hydrocele">Hydrocele</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/lifestyledisorders/erectiledysfunction">Erectile Dysfunction</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/lifestyledisorders/prematureejaculation">Premature Ejaculation</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/lifestyledisorders/diabetes">Diabetes</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/lifestyledisorders/highbloodpressure">High Blood Pressure(HTN)</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/lifestyledisorders/uti">Urine Tract Infection(UTI)</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/lifestyledisorders/infection">infection</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/lifestyledisorders/obesity">Obesity(Overweight)</a>
-              </h1>
-              <h1 class="text-[20px] p-1 hover:text-orange-500">
-                <i class="fa fa-angle-right pr-2 text-orange-500"></i
-                ><a href="#diseases/lifestyledisorders/piles">Piles</a>
-              </h1>
+              <h1 class="text-[30px] lg:text-[50px] font-bold text-white">Gall Bladder Stones:</h1>
+              <p class=" text-white w-[85vw] lg:w-[50vw]">
+                  Gallstones, or gall bladder stones, are hardened deposits that form in the gallbladder, an organ beneath the liver. These stones can cause pain and complications, but Ayurveda offers a holistic approach to managing and potentially dissolving them through natural remedies and lifestyle modifications.
+              </p>
+            </div>  
+             <div>
+              <button
+                aria-hidden 006d77
+                class="ml-[30px] mt-[10px] lg:mt-0 lg:ml-[200px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)] p-4 rounded-md bg-[#006d77] text-white tracking-[2px] text-[15px] hover:bg-[#fbb85b] transition-[6s]"
+                id="appointment-btn"
+                >
+                BOOK AN APPOINTMENT
+              </button>
+             </div>                   
+          </div> 
+      </div>
+  </section>
+  <section class="block lg:flex lg:justify-center">
+      <aside>  
+          <section class="lg:p-10 p-4">
+
+              <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Physiology of Gall Bladder Stones</h1>
+              <p class="text-gray-600">
+                  The gallbladder is a small, pear-shaped organ located under the liver. It stores bile, a digestive fluid that helps break down fats. When you consume fatty foods, the gallbladder releases bile into the small intestine to aid digestion. Gallstones form when the balance of bile components is disturbed, either due to excess cholesterol or bilirubin.
+              </p>
+              <h2 class="text-[#006d77] lg:text-[25px] text-[20px] font-bold mt-5">Types of Gallstones</h2>
+              <ul class="list-disc pl-5 text-gray-600">
+                  <li><span class="font-bold">Cholesterol Stones:</span> These are the most common type, formed when there is too much cholesterol in the bile.</li>
+                  <li><span class="font-bold">Pigment Stones:</span> Smaller and darker, these stones form when there is excess bilirubin in the bile.</li>
+              </ul>
+
+              <h1 class="lg:text-[30px] text-[25px] font-bold mt-5 text-[#006d77]">Causes of Gall Bladder Stones</h1>
+              <p class="text-gray-600">
+                  Gallstones develop when the composition of bile becomes imbalanced. Factors contributing to this imbalance include:
+              </p>
+              <h2 class="text-[#006d77] lg:text-[25px] text-[20px] font-bold mt-5">Primary Causes</h2>
+              <ul class="list-disc pl-5 text-gray-600">
+                  <li><span class="font-bold">Excess Cholesterol:</span> When the liver excretes excess cholesterol, bile salts cannot dissolve it, causing it to crystallize.</li>
+                  <li><span class="font-bold">Obesity:</span> Being overweight increases cholesterol levels and promotes gallstone formation.</li>
+                  <li><span class="font-bold">Pregnancy:</span> Hormonal changes increase cholesterol in the bile, which may lead to stones.</li>
+                  <li><span class="font-bold">Diabetes:</span> Poor blood sugar control, especially when combined with obesity, raises the risk of gallstones.</li>
+                  <li><span class="font-bold">Rapid Weight Loss:</span> This can trigger the liver to release more cholesterol, promoting stone formation.</li>
+                  <li><span class="font-bold">Dietary Factors:</span> A high-fat, low-fiber diet increases cholesterol levels and promotes gallstones.</li>
+              </ul>
+
+              <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Symptoms of Gall Bladder Stones</h1>
+              <p class="text-gray-600">
+                  Gallstones may be asymptomatic (silent), but when they block bile ducts, symptoms can include:
+              </p>
+              <ul class="list-disc pl-5 text-gray-600">
+                  <li><span class="font-bold">Severe Abdominal Pain:</span> Known as a gallbladder attack, the pain typically occurs in the upper right abdomen and can radiate to the back or right shoulder.</li>
+                  <li><span class="font-bold">Nausea and Vomiting:</span> Often occurring after meals, especially fatty foods.</li>
+                  <li><span class="font-bold">Jaundice:</span> Yellowing of the skin and eyes, caused by a blocked bile duct.</li>
+                  <li><span class="font-bold">Indigestion and Bloating:</span> Difficulty digesting fatty foods leads to bloating and discomfort.</li>
+                  <li><span class="font-bold">Fever and Chills:</span> These symptoms may indicate an infection (cholecystitis) that requires immediate attention.</li>
+              </ul>
+
+              <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Perspective on Gall Bladder Stones</h1>
+              <p class="text-gray-600">
+                  In Ayurveda, gallstones are seen as the result of an imbalance in the Pitta dosha, which governs digestion, metabolism, and bile production. An excess of Pitta leads to the overproduction of bile, resulting in the formation of stones. Ayurveda also identifies Ama, the toxic residue from undigested food, as a major contributor to gallstone formation.
+              </p>
+
+              <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Treatment for Gall Bladder Stones</h1>
+              <p class="text-gray-600">
+                  Ayurvedic treatment for gallstones focuses on balancing Pitta dosha, detoxifying the body, and improving digestive health. Below are key Ayurvedic approaches:
+              </p>
+
+              <h2 class="text-[#006d77] lg:text-[25px] text-[20px] font-bold mt-5">Dietary Modifications</h2>
+              <ul class="list-disc pl-5 text-gray-600">
+                  <li><span class="font-bold">Reduce Fat Intake:</span> Avoid fried, greasy foods that exacerbate cholesterol buildup in bile.</li>
+                  <li><span class="font-bold">Increase Fiber:</span> Consume a high-fiber diet from fruits, vegetables, and whole grains to aid digestion and prevent constipation.</li>
+                  <li><span class="font-bold">Warm Water:</span> Drink warm water throughout the day to maintain healthy bile flow and promote digestion.</li>
+                  <li><span class="font-bold">Avoid Heavy, Spicy Foods:</span> Foods that are heavy or spicy aggravate Pitta dosha. Focus on cooling foods like cucumbers and leafy greens.</li>
+                  <li><span class="font-bold">Herbal Teas:</span> Herbal teas such as peppermint, ginger, or chamomile can help soothe the digestive system and support bile flow.</li>
+              </ul>
+
+              <h2 class="text-[#006d77] lg:text-[25px] text-[20px] font-bold mt-5">Panchakarma Detoxification</h2>
+              <ul class="list-disc pl-5 text-gray-600">
+                  <li><span class="font-bold">Virechana (Purgation Therapy):</span> Induces purgation to remove toxins (Ama) and reduce Pitta from the digestive system.</li>
+                  <li><span class="font-bold">Basti (Medicated Enema):</span> Helps cleanse the colon and remove accumulated toxins, improving liver and gallbladder function.</li>
+                  <li><span class="font-bold">Udvartana (Herbal Powder Massage):</span> Stimulates bile production and detoxifies the body through therapeutic massage with herbal powders.</li>
+              </ul>
+
+              <h2 class="text-[#006d77] lg:text-[25px] text-[20px] font-bold mt-5">Lifestyle Modifications</h2>
+              <ul class="list-disc pl-5 text-gray-600">
+                  <li><span class="font-bold">Regular Exercise:</span> Yoga and walking improve digestion, reduce obesity, and promote healthy bile flow. Poses like Setu Bandhasana (Bridge Pose) and Bhujangasana (Cobra Pose) are particularly beneficial.</li>
+                  <li><span class="font-bold">Stress Management:</span> Practices like meditation and deep breathing help reduce Pitta imbalances caused by stress.</li>
+                  <li><span class="font-bold">Hydration:</span> Drinking plenty of water helps maintain healthy bile and digestion, preventing gallstone formation.</li>
+              </ul>
+
+              <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Conclusion</h1>
+              <p class="text-gray-600">
+                  Gallstones can cause significant discomfort and complications, but Ayurveda offers a natural approach to managing and potentially dissolving them. Through dietary changes, herbal remedies, Panchakarma detoxification, and lifestyle modifications, Ayurveda helps restore balance and support liver and gallbladder health. Always consult a qualified Ayurvedic practitioner to create a personalized treatment plan for effective management.
+              </p>
+          </section>
+      </aside>
+  </section>
+  <div class="bg-white  h-[900px] lg:h-[800px]">
+    <div class="bg-[url('https://thumbs.dreamstime.com/b/neurons-nervous-system-medicine-biology-background-creative-ai-neurons-nervous-system-medicine-biology-background-design-325091377.jpg')] bg-cover">
+      <div class="bg-[rgba(0,0,0,0.5)]">
+        <h1 class="text-center text-white text-[30px] lg:text-[60px] font-bold tracking-wide">LIFESTYLE DISORDERS</h1>
+        <div class="flex justify-center items-center">
+          <button
+          aria-hidden 006d77
+          class="mt-[10px] lg:mt-0  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)] p-4 rounded-md bg-[#006d77] text-white tracking-[2px] text-[15px] hover:bg-[#fbb85b] transition-[6s]"
+          id="appointment-btn2"
+          >
+          BOOK AN APPOINTMENT
+        </button>
+        </div>
+        
+        <div class="p-5 flex items-center justify-between flex-wrap">
+          <a href="#diseases/lifestyledisorders/diabetes">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/L1.webp" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Diabetes</h1>
+              </div>
+            </div>
+          </a>
+          <a href="#diseases/lifestyledisorders/varicocele">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/L2.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Variocele</h1>
+              </div>
+            </div>
+          </a>
+          <a href="#diseases/lifestyledisorders/hydrocele">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/L3.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Hydrocele</h1>
+              </div>
+            </div>
+          </a>
+          <a href="#diseases/lifestyledisorders/prematureejaculation">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/L2.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Premature ejaculation</h1>
+              </div>
+            </div>
+          </a>
+          <a href="#diseases/lifestyledisorders/highbloodpressure">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/L1.webp" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">High blood pressure</h1>
+              </div>
+            </div>
+          </a>
+          <a href="#diseases/lifestyledisorders/infection">
+            <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+              <div class="p-3">
+                <img src="../../images/diseases/disease-link-images/infections.jpeg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+              </div>
+              <div class="w-[160px] lg:w-[220px] ">
+                <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Infection</h1>
+              </div>
+            </div>
+          </a>                                     
+        </div>
+
+        <div class="p-5 flex items-center justify-center flex-wrap">
+            <a href="#diseases/lifestyledisorders/uti" class="p-4">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/uti.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">UTI</h1>
+                </div>
+              </div>
+            </a>
+            <a href="#diseases/lifestyledisorders/obesity" class="p-4">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/obesity.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Overweight(Obesity)</h1>
+                </div>
+              </div>
+            </a>
+            <a href="#diseases/lifestyledisorders/piles" class="p-4">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/infections.jpeg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Piles</h1>
+                </div>
+              </div>
+            </a>
+            <a href="#diseases/lifestyledisorders/erectiledysfunction">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/L1.webp" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Erectile Dysfunction</h1>
+                </div>
+              </div>
+            </a>                                       
+          </div>        
+      </div>
+    </div>
+  </div>
+  <section id="appointment-window" class="hidden   justify-center items-center w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.5)] top-0 left-0 fixed">
+    <section class="animate-fade-down -mt-[70px]">
+      <div class="p-3 bg-[#d8590a] flex items-center justify-between text-2xl rounded-tl-lg rounded-tr-lg text-white ">
+        <span>Book an Appointment</span><span class="cursor-pointer" id="apmnt-window-closer">&times;</span>
+      </div>
+      <div class="bg-[#006D77]  shadow-lg p-2  transition-transform transform rounded-bl-lg rounded-br-lg">
+        <form id="appointment-form" class="space-y-4" action="SaveAppointment.php"  method="Post">
+          <div class=" block lg:flex lg:justify-center w-[90vw] lg:w-[55vw]">
+            <div>
+              <div class="p-2">
+                <label for="name" class="hidden lg:block text-sm font-medium text-white">First Name</label>
+                <input type="text" id="first_name" placeholder="Enter your First Name" name="FirstName" required class=" mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] bg-white rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+            </div>
+            <div class="p-2">
+              <label for="name" class="hidden lg:block text-sm font-medium text-white">Last Name</label>
+              <input type="text" id="last_name" placeholder="Enter your Last Name" name="LastName" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] bg-white rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+          </div>
+            <div class="p-2">
+                <label for="email" class="hidden lg:block text-sm font-medium text-white">Email</label>
+                <input  id="email" placeholder="Enter your Email" name="Email" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
+            </div>
+            <div class="p-2">
+                <label for="phone" class="hidden lg:block text-sm font-medium text-white">Phone Number</label>
+                <div class="flex">
+                  <select class="p-2 mt-[5px] w-[70px] rounded-tl-md rounded-bl-md lg:w-[75px]" name="countries" id="isd-code">
+                    <option value="Select">+00</option>
+                    <option value="+93">(+93) Afghanistan</option>
+                    <option value="+355">(+355) Albania</option>
+                    <option value="+213">(+213) Algeria</option>
+                    <option value="+376">(+376) Andorra</option>
+                    <option value="+244">(+244) Angola</option>
+                    <option value="+1-268">(+1-268) Antigua and Barbuda</option>
+                    <option value="+54">(+54) Argentina</option>
+                    <option value="+374">(+374) Armenia</option>
+                    <option value="+61">(+61) Australia</option>
+                    <option value="+43">(+43) Austria</option>
+                    <option value="+994">(+994) Azerbaijan</option>
+                    <option value="+1-242">(+1-242) Bahamas</option>
+                    <option value="+973">(+973) Bahrain</option>
+                    <option value="+880">(+880) Bangladesh</option>
+                    <option value="+1-246">(+1-246) Barbados</option>
+                    <option value="+375">(+375) Belarus</option>
+                    <option value="+32">(+32) Belgium</option>
+                    <option value="+501">(+501) Belize</option>
+                    <option value="+229">(+229) Benin</option>
+                    <option value="+975">(+975) Bhutan</option>
+                    <option value="+591">(+591) Bolivia</option>
+                    <option value="+387">(+387) Bosnia and Herzegovina</option>
+                    <option value="+267">(+267) Botswana</option>
+                    <option value="+55">(+55) Brazil</option>
+                    <option value="+673">(+673) Brunei</option>
+                    <option value="+359">(+359) Bulgaria</option>
+                    <option value="+226">(+226) Burkina Faso</option>
+                    <option value="+257">(+257) Burundi</option>
+                    <option value="+238">(+238) Cabo Verde</option>
+                    <option value="+855">(+855) Cambodia</option>
+                    <option value="+237">(+237) Cameroon</option>
+                    <option value="+1">(+1) Canada</option>
+                    <option value="+236">(+236) Central African Republic</option>
+                    <option value="+56">(+56) Chile</option>
+                    <option value="+86">(+86) China</option>
+                    <option value="+57">(+57) Colombia</option>
+                    <option value="+269">(+269) Comoros</option>
+                    <option value="+242">(+242) Congo</option>
+                    <option value="+506">(+506) Costa Rica</option>
+                    <option value="+385">(+385) Croatia</option>
+                    <option value="+53">(+53) Cuba</option>
+                    <option value="+357">(+357) Cyprus</option>
+                    <option value="+420">(+420) Czech Republic</option>
+                    <option value="+243">(+243) Democratic Republic of the Congo</option>
+                    <option value="+45">(+45) Denmark</option>
+                    <option value="+253">(+253) Djibouti</option>
+                    <option value="+1-767">(+1-767) Dominica</option>
+                    <option value="+1-809">(+1-809) Dominican Republic</option>
+                    <option value="+593">(+593) Ecuador</option>
+                    <option value="+20">(+20) Egypt</option>
+                    <option value="+503">(+503) El Salvador</option>
+                    <option value="+240">(+240) Equatorial Guinea</option>
+                    <option value="+291">(+291) Eritrea</option>
+                    <option value="+372">(+372) Estonia</option>
+                    <option value="+268">(+268) Eswatini</option>
+                    <option value="+251">(+251) Ethiopia</option>
+                    <option value="+679">(+679) Fiji</option>
+                    <option value="+358">(+358) Finland</option>
+                    <option value="+33">(+33) France</option>
+                    <option value="+241">(+241) Gabon</option>
+                    <option value="+220">(+220) Gambia</option>
+                    <option value="+995">(+995) Georgia</option>
+                    <option value="+49">(+49) Germany</option>
+                    <option value="+233">(+233) Ghana</option>
+                    <option value="+30">(+30) Greece</option>
+                    <option value="+1-473">(+1-473) Grenada</option>
+                    <option value="+502">(+502) Guatemala</option>
+                    <option value="+224">(+224) Guinea</option>
+                    <option value="+245">(+245) Guinea-Bissau</option>
+                    <option value="+592">(+592) Guyana</option>
+                    <option value="+509">(+509) Haiti</option>
+                    <option value="+504">(+504) Honduras</option>
+                    <option value="+36">(+36) Hungary</option>
+                    <option value="+354">(+354) Iceland</option>
+                    <option value="+91">(+91) India</option>
+                    <option value="+62">(+62) Indonesia</option>
+                    <option value="+98">(+98) Iran</option>
+                    <option value="+964">(+964) Iraq</option>
+                    <option value="+353">(+353) Ireland</option>
+                    <option value="+972">(+972) Israel</option>
+                    <option value="+39">(+39) Italy</option>
+                    <option value="+225">(+225) Ivory Coast</option>
+                    <option value="+1-876">(+1-876) Jamaica</option>
+                    <option value="+81">(+81) Japan</option>
+                    <option value="+962">(+962) Jordan</option>
+                    <option value="+7">(+7) Kazakhstan</option>
+                    <option value="+254">(+254) Kenya</option>
+                    <option value="+686">(+686) Kiribati</option>
+                    <option value="+383">(+383) Kosovo</option>
+                    <option value="+965">(+965) Kuwait</option>
+                    <option value="+996">(+996) Kyrgyzstan</option>
+                    <option value="+856">(+856) Laos</option>
+                    <option value="+371">(+371) Latvia</option>
+                    <option value="+961">(+961) Lebanon</option>
+                    <option value="+266">(+266) Lesotho</option>
+                    <option value="+231">(+231) Liberia</option>
+                    <option value="+218">(+218) Libya</option>
+                    <option value="+423">(+423) Liechtenstein</option>
+                    <option value="+370">(+370) Lithuania</option>
+                    <option value="+352">(+352) Luxembourg</option>
+                    <option value="+261">(+261) Madagascar</option>
+                    <option value="+265">(+265) Malawi</option>
+                    <option value="+60">(+60) Malaysia</option>
+                    <option value="+960">(+960) Maldives</option>
+                    <option value="+223">(+223) Mali</option>
+                    <option value="+356">(+356) Malta</option>
+                    <option value="+692">(+692) Marshall Islands</option>
+                    <option value="+222">(+222) Mauritania</option>
+                    <option value="+230">(+230) Mauritius</option>
+                    <option value="+52">(+52) Mexico</option>
+                    <option value="+691">(+691) Micronesia</option>
+                    <option value="+373">(+373) Moldova</option>
+                    <option value="+377">(+377) Monaco</option>
+                    <option value="+976">(+976) Mongolia</option>
+                    <option value="+382">(+382) Montenegro</option>
+                    <option value="+212">(+212) Morocco</option>
+                    <option value="+258">(+258) Mozambique</option>
+                    <option value="+95">(+95) Myanmar</option>
+                    <option value="+264">(+264) Namibia</option>
+                    <option value="+674">(+674) Nauru</option>
+                    <option value="+977">(+977) Nepal</option>
+                    <option value="+31">(+31) Netherlands</option>
+                    <option value="+64">(+64) New Zealand</option>
+                    <option value="+505">(+505) Nicaragua</option>
+                    <option value="+227">(+227) Niger</option>
+                    <option value="+234">(+234) Nigeria</option>
+                    <option value="+850">(+850) North Korea</option>
+                    <option value="+389">(+389) North Macedonia</option>
+                    <option value="+47">(+47) Norway</option>
+                    <option value="+968">(+968) Oman</option>
+                    <option value="+92">(+92) Pakistan</option>
+                    <option value="+680">(+680) Palau</option>
+                    <option value="+507">(+507) Panama</option>
+                    <option value="+675">(+675) Papua New Guinea</option>
+                    <option value="+595">(+595) Paraguay</option>
+                    <option value="+51">(+51) Peru</option>
+                    <option value="+63">(+63) Philippines</option>
+                    <option value="+48">(+48) Poland</option>
+                    <option value="+351">(+351) Portugal</option>
+                    <option value="+974">(+974) Qatar</option>
+                    <option value="+40">(+40) Romania</option>
+                    <option value="+7">(+7) Russia</option>
+                    <option value="+250">(+250) Rwanda</option>
+                    <option value="+1-869">(+1-869) Saint Kitts and Nevis</option>
+                    <option value="+1-758">(+1-758) Saint Lucia</option>
+                    <option value="+1-784">(+1-784) Saint Vincent and the Grenadines</option>
+                    <option value="+685">(+685) Samoa</option>
+                    <option value="+378">(+378) San Marino</option>
+                    <option value="+239">(+239) Sao Tome and Principe</option>
+                    <option value="+966">(+966) Saudi Arabia</option>
+                    <option value="+221">(+221) Senegal</option>
+                    <option value="+381">(+381) Serbia</option>
+                    <option value="+248">(+248) Seychelles</option>
+                    <option value="+232">(+232) Sierra Leone</option>
+                    <option value="+65">(+65) Singapore</option>
+                    <option value="+421">(+421) Slovakia</option>
+                    <option value="+386">(+386) Slovenia</option>
+                    <option value="+677">(+677) Solomon Islands</option>
+                    <option value="+252">(+252) Somalia</option>
+                    <option value="+27">(+27) South Africa</option>
+                    <option value="+82">(+82) South Korea</option>
+                    <option value="+211">(+211) South Sudan</option>
+                    <option value="+34">(+34) Spain</option>
+                    <option value="+94">(+94) Sri Lanka</option>
+                    <option value="+249">(+249) Sudan</option>
+                    <option value="+597">(+597) Suriname</option>
+                    <option value="+46">(+46) Sweden</option>
+                    <option value="+41">(+41) Switzerland</option>
+                    <option value="+963">(+963) Syria</option>
+                    <option value="+886">(+886) Taiwan</option>
+                    <option value="+992">(+992) Tajikistan</option>
+                    <option value="+255">(+255) Tanzania</option>
+                    <option value="+66">(+66) Thailand</option>
+                    <option value="+670">(+670) Timor-Leste</option>
+                    <option value="+228">(+228) Togo</option>
+                    <option value="+676">(+676) Tonga</option>
+                    <option value="+1-868">(+1-868) Trinidad and Tobago</option>
+                    <option value="+216">(+216) Tunisia</option>
+                    <option value="+993">(+993) Turkmenistan</option>
+                    <option value="+90">(+90) Turkey</option>
+                    <option value="+688">(+688) Tuvalu</option>
+                    <option value="+256">(+256) Uganda</option>
+                    <option value="+380">(+380) Ukraine</option>
+                    <option value="+971">(+971) United Arab Emirates</option>
+                    <option value="+44">(+44) United Kingdom</option>
+                    <option value="+1">(+1) United States</option>
+                    <option value="+598">(+598) Uruguay</option>
+                    <option value="+998">(+998) Uzbekistan</option>
+                    <option value="+678">(+678) Vanuatu</option>
+                    <option value="+58">(+58) Venezuela</option>
+                    <option value="+84">(+84) Vietnam</option>
+                    <option value="+967">(+967) Yemen</option>
+                    <option value="+260">(+260) Zambia</option>
+                    <option value="+263">(+263) Zimbabwe</option>
+                </select>
+                
+                    <input type="number" id="phone" placeholder="Enter your Phone Number" name="PhoneNumber" required class="mt-1 block w-full lg:w-[330px] p-2 border border-[#006D77] rounded-tr-md rounded-br-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
+                </div>              
+            </div>
+            </div>
+            <div>
+            <!-- <div>
+                <label for="date" class="block text-sm font-medium text-gray-700">Appointment Date</label>
+                <input type="date" id="date" name="date" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500" />
+            </div> -->
+            <div class="p-2">
+              <label for="State" class="hidden lg:block text-sm font-medium text-white">State</label>
+              <input type="text" id="state" placeholder="Enter your State"   name="State" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
+          </div>
+          <div class="p-2">
+            <label for="Country" class="hidden lg:block text-sm font-medium text-white">Country</label>
+            <!-- <input type="text" id="country" placeholder="Enter your Country" name="Country" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" /> -->
+            <select class="p-2 mt-[5px] w-full rounded-md lg:w-[400px]" name="countries" id="country">
+              <option value="Select">Select</option>
+              <option value="afghanistan">Afghanistan</option>
+              <option value="albania">Albania</option>
+              <option value="algeria">Algeria</option>
+              <option value="andorra">Andorra</option>
+              <option value="angola">Angola</option>
+              <option value="antigua-and-barbuda">Antigua and Barbuda</option>
+              <option value="argentina">Argentina</option>
+              <option value="armenia">Armenia</option>
+              <option value="australia">Australia</option>
+              <option value="austria">Austria</option>
+              <option value="azerbaijan">Azerbaijan</option>
+              <option value="bahamas">Bahamas</option>
+              <option value="bahrain">Bahrain</option>
+              <option value="bangladesh">Bangladesh</option>
+              <option value="barbados">Barbados</option>
+              <option value="belarus">Belarus</option>
+              <option value="belgium">Belgium</option>
+              <option value="belize">Belize</option>
+              <option value="benin">Benin</option>
+              <option value="bhutan">Bhutan</option>
+              <option value="bolivia">Bolivia</option>
+              <option value="bosnia-and-herzegovina">Bosnia and Herzegovina</option>
+              <option value="botswana">Botswana</option>
+              <option value="brazil">Brazil</option>
+              <option value="brunei">Brunei</option>
+              <option value="bulgaria">Bulgaria</option>
+              <option value="burkina-faso">Burkina Faso</option>
+              <option value="burundi">Burundi</option>
+              <option value="cabo-verde">Cabo Verde</option>
+              <option value="cambodia">Cambodia</option>
+              <option value="cameroon">Cameroon</option>
+              <option value="canada">Canada</option>
+              <option value="central-african-republic">Central African Republic</option>
+              <option value="chile">Chile</option>
+              <option value="china">China</option>
+              <option value="colombia">Colombia</option>
+              <option value="comoros">Comoros</option>
+              <option value="congo">Congo</option>
+              <option value="costa-rica">Costa Rica</option>
+              <option value="croatia">Croatia</option>
+              <option value="cuba">Cuba</option>
+              <option value="cyprus">Cyprus</option>
+              <option value="czech-republic">Czech Republic</option>
+              <option value="democratic-republic-of-the-congo">Democratic Republic of the Congo</option>
+              <option value="denmark">Denmark</option>
+              <option value="djibouti">Djibouti</option>
+              <option value="dominica">Dominica</option>
+              <option value="dominican-republic">Dominican Republic</option>
+              <option value="ecuador">Ecuador</option>
+              <option value="egypt">Egypt</option>
+              <option value="el-salvador">El Salvador</option>
+              <option value="equatorial-guinea">Equatorial Guinea</option>
+              <option value="eritrea">Eritrea</option>
+              <option value="estonia">Estonia</option>
+              <option value="eswatini">Eswatini</option>
+              <option value="ethiopia">Ethiopia</option>
+              <option value="fiji">Fiji</option>
+              <option value="finland">Finland</option>
+              <option value="france">France</option>
+              <option value="gabon">Gabon</option>
+              <option value="gambia">Gambia</option>
+              <option value="georgia">Georgia</option>
+              <option value="germany">Germany</option>
+              <option value="ghana">Ghana</option>
+              <option value="greece">Greece</option>
+              <option value="grenada">Grenada</option>
+              <option value="guatemala">Guatemala</option>
+              <option value="guinea">Guinea</option>
+              <option value="guinea-bissau">Guinea-Bissau</option>
+              <option value="guyana">Guyana</option>
+              <option value="haiti">Haiti</option>
+              <option value="honduras">Honduras</option>
+              <option value="hungary">Hungary</option>
+              <option value="iceland">Iceland</option>
+              <option value="india">India</option>
+              <option value="indonesia">Indonesia</option>
+              <option value="iran">Iran</option>
+              <option value="iraq">Iraq</option>
+              <option value="ireland">Ireland</option>
+              <option value="israel">Israel</option>
+              <option value="italy">Italy</option>
+              <option value="ivory-coast">Ivory Coast</option>
+              <option value="jamaica">Jamaica</option>
+              <option value="japan">Japan</option>
+              <option value="jordan">Jordan</option>
+              <option value="kazakhstan">Kazakhstan</option>
+              <option value="kenya">Kenya</option>
+              <option value="kiribati">Kiribati</option>
+              <option value="kosovo">Kosovo</option>
+              <option value="kuwait">Kuwait</option>
+              <option value="kyrgyzstan">Kyrgyzstan</option>
+              <option value="laos">Laos</option>
+              <option value="latvia">Latvia</option>
+              <option value="lebanon">Lebanon</option>
+              <option value="lesotho">Lesotho</option>
+              <option value="liberia">Liberia</option>
+              <option value="libya">Libya</option>
+              <option value="liechtenstein">Liechtenstein</option>
+              <option value="lithuania">Lithuania</option>
+              <option value="luxembourg">Luxembourg</option>
+              <option value="madagascar">Madagascar</option>
+              <option value="malawi">Malawi</option>
+              <option value="malaysia">Malaysia</option>
+              <option value="maldives">Maldives</option>
+              <option value="mali">Mali</option>
+              <option value="malta">Malta</option>
+              <option value="marshall-islands">Marshall Islands</option>
+              <option value="mauritania">Mauritania</option>
+              <option value="mauritius">Mauritius</option>
+              <option value="mexico">Mexico</option>
+              <option value="micronesia">Micronesia</option>
+              <option value="moldova">Moldova</option>
+              <option value="monaco">Monaco</option>
+              <option value="mongolia">Mongolia</option>
+              <option value="montenegro">Montenegro</option>
+              <option value="morocco">Morocco</option>
+              <option value="mozambique">Mozambique</option>
+              <option value="myanmar">Myanmar</option>
+              <option value="namibia">Namibia</option>
+              <option value="nauru">Nauru</option>
+              <option value="nepal">Nepal</option>
+              <option value="netherlands">Netherlands</option>
+              <option value="new-zealand">New Zealand</option>
+              <option value="nicaragua">Nicaragua</option>
+              <option value="niger">Niger</option>
+              <option value="nigeria">Nigeria</option>
+              <option value="north-korea">North Korea</option>
+              <option value="north-macedonia">North Macedonia</option>
+              <option value="norway">Norway</option>
+              <option value="oman">Oman</option>
+              <option value="pakistan">Pakistan</option>
+              <option value="palau">Palau</option>
+              <option value="panama">Panama</option>
+              <option value="papua-new-guinea">Papua New Guinea</option>
+              <option value="paraguay">Paraguay</option>
+              <option value="peru">Peru</option>
+              <option value="philippines">Philippines</option>
+              <option value="poland">Poland</option>
+              <option value="portugal">Portugal</option>
+              <option value="qatar">Qatar</option>
+              <option value="romania">Romania</option>
+              <option value="russia">Russia</option>
+              <option value="rwanda">Rwanda</option>
+              <option value="saint-kitts-and-nevis">Saint Kitts and Nevis</option>
+              <option value="saint-lucia">Saint Lucia</option>
+              <option value="saint-vincent-and-the-grenadines">Saint Vincent and the Grenadines</option>
+              <option value="samoa">Samoa</option>
+              <option value="san-marino">San Marino</option>
+              <option value="sao-tome-and-principe">Sao Tome and Principe</option>
+              <option value="saudi-arabia">Saudi Arabia</option>
+              <option value="senegal">Senegal</option>
+              <option value="serbia">Serbia</option>
+              <option value="seychelles">Seychelles</option>
+              <option value="sierra-leone">Sierra Leone</option>
+              <option value="singapore">Singapore</option>
+              <option value="slovakia">Slovakia</option>
+              <option value="slovenia">Slovenia</option>
+              <option value="solomon-islands">Solomon Islands</option>
+              <option value="somalia">Somalia</option>
+              <option value="south-africa">South Africa</option>
+              <option value="south-korea">South Korea</option>
+              <option value="south-sudan">South Sudan</option>
+              <option value="spain">Spain</option>
+              <option value="sri-lanka">Sri Lanka</option>
+              <option value="sudan">Sudan</option>
+              <option value="suriname">Suriname</option>
+              <option value="sweden">Sweden</option>
+              <option value="switzerland">Switzerland</option>
+              <option value="syria">Syria</option>
+              <option value="taiwan">Taiwan</option>
+              <option value="tajikistan">Tajikistan</option>
+              <option value="tanzania">Tanzania</option>
+              <option value="thailand">Thailand</option>
+              <option value="timor-leste">Timor-Leste</option>
+              <option value="togo">Togo</option>
+              <option value="tonga">Tonga</option>
+              <option value="trinidad-and-tobago">Trinidad and Tobago</option>
+              <option value="tunisia">Tunisia</option>
+              <option value="turkmenistan">Turkmenistan</option>
+              <option value="turkey">Turkey</option>
+              <option value="tuvalu">Tuvalu</option>
+              <option value="uganda">Uganda</option>
+              <option value="ukraine">Ukraine</option>
+              <option value="united-arab-emirates">United Arab Emirates</option>
+              <option value="united-kingdom">United Kingdom</option>
+              <option value="united-states">United States</option>
+              <option value="uruguay">Uruguay</option>
+              <option value="uzbekistan">Uzbekistan</option>
+              <option value="vanuatu">Vanuatu</option>
+              <option value="venezuela">Venezuela</option>
+              <option value="vietnam">Vietnam</option>
+              <option value="yemen">Yemen</option>
+              <option value="zambia">Zambia</option>
+              <option value="zimbabwe">Zimbabwe</option>
+          </select>
+          
+            
+          </div>
+            <div class="p-2">
+                <label for="message" class="hidden lg:block text-sm font-medium text-white">Message</label>
+                <textarea id="message" placeholder="Enter your Message" name="Message" rows="4"  class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white"></textarea>
+            </div>
             </div>
           </div>
-          <div class="mt-5 bg-cover bg-center w-full lg:w-[500px] h-[180px]" style="background-image: url('https://www.ayurwakeup.com/wp-content/uploads/2024/05/ayurwakeup-lung.jpg')">
-            <div class="bg-[rgba(0,0,0,0.5)] h-[180px] w-full lg:w-[500px] flex justify-center items-center"></div>
-          </div>
-        </div>
-      </aside>
-    </section>
+          <div class="flex justify-center items-center">
+            <button type="submit" id="book-appointment-btn" class="m-auto bg-orange-600 text-white p-3 rounded-md hover:bg-[#174f54] font-bold  transition duration-200">Book Appointment</button>
+          </div>    
+            
+        </form>
+    </div>
+    </section>  
   </section>
-  
+</section>

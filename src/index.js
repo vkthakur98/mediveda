@@ -335,6 +335,8 @@ function loadContent(page) {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/kidneydisorders/ckd") {
@@ -381,6 +383,8 @@ function loadContent(page) {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/kidneydisorders/uto") {
@@ -391,6 +395,8 @@ function loadContent(page) {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/kidneydisorders/proteinuria") {
@@ -401,6 +407,8 @@ function loadContent(page) {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/jointneuralpain/arthritis") {
@@ -491,6 +499,8 @@ else if (page == "diseases/jointneuralpain/sciatica") {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/femaleinfertility/endometriosis") {
@@ -501,6 +511,8 @@ else if (page == "diseases/jointneuralpain/sciatica") {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/femaleinfertility/hormonalimbalance") {
@@ -511,6 +523,8 @@ else if (page == "diseases/jointneuralpain/sciatica") {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/femaleinfertility/irregularmenstruation") {
@@ -521,6 +535,8 @@ else if (page == "diseases/jointneuralpain/sciatica") {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/femaleinfertility/uterinefibroids") {
@@ -561,6 +577,8 @@ else if (page == "diseases/jointneuralpain/sciatica") {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/lifestyledisorders/varicocele") {
@@ -571,6 +589,8 @@ else if (page == "diseases/jointneuralpain/sciatica") {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/lifestyledisorders/hydrocele") {
@@ -581,6 +601,8 @@ else if (page == "diseases/jointneuralpain/sciatica") {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/lifestyledisorders/prematureejaculation") {
@@ -591,6 +613,8 @@ else if (page == "diseases/jointneuralpain/sciatica") {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/lifestyledisorders/diabetes") {
@@ -601,6 +625,8 @@ else if (page == "diseases/jointneuralpain/sciatica") {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/lifestyledisorders/highbloodpressure") {
@@ -611,6 +637,8 @@ else if (page == "diseases/jointneuralpain/sciatica") {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/lifestyledisorders/infection") {
@@ -621,6 +649,8 @@ else if (page == "diseases/jointneuralpain/sciatica") {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/lifestyledisorders/uti") {
@@ -631,6 +661,8 @@ else if (page == "diseases/jointneuralpain/sciatica") {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/lifestyledisorders/obesity") {
@@ -641,6 +673,8 @@ else if (page == "diseases/jointneuralpain/sciatica") {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/lifestyledisorders/erectiledysfunction") {
@@ -661,6 +695,8 @@ else if (page == "diseases/jointneuralpain/sciatica") {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else if (page == "diseases/lifestyledisorders/gallbladderstone") {
@@ -671,6 +707,8 @@ else if (page == "diseases/jointneuralpain/sciatica") {
         document.getElementById("loader_main").classList.remove("flex");
         contentDiv.innerHTML = data;
         document.documentElement.scrollTop = 0;
+        operateAppointmentWindow();
+        bookAppointment();
       });
   }
   else {
