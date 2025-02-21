@@ -18,19 +18,19 @@ navs.forEach((nav) => {
     const hash = e.target.textContent;
     switch (hash) {
       case "Home":
-        window.location.href = "#";
+        window.location.href = "";
         resetMenu();
         break;
       case "About Us":
-        window.location.href = "#about";
+        window.location.href = "about";
         resetMenu();
         break;
       case "Payment":
-        window.location.href = "#payment/QR_MD76XLMNS3298SLLSIEMN7";
+        window.location.href = "payment-qr";
         resetMenu();
         break;
       case "Contact Us":
-          window.location.href = "#contact-us";
+          window.location.href = "contact-us";
           resetMenu();
           break;  
       default:

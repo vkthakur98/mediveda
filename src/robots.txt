@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Allow: /about.html
+Allow: /contactus.html
+Allow: /payment.html

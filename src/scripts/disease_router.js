@@ -4,7 +4,9 @@ export default function()
     disease_links.forEach((link) => {
         link.addEventListener("click", () => {
             let disease = link.getAttribute("link");
-            window.location.hash = `#diseases/${disease}`
+            window.location.href = `${disease}`
+
         })        
     });
+
 }

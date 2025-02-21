@@ -1,118 +1,633 @@
 <section>
-  <section>
-    <div
-      class="lg:h-[400px] h-[250px] w-full bg-cover bg-center"
-      style="background-image: url('https://s3.ap-south-1.amazonaws.com/awsimages.imagesbazaar.com/1200x1800-new/2458/SX93708.jpg')"
-    >
-      <div class="bg-[rgba(0,0,0,0.5)] lg:h-[400px] h-[250px] p-5 lg:p-20">
-        <div data-aos="slide-right" data-aos-once="true" class="mt-16">
-          <h1 class="text-[40px] lg:text-[65px] w-auto lg:w-[1000px] font-verdana font-bold text-white">
-            Liver Fibrosis
-          </h1>
-          <div>
-            <br />
+  <div id="message-window" class="animate-fade-down hidden fixed rounded-sm lg:rounded-xl left-0 lg:left-[40vw]  top-0 lg:top-1 h-[110px] w-[100vw] lg:w-[auto] bg-gray-200 z-30 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]">
+    <div class="rounded-none lg:rounded-tr-xl lg:rounded-tl-xl p-2 bg-[#006D77] text-white" id="message-window-header">
+      Message
+    </div>
+    <div class="p-2">
+      <p><i id="message-icon" class="fa-solid fa-check p-2 bg-green-700 text-white rounded-[50%]"></i><span class="pl-2" id="message-content">Your appointment has been booked.</span></p>
+    </div>
+  </div>
+  <div id="err-message-window" class="animate-fade-down hidden fixed rounded-sm lg:rounded-xl left-0 lg:left-[40vw]  top-0 lg:top-1 h-[140px] w-[100vw] lg:w-[auto] bg-gray-200 z-30 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]">
+    <div class="rounded-none lg:rounded-tr-xl lg:rounded-tl-xl p-2 bg-red-500 text-white" id="message-window-header">
+      Message
+    </div>
+    <div class="p-2">
+      <p><i id="message-icon" class=" fa-solid fa-xmark pl-[10px] pr-[10px] pt-[8px] pb-[8px] bg-red-500 text-white rounded-[50%]"></i><span class="pl-2 text-red-500" id="err-message-content">Something went wrong.</span></p>
+      <div class="flex justify-center">
+        <button class="mt-2 bg-red-500 text-white p-2 rounded-md hover:bg-red-600" id="err-message-window-closer">Close</button>
+      </div>
+    </div>
+  </div>
+  <section class="flex justify-center items-center p-[10px]">
+      <div class="bg-[url('https://media.istockphoto.com/id/1272365959/photo/hepatitis-virus-with-human-liver.jpg?s=612x612&w=0&k=20&c=0Y8eNGsdsl3uqCmT55eqYD4keGSByw_zVKtm8VJowqg=')] w-[90vw] rounded-lg bg-cover">
+          <div class="block  lg:flex lg:justify-start lg:items-center p-5 bg-gradient-to-r from-[#774EA5] to-[transparent] rounded-lg">
+            <div>
+              <h1 class="text-[30px] lg:text-[50px] font-bold text-white">Liver Fibrosis: A Brief Overview</h1>
+              <p class="text-white w-[85vw] lg:w-[50vw]">
+                Liver fibrosis is a condition characterized by the scarring of liver tissue in response to chronic injury or inflammation. It is an early stage of liver cirrhosis and occurs when the liver attempts to repair itself after repeated injury, typically due to conditions like chronic hepatitis, fatty liver disease, or alcoholic liver disease. If left untreated, liver fibrosis can progress to cirrhosis, where the liver's ability to function is severely impaired.
+              </p>
+            </div>
+            <div>
+              <button
+          aria-hidden 006d77
+          class="ml-[30px] mt-[10px] lg:mt-0 lg:ml-[200px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)] p-4 rounded-md bg-[#006d77] text-white tracking-[2px] text-[15px] hover:bg-[#fbb85b] transition-[6s]"
+          id="appointment-btn"
+          >
+          BOOK AN APPOINTMENT
+        </button>
+            </div>                                 
           </div>
+      </div>
+  </section>
+  <section class="block lg:flex lg:justify-center">
+      <aside>  
+          <section class="lg:p-10 p-4">
+              <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Physiology of Liver Fibrosis</h1>
+              <p class="text-gray-600">
+                The liver is a vital organ responsible for detoxifying the body, metabolizing nutrients, producing proteins, and maintaining blood sugar levels. When the liver is repeatedly exposed to toxins, infections, or other harmful substances, it becomes inflamed. In response to this inflammation, the liver tries to repair itself by forming scar tissue. This scarring, or fibrosis, is a result of an abnormal accumulation of collagen and other extracellular matrix proteins.
+
+                In the early stages of liver fibrosis, the liver may still function normally, but as fibrosis progresses, it can impair the liver's ability to carry out its functions, leading to complications like portal hypertension, ascites, varices, and eventually liver failure.
+              </p>
+
+              <h1 class="lg:text-[30px] text-[25px] font-bold mt-5 text-[#006d77]">Causes of Liver Fibrosis</h1>
+              <p class="text-gray-600">
+                Liver fibrosis is typically the result of chronic damage to the liver cells (hepatocytes) caused by various underlying factors, including:
+              </p>
+              <ul class="list-disc pl-5 text-gray-600">
+                  <li><span class="font-bold">Chronic Viral Hepatitis:</span> Hepatitis B and Hepatitis C infections can cause prolonged inflammation and damage to liver tissue, leading to fibrosis. Chronic viral hepatitis is one of the leading causes of liver fibrosis worldwide.</li>
+                  <li><span class="font-bold">Non-Alcoholic Fatty Liver Disease (NAFLD):</span> NAFLD and its more severe form, Non-Alcoholic Steatohepatitis (NASH), are associated with obesity, type 2 diabetes, insulin resistance, and metabolic syndrome. These conditions can lead to fat accumulation in the liver and inflammation, causing fibrosis.</li>
+                  <li><span class="font-bold">Alcoholic Liver Disease:</span> Prolonged heavy alcohol consumption is a major cause of liver fibrosis, which develops as the liver cells are damaged by alcohol toxicity and the liver attempts to repair itself by forming scar tissue.</li>
+                  <li><span class="font-bold">Autoimmune Hepatitis:</span> In autoimmune hepatitis, the body's immune system attacks the liver cells, causing chronic inflammation and fibrosis over time.</li>
+                  <li><span class="font-bold">Genetic Disorders:</span> Conditions like hemochromatosis (excess iron in the liver), Wilson’s disease (excess copper in the liver), and alpha-1 antitrypsin deficiency can lead to chronic liver injury and fibrosis.</li>
+                  <li><span class="font-bold">Medications and Toxins:</span> Long-term use of certain medications, such as methotrexate, antiretrovirals, and acetaminophen, or exposure to environmental toxins, can cause liver damage and contribute to fibrosis.</li>
+                  <li><span class="font-bold">Chronic Biliary Obstruction:</span> Diseases like primary sclerosing cholangitis (PSC) or primary biliary cirrhosis (PBC), where there is damage to the bile ducts, can cause a buildup of bile in the liver, leading to fibrosis.</li>
+                  <li><span class="font-bold">Fatty Liver Disease (NAFLD/NASH):</span> Metabolic disorders such as diabetes, hypertension, and obesity can lead to the accumulation of fat in the liver, which causes inflammation and fibrosis over time.</li>
+              </ul>
+              
+              <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Treatment for Liver Fibrosis</h1>
+              <p class="text-gray-600">
+                Ayurveda views liver fibrosis as an imbalance of the Pitta and Kapha doshas, with an accumulation of Ama (toxins) in the liver and digestive system. The liver is considered a key organ for digestive fire (Agni) and detoxification, and when Agni is weak, it leads to toxin buildup and tissue damage. In Ayurveda, the treatment for liver fibrosis focuses on detoxification, restoring digestive health, reducing inflammation, and regenerating liver tissue.
+              </p>
+
+              <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Additional Ayurvedic Approaches for Liver Fibrosis</h1>
+              <ul class="list-disc pl-5 text-gray-600">
+                  <li><span class="font-bold">Dietary Modifications:</span> Ayurveda emphasizes a light, easily digestible diet to reduce the burden on the liver. Foods that are cooling, alkaline, and anti-inflammatory should be included, such as green leafy vegetables, fruits, whole grains, and legumes. Avoid heavy, oily, and spicy foods, as well as alcohol and processed foods, which can worsen liver damage.</li>
+                  <li><span class="font-bold">Regular Exercise and Yoga:</span> Yoga and moderate exercise can help improve circulation, boost digestive fire (Agni), and support the detoxification process in the body. Specific yoga poses, such as Bhujangasana (Cobra Pose) and Trikonasana (Triangle Pose), can support liver health and enhance detoxification.</li>
+                  <li><span class="font-bold">Hydration:</span> Staying hydrated is essential for liver health. Ayurveda recommends herbal teas made from coriander, ginger, or cumin to help improve digestion, promote detoxification, and reduce inflammation.</li>
+              </ul>
+              
+              <h1 class="text-[#006d77] lg:text-[30px] text-[25px] font-bold mt-5">Conclusion</h1>
+              <p class="text-gray-600">
+                  Liver fibrosis is a condition marked by the progressive scarring of liver tissue due to chronic inflammation. It can result from causes such as viral infections, alcohol abuse, fatty liver disease, and autoimmune hepatitis. Ayurveda offers a holistic approach to managing liver fibrosis by using detoxifying herbs like Guduchi, Turmeric, Kutki, and Amla to reduce inflammation, regenerate liver cells, and restore liver function. Alongside herbal remedies, Ayurveda emphasizes dietary modifications, Panchakarma detoxification, and lifestyle changes to support liver health and prevent the progression of fibrosis to cirrhosis.
+              </p>
+          </section>
+      </aside>
+  </section>
+  <section>
+    <div class="bg-white  h-[1100px] lg:h-[800px]">
+      <div class="bg-[url('https://assets.medpagetoday.net/media/images/99xxx/99926_m.jpg')] bg-cover">
+        <div class="bg-[rgba(0,0,0,0.5)]">
+          <h1 class="text-center text-white text-[30px] lg:text-[60px] font-bold tracking-wide">LIVER DISORDERS</h1>
+          <div class="flex justify-center items-center">
+            <button
+            aria-hidden 006d77
+            class="mt-[10px] lg:mt-0  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)] p-4 rounded-md bg-[#006d77] text-white tracking-[2px] text-[15px] hover:bg-[#fbb85b] transition-[6s]"
+            id="appointment-btn2"
+            >
+            BOOK AN APPOINTMENT
+          </button>
+          </div>
+          
+          <div class="p-4 flex items-center justify-between flex-wrap">
+            <a href="chronic-liver-disorder-ayurvedic-treatment">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/Cld.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Chronic Liver Disease</h1>
+                </div>
+              </div>
+            </a>
+            <a href="fatty-liver-ayurvedic-treatment">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/fatty liver.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Fatty Liver</h1>
+                </div>
+              </div>
+            </a>
+            <a href="liver-cirrhosis-ayurvedic-treatment">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/liver cirrhosis.avif" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Liver cirrhosis</h1>
+                </div>
+              </div>
+            </a>
+            <a href="jaundice-ayurvedic-treatment">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/jaundice.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Jaundice(Gilbert Syndrome)</h1>
+                </div>
+              </div>
+            </a>
+            <a href="hepatitis-ayurvedic-treatment">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/hepetitis.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Hepatitis</h1>
+                </div>
+              </div>
+            </a>
+            <a href="hepatomegaly-ayurvedic-treatment">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/hepatamogaly.jpg" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Hepatomegaly</h1>
+                </div>
+              </div>
+            </a>                                     
+          </div>
+
+          <div class="p-5 flex items-center justify-center flex-wrap">
+            <a href="liver-abscess-ayurvedic-treatment" class="p-4">
+              <div class="bg-white mt-2 cursor-pointer w-[160px] lg:w-[220px] transition-[2s] hover:-mt-[20px] rounded-[10px]  shadow-[0_3px_10px_0_rgba(0,0,0,0.5)]">
+                <div class="p-3">
+                  <img src="../../images/diseases/disease-link-images/liver abscess.avif" alt="" class="w-[160px] lg:w-[220px] h-[120px] lg:h-[150px] rounded-lg">
+                </div>
+                <div class="w-[160px] lg:w-[220px] ">
+                  <h1 class="text-center text-[18px] rounded-b-[10px] font-bold bg-red-500 text-white p-2 h-[70px]">Liver Abscess</h1>
+                </div>
+              </div>
+            </a>                                        
+          </div>
+          
         </div>
       </div>
     </div>
-  </section>
-  <section class="block lg:flex lg:justify-center">
-    <aside>
-      <section>
-        <div class="lg:p-10 p-4">
-          <img
-            src="../../images/diseases/fliver.jpg"
-            class="w-full h-auto lg:w-[800px] lg:h-[550px]"
-            alt="Image depicting the anatomy related to Liver Fibrosis"
-          />
+    <section id="appointment-window" class="hidden   justify-center items-center w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.5)] top-0 left-0 fixed">
+      <section class="animate-fade-down -mt-[70px]">
+        <div class="p-3 bg-[#d8590a] flex items-center justify-between text-2xl rounded-tl-lg rounded-tr-lg text-white ">
+          <span>Book an Appointment</span><span class="cursor-pointer" id="apmnt-window-closer">&times;</span>
         </div>
-      </section>
-      <section class="lg:p-10 p-4">
-        <h1 class="lg:text-[40px] text-[30px] font-bold">Liver Fibrosis: A Brief Overview</h1>
-        <p class="text-gray-600">
-          Liver fibrosis is a condition characterized by the scarring of liver tissue in response to chronic injury or inflammation. It is an early stage of liver cirrhosis and occurs when the liver attempts to repair itself after repeated injury, typically due to conditions like chronic hepatitis, fatty liver disease, or alcoholic liver disease. If left untreated, liver fibrosis can progress to cirrhosis, where the liver's ability to function is severely impaired.
-        </p>
-
-        <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Physiology of Liver Fibrosis</h1>
-        <p class="text-gray-600">
-          The liver is a vital organ responsible for detoxifying the body, metabolizing nutrients, producing proteins, and maintaining blood sugar levels. When the liver is repeatedly exposed to toxins, infections, or other harmful substances, it becomes inflamed. In response to this inflammation, the liver tries to repair itself by forming scar tissue. This scarring, or fibrosis, is a result of an abnormal accumulation of collagen and other extracellular matrix proteins.
-        </p>
-        <p class="text-gray-600">
-          In the early stages of liver fibrosis, the liver may still function normally, but as fibrosis progresses, it can impair the liver's ability to carry out its functions, leading to complications like portal hypertension, ascites, varices, and eventually liver failure.
-        </p>
-
-        <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Causes of Liver Fibrosis</h1>
-        <p class="text-gray-600">
-          Liver fibrosis is typically the result of chronic damage to the liver cells (hepatocytes) caused by various underlying factors, including:
-        </p>
-        <ul class="list-disc pl-5 text-gray-600">
-          <li><span class="font-bold">Chronic Viral Hepatitis:</span> Hepatitis B and Hepatitis C infections can cause prolonged inflammation and damage to liver tissue, leading to fibrosis. Chronic viral hepatitis is one of the leading causes of liver fibrosis worldwide.</li>
-          <li><span class="font-bold">Non-Alcoholic Fatty Liver Disease (NAFLD):</span> NAFLD and its more severe form, Non-Alcoholic Steatohepatitis (NASH), are associated with obesity, type 2 diabetes, insulin resistance, and metabolic syndrome. These conditions can lead to fat accumulation in the liver and inflammation, causing fibrosis.</li>
-          <li><span class="font-bold">Alcoholic Liver Disease:</span> Prolonged heavy alcohol consumption is a major cause of liver fibrosis, which develops as the liver cells are damaged by alcohol toxicity and the liver attempts to repair itself by forming scar tissue.</li>
-          <li><span class="font-bold">Autoimmune Hepatitis:</span> In autoimmune hepatitis, the body's immune system attacks the liver cells, causing chronic inflammation and fibrosis over time.</li>
-          <li><span class="font-bold">Genetic Disorders:</span> Conditions like hemochromatosis (excess iron in the liver), Wilson’s disease (excess copper in the liver), and alpha-1 antitrypsin deficiency can lead to chronic liver injury and fibrosis.</li>
-          <li><span class="font-bold">Medications and Toxins:</span> Long-term use of certain medications, such as methotrexate, antiretrovirals, and acetaminophen, or exposure to environmental toxins, can cause liver damage and contribute to fibrosis.</li>
-          <li><span class="font-bold">Chronic Biliary Obstruction:</span> Diseases like primary sclerosing cholangitis (PSC) or primary biliary cirrhosis (PBC), where there is damage to the bile ducts, can cause a buildup of bile in the liver, leading to fibrosis.</li>
-          <li><span class="font-bold">Fatty Liver Disease (NAFLD/NASH):</span> Metabolic disorders such as diabetes, hypertension, and obesity can lead to the accumulation of fat in the liver, which causes inflammation and fibrosis over time.</li>
-        </ul>
-
-        <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Ayurvedic Treatment for Liver Fibrosis</h1>
-        <p class="text-gray-600">
-          Ayurveda views liver fibrosis as an imbalance of the Pitta and Kapha doshas, with an accumulation of Ama (toxins) in the liver and digestive system. The liver is considered a key organ for digestive fire (Agni) and detoxification, and when Agni is weak, it leads to toxin buildup and tissue damage. In Ayurveda, the treatment for liver fibrosis focuses on detoxification, restoring digestive health, reducing inflammation, and regenerating liver tissue.
-        </p>
-
-        <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Additional Ayurvedic Approaches for Liver Fibrosis</h1>
-        <ul class="list-disc pl-5 text-gray-600">
-          <li><span class="font-bold">Dietary Modifications:</span> Ayurveda emphasizes a light, easily digestible diet to reduce the burden on the liver. Foods that are cooling, alkaline, and anti-inflammatory should be included, such as green leafy vegetables, fruits, whole grains, and legumes. Avoid heavy, oily, and spicy foods, as well as alcohol and processed foods, which can worsen liver damage.</li>
-          <li><span class="font-bold">Regular Exercise and Yoga:</span> Yoga and moderate exercise can help improve circulation, boost digestive fire (Agni), and support the detoxification process in the body. Specific yoga poses, such as Bhujangasana (Cobra Pose) and Trikonasana (Triangle Pose), can support liver health and enhance detoxification.</li>
-          <li><span class="font-bold">Hydration:</span> Staying hydrated is essential for liver health. Ayurveda recommends herbal teas made from coriander, ginger, or cumin to help improve digestion, promote detoxification, and reduce inflammation.</li>
-        </ul>
-
-        <h1 class="lg:text-[30px] text-[25px] font-bold mt-5">Conclusion</h1>
-        <p class="text-gray-600">
-          Liver fibrosis is a condition marked by the progressive scarring of liver tissue due to chronic inflammation. It can result from causes such as viral infections, alcohol abuse, fatty liver disease, and autoimmune hepatitis. Ayurveda offers a holistic approach to managing liver fibrosis by using detoxifying herbs like Guduchi, Turmeric, Kutki, and Amla to reduce inflammation, regenerate liver cells, and restore liver function. Alongside herbal remedies, Ayurveda emphasizes dietary modifications, Panchakarma detoxification, and lifestyle changes to support liver health and prevent the progression of fibrosis to cirrhosis.
-        </p>
-      </section>
-    </aside>
-    <aside>
-      <div class="p-4 lg:p-10 m-auto lg:m-0">
-        <div class="p-5 bg-white shadow-md w-full lg:w-[500px] border-l-2 border-orange-500">
-          <h1 class="text-[30px] font-bold">Liver Disorders</h1>
-          <div>
-            <h1 class="text-[20px] p-1 hover:text-orange-500">
-              <i class="fa fa-angle-right pr-2 text-orange-500"></i
-              ><a href="#diseases/liverdisorders/chronicliverdiseases">CLD(Chronic Liver Disorders)</a>
-            </h1>
-            <h1 class="text-[20px] p-1 hover:text-orange-500">
-              <i class="fa fa-angle-right pr-2 text-orange-500"></i
-              ><a href="#diseases/liverdisorders/fattyliver">Fatty Liver</a>
-            </h1>
-            <h1 class="text-[20px] p-1 hover:text-orange-500">
-              <i class="fa fa-angle-right pr-2 text-orange-500"></i
-              ><a href="#diseases/liverdisorders/livercirrhosis">Liver Cirrhosis</a>
-            </h1>
-            <h1 class="text-[20px] p-1 hover:text-orange-500">
-              <i class="fa fa-angle-right pr-2 text-orange-500"></i
-              ><a href="#diseases/liverdisorders/jaundice">Jaundice(Gilbert Syndrome)</a>
-            </h1>
-            <h1 class="text-[20px] p-1 hover:text-orange-500">
-              <i class="fa fa-angle-right pr-2 text-orange-500"></i
-              ><a href="#diseases/liverdisorders/hepatitis">Hepatitis</a>
-            </h1>
-            <h1 class="text-[20px] p-1 hover:text-orange-500">
-              <i class="fa fa-angle-right pr-2 text-orange-500"></i
-              ><a href="#diseases/liverdisorders/heaptomegaly">Heaptomegaly</a>
-            </h1>
-            <h1 class="text-[20px] p-1 hover:text-orange-500">
-              <i class="fa fa-angle-right pr-2 text-orange-500"></i
-              ><a href="#diseases/liverdisorders/liverabscess">Liver Abscess</a>
-            </h1>
-          </div>
-        </div>
-        <div class="mt-5 bg-cover bg-center w-full lg:w-[500px] h-[180px]" style="background-image: url('https://s3.ap-south-1.amazonaws.com/awsimages.imagesbazaar.com/1200x1800-new/2458/SX93708.jpg')">
-          <div class="bg-[rgba(0,0,0,0.5)] h-[180px] w-full lg:w-[500px] flex justify-center items-center"></div>
-        </div>
+        <div class="bg-[#006D77]  shadow-lg p-2  transition-transform transform rounded-bl-lg rounded-br-lg">
+          <form id="appointment-form" class="space-y-4" action="SaveAppointment.php"  method="Post">
+            <div class=" block lg:flex lg:justify-center w-[90vw] lg:w-[55vw]">
+              <div>
+                <div class="p-2">
+                  <label for="name" class="hidden lg:block text-sm font-medium text-white">First Name</label>
+                  <input type="text" id="first_name" placeholder="Enter your First Name" name="FirstName" required class=" mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] bg-white rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+              </div>
+              <div class="p-2">
+                <label for="name" class="hidden lg:block text-sm font-medium text-white">Last Name</label>
+                <input type="text" id="last_name" placeholder="Enter your Last Name" name="LastName" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] bg-white rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
+            </div>
+              <div class="p-2">
+                  <label for="email" class="hidden lg:block text-sm font-medium text-white">Email</label>
+                  <input  id="email" placeholder="Enter your Email" name="Email" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
+              </div>
+              <div class="p-2">
+                  <label for="phone" class="hidden lg:block text-sm font-medium text-white">Phone Number</label>
+                  <div class="flex">
+                    <select class="p-2 mt-[5px] w-[70px] rounded-tl-md rounded-bl-md lg:w-[75px]" name="countries" id="isd-code">
+                      <option value="Select">+00</option>
+                      <option value="+93">(+93) Afghanistan</option>
+                      <option value="+355">(+355) Albania</option>
+                      <option value="+213">(+213) Algeria</option>
+                      <option value="+376">(+376) Andorra</option>
+                      <option value="+244">(+244) Angola</option>
+                      <option value="+1-268">(+1-268) Antigua and Barbuda</option>
+                      <option value="+54">(+54) Argentina</option>
+                      <option value="+374">(+374) Armenia</option>
+                      <option value="+61">(+61) Australia</option>
+                      <option value="+43">(+43) Austria</option>
+                      <option value="+994">(+994) Azerbaijan</option>
+                      <option value="+1-242">(+1-242) Bahamas</option>
+                      <option value="+973">(+973) Bahrain</option>
+                      <option value="+880">(+880) Bangladesh</option>
+                      <option value="+1-246">(+1-246) Barbados</option>
+                      <option value="+375">(+375) Belarus</option>
+                      <option value="+32">(+32) Belgium</option>
+                      <option value="+501">(+501) Belize</option>
+                      <option value="+229">(+229) Benin</option>
+                      <option value="+975">(+975) Bhutan</option>
+                      <option value="+591">(+591) Bolivia</option>
+                      <option value="+387">(+387) Bosnia and Herzegovina</option>
+                      <option value="+267">(+267) Botswana</option>
+                      <option value="+55">(+55) Brazil</option>
+                      <option value="+673">(+673) Brunei</option>
+                      <option value="+359">(+359) Bulgaria</option>
+                      <option value="+226">(+226) Burkina Faso</option>
+                      <option value="+257">(+257) Burundi</option>
+                      <option value="+238">(+238) Cabo Verde</option>
+                      <option value="+855">(+855) Cambodia</option>
+                      <option value="+237">(+237) Cameroon</option>
+                      <option value="+1">(+1) Canada</option>
+                      <option value="+236">(+236) Central African Republic</option>
+                      <option value="+56">(+56) Chile</option>
+                      <option value="+86">(+86) China</option>
+                      <option value="+57">(+57) Colombia</option>
+                      <option value="+269">(+269) Comoros</option>
+                      <option value="+242">(+242) Congo</option>
+                      <option value="+506">(+506) Costa Rica</option>
+                      <option value="+385">(+385) Croatia</option>
+                      <option value="+53">(+53) Cuba</option>
+                      <option value="+357">(+357) Cyprus</option>
+                      <option value="+420">(+420) Czech Republic</option>
+                      <option value="+243">(+243) Democratic Republic of the Congo</option>
+                      <option value="+45">(+45) Denmark</option>
+                      <option value="+253">(+253) Djibouti</option>
+                      <option value="+1-767">(+1-767) Dominica</option>
+                      <option value="+1-809">(+1-809) Dominican Republic</option>
+                      <option value="+593">(+593) Ecuador</option>
+                      <option value="+20">(+20) Egypt</option>
+                      <option value="+503">(+503) El Salvador</option>
+                      <option value="+240">(+240) Equatorial Guinea</option>
+                      <option value="+291">(+291) Eritrea</option>
+                      <option value="+372">(+372) Estonia</option>
+                      <option value="+268">(+268) Eswatini</option>
+                      <option value="+251">(+251) Ethiopia</option>
+                      <option value="+679">(+679) Fiji</option>
+                      <option value="+358">(+358) Finland</option>
+                      <option value="+33">(+33) France</option>
+                      <option value="+241">(+241) Gabon</option>
+                      <option value="+220">(+220) Gambia</option>
+                      <option value="+995">(+995) Georgia</option>
+                      <option value="+49">(+49) Germany</option>
+                      <option value="+233">(+233) Ghana</option>
+                      <option value="+30">(+30) Greece</option>
+                      <option value="+1-473">(+1-473) Grenada</option>
+                      <option value="+502">(+502) Guatemala</option>
+                      <option value="+224">(+224) Guinea</option>
+                      <option value="+245">(+245) Guinea-Bissau</option>
+                      <option value="+592">(+592) Guyana</option>
+                      <option value="+509">(+509) Haiti</option>
+                      <option value="+504">(+504) Honduras</option>
+                      <option value="+36">(+36) Hungary</option>
+                      <option value="+354">(+354) Iceland</option>
+                      <option value="+91">(+91) India</option>
+                      <option value="+62">(+62) Indonesia</option>
+                      <option value="+98">(+98) Iran</option>
+                      <option value="+964">(+964) Iraq</option>
+                      <option value="+353">(+353) Ireland</option>
+                      <option value="+972">(+972) Israel</option>
+                      <option value="+39">(+39) Italy</option>
+                      <option value="+225">(+225) Ivory Coast</option>
+                      <option value="+1-876">(+1-876) Jamaica</option>
+                      <option value="+81">(+81) Japan</option>
+                      <option value="+962">(+962) Jordan</option>
+                      <option value="+7">(+7) Kazakhstan</option>
+                      <option value="+254">(+254) Kenya</option>
+                      <option value="+686">(+686) Kiribati</option>
+                      <option value="+383">(+383) Kosovo</option>
+                      <option value="+965">(+965) Kuwait</option>
+                      <option value="+996">(+996) Kyrgyzstan</option>
+                      <option value="+856">(+856) Laos</option>
+                      <option value="+371">(+371) Latvia</option>
+                      <option value="+961">(+961) Lebanon</option>
+                      <option value="+266">(+266) Lesotho</option>
+                      <option value="+231">(+231) Liberia</option>
+                      <option value="+218">(+218) Libya</option>
+                      <option value="+423">(+423) Liechtenstein</option>
+                      <option value="+370">(+370) Lithuania</option>
+                      <option value="+352">(+352) Luxembourg</option>
+                      <option value="+261">(+261) Madagascar</option>
+                      <option value="+265">(+265) Malawi</option>
+                      <option value="+60">(+60) Malaysia</option>
+                      <option value="+960">(+960) Maldives</option>
+                      <option value="+223">(+223) Mali</option>
+                      <option value="+356">(+356) Malta</option>
+                      <option value="+692">(+692) Marshall Islands</option>
+                      <option value="+222">(+222) Mauritania</option>
+                      <option value="+230">(+230) Mauritius</option>
+                      <option value="+52">(+52) Mexico</option>
+                      <option value="+691">(+691) Micronesia</option>
+                      <option value="+373">(+373) Moldova</option>
+                      <option value="+377">(+377) Monaco</option>
+                      <option value="+976">(+976) Mongolia</option>
+                      <option value="+382">(+382) Montenegro</option>
+                      <option value="+212">(+212) Morocco</option>
+                      <option value="+258">(+258) Mozambique</option>
+                      <option value="+95">(+95) Myanmar</option>
+                      <option value="+264">(+264) Namibia</option>
+                      <option value="+674">(+674) Nauru</option>
+                      <option value="+977">(+977) Nepal</option>
+                      <option value="+31">(+31) Netherlands</option>
+                      <option value="+64">(+64) New Zealand</option>
+                      <option value="+505">(+505) Nicaragua</option>
+                      <option value="+227">(+227) Niger</option>
+                      <option value="+234">(+234) Nigeria</option>
+                      <option value="+850">(+850) North Korea</option>
+                      <option value="+389">(+389) North Macedonia</option>
+                      <option value="+47">(+47) Norway</option>
+                      <option value="+968">(+968) Oman</option>
+                      <option value="+92">(+92) Pakistan</option>
+                      <option value="+680">(+680) Palau</option>
+                      <option value="+507">(+507) Panama</option>
+                      <option value="+675">(+675) Papua New Guinea</option>
+                      <option value="+595">(+595) Paraguay</option>
+                      <option value="+51">(+51) Peru</option>
+                      <option value="+63">(+63) Philippines</option>
+                      <option value="+48">(+48) Poland</option>
+                      <option value="+351">(+351) Portugal</option>
+                      <option value="+974">(+974) Qatar</option>
+                      <option value="+40">(+40) Romania</option>
+                      <option value="+7">(+7) Russia</option>
+                      <option value="+250">(+250) Rwanda</option>
+                      <option value="+1-869">(+1-869) Saint Kitts and Nevis</option>
+                      <option value="+1-758">(+1-758) Saint Lucia</option>
+                      <option value="+1-784">(+1-784) Saint Vincent and the Grenadines</option>
+                      <option value="+685">(+685) Samoa</option>
+                      <option value="+378">(+378) San Marino</option>
+                      <option value="+239">(+239) Sao Tome and Principe</option>
+                      <option value="+966">(+966) Saudi Arabia</option>
+                      <option value="+221">(+221) Senegal</option>
+                      <option value="+381">(+381) Serbia</option>
+                      <option value="+248">(+248) Seychelles</option>
+                      <option value="+232">(+232) Sierra Leone</option>
+                      <option value="+65">(+65) Singapore</option>
+                      <option value="+421">(+421) Slovakia</option>
+                      <option value="+386">(+386) Slovenia</option>
+                      <option value="+677">(+677) Solomon Islands</option>
+                      <option value="+252">(+252) Somalia</option>
+                      <option value="+27">(+27) South Africa</option>
+                      <option value="+82">(+82) South Korea</option>
+                      <option value="+211">(+211) South Sudan</option>
+                      <option value="+34">(+34) Spain</option>
+                      <option value="+94">(+94) Sri Lanka</option>
+                      <option value="+249">(+249) Sudan</option>
+                      <option value="+597">(+597) Suriname</option>
+                      <option value="+46">(+46) Sweden</option>
+                      <option value="+41">(+41) Switzerland</option>
+                      <option value="+963">(+963) Syria</option>
+                      <option value="+886">(+886) Taiwan</option>
+                      <option value="+992">(+992) Tajikistan</option>
+                      <option value="+255">(+255) Tanzania</option>
+                      <option value="+66">(+66) Thailand</option>
+                      <option value="+670">(+670) Timor-Leste</option>
+                      <option value="+228">(+228) Togo</option>
+                      <option value="+676">(+676) Tonga</option>
+                      <option value="+1-868">(+1-868) Trinidad and Tobago</option>
+                      <option value="+216">(+216) Tunisia</option>
+                      <option value="+993">(+993) Turkmenistan</option>
+                      <option value="+90">(+90) Turkey</option>
+                      <option value="+688">(+688) Tuvalu</option>
+                      <option value="+256">(+256) Uganda</option>
+                      <option value="+380">(+380) Ukraine</option>
+                      <option value="+971">(+971) United Arab Emirates</option>
+                      <option value="+44">(+44) United Kingdom</option>
+                      <option value="+1">(+1) United States</option>
+                      <option value="+598">(+598) Uruguay</option>
+                      <option value="+998">(+998) Uzbekistan</option>
+                      <option value="+678">(+678) Vanuatu</option>
+                      <option value="+58">(+58) Venezuela</option>
+                      <option value="+84">(+84) Vietnam</option>
+                      <option value="+967">(+967) Yemen</option>
+                      <option value="+260">(+260) Zambia</option>
+                      <option value="+263">(+263) Zimbabwe</option>
+                  </select>
+                  
+                      <input type="number" id="phone" placeholder="Enter your Phone Number" name="PhoneNumber" required class="mt-1 block w-full lg:w-[330px] p-2 border border-[#006D77] rounded-tr-md rounded-br-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
+                  </div>              
+              </div>
+              </div>
+              <div>
+              <!-- <div>
+                  <label for="date" class="block text-sm font-medium text-gray-700">Appointment Date</label>
+                  <input type="date" id="date" name="date" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500" />
+              </div> -->
+              <div class="p-2">
+                <label for="State" class="hidden lg:block text-sm font-medium text-white">State</label>
+                <input type="text" id="state" placeholder="Enter your State"   name="State" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
+            </div>
+            <div class="p-2">
+              <label for="Country" class="hidden lg:block text-sm font-medium text-white">Country</label>
+              <!-- <input type="text" id="country" placeholder="Enter your Country" name="Country" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" /> -->
+              <select class="p-2 mt-[5px] w-full rounded-md lg:w-[400px]" name="countries" id="country">
+                <option value="Select">Select Country</option>
+                <option value="afghanistan">Afghanistan</option>
+                <option value="albania">Albania</option>
+                <option value="algeria">Algeria</option>
+                <option value="andorra">Andorra</option>
+                <option value="angola">Angola</option>
+                <option value="antigua-and-barbuda">Antigua and Barbuda</option>
+                <option value="argentina">Argentina</option>
+                <option value="armenia">Armenia</option>
+                <option value="australia">Australia</option>
+                <option value="austria">Austria</option>
+                <option value="azerbaijan">Azerbaijan</option>
+                <option value="bahamas">Bahamas</option>
+                <option value="bahrain">Bahrain</option>
+                <option value="bangladesh">Bangladesh</option>
+                <option value="barbados">Barbados</option>
+                <option value="belarus">Belarus</option>
+                <option value="belgium">Belgium</option>
+                <option value="belize">Belize</option>
+                <option value="benin">Benin</option>
+                <option value="bhutan">Bhutan</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="bosnia-and-herzegovina">Bosnia and Herzegovina</option>
+                <option value="botswana">Botswana</option>
+                <option value="brazil">Brazil</option>
+                <option value="brunei">Brunei</option>
+                <option value="bulgaria">Bulgaria</option>
+                <option value="burkina-faso">Burkina Faso</option>
+                <option value="burundi">Burundi</option>
+                <option value="cabo-verde">Cabo Verde</option>
+                <option value="cambodia">Cambodia</option>
+                <option value="cameroon">Cameroon</option>
+                <option value="canada">Canada</option>
+                <option value="central-african-republic">Central African Republic</option>
+                <option value="chile">Chile</option>
+                <option value="china">China</option>
+                <option value="colombia">Colombia</option>
+                <option value="comoros">Comoros</option>
+                <option value="congo">Congo</option>
+                <option value="costa-rica">Costa Rica</option>
+                <option value="croatia">Croatia</option>
+                <option value="cuba">Cuba</option>
+                <option value="cyprus">Cyprus</option>
+                <option value="czech-republic">Czech Republic</option>
+                <option value="democratic-republic-of-the-congo">Democratic Republic of the Congo</option>
+                <option value="denmark">Denmark</option>
+                <option value="djibouti">Djibouti</option>
+                <option value="dominica">Dominica</option>
+                <option value="dominican-republic">Dominican Republic</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="egypt">Egypt</option>
+                <option value="el-salvador">El Salvador</option>
+                <option value="equatorial-guinea">Equatorial Guinea</option>
+                <option value="eritrea">Eritrea</option>
+                <option value="estonia">Estonia</option>
+                <option value="eswatini">Eswatini</option>
+                <option value="ethiopia">Ethiopia</option>
+                <option value="fiji">Fiji</option>
+                <option value="finland">Finland</option>
+                <option value="france">France</option>
+                <option value="gabon">Gabon</option>
+                <option value="gambia">Gambia</option>
+                <option value="georgia">Georgia</option>
+                <option value="germany">Germany</option>
+                <option value="ghana">Ghana</option>
+                <option value="greece">Greece</option>
+                <option value="grenada">Grenada</option>
+                <option value="guatemala">Guatemala</option>
+                <option value="guinea">Guinea</option>
+                <option value="guinea-bissau">Guinea-Bissau</option>
+                <option value="guyana">Guyana</option>
+                <option value="haiti">Haiti</option>
+                <option value="honduras">Honduras</option>
+                <option value="hungary">Hungary</option>
+                <option value="iceland">Iceland</option>
+                <option value="india">India</option>
+                <option value="indonesia">Indonesia</option>
+                <option value="iran">Iran</option>
+                <option value="iraq">Iraq</option>
+                <option value="ireland">Ireland</option>
+                <option value="israel">Israel</option>
+                <option value="italy">Italy</option>
+                <option value="ivory-coast">Ivory Coast</option>
+                <option value="jamaica">Jamaica</option>
+                <option value="japan">Japan</option>
+                <option value="jordan">Jordan</option>
+                <option value="kazakhstan">Kazakhstan</option>
+                <option value="kenya">Kenya</option>
+                <option value="kiribati">Kiribati</option>
+                <option value="kosovo">Kosovo</option>
+                <option value="kuwait">Kuwait</option>
+                <option value="kyrgyzstan">Kyrgyzstan</option>
+                <option value="laos">Laos</option>
+                <option value="latvia">Latvia</option>
+                <option value="lebanon">Lebanon</option>
+                <option value="lesotho">Lesotho</option>
+                <option value="liberia">Liberia</option>
+                <option value="libya">Libya</option>
+                <option value="liechtenstein">Liechtenstein</option>
+                <option value="lithuania">Lithuania</option>
+                <option value="luxembourg">Luxembourg</option>
+                <option value="madagascar">Madagascar</option>
+                <option value="malawi">Malawi</option>
+                <option value="malaysia">Malaysia</option>
+                <option value="maldives">Maldives</option>
+                <option value="mali">Mali</option>
+                <option value="malta">Malta</option>
+                <option value="marshall-islands">Marshall Islands</option>
+                <option value="mauritania">Mauritania</option>
+                <option value="mauritius">Mauritius</option>
+                <option value="mexico">Mexico</option>
+                <option value="micronesia">Micronesia</option>
+                <option value="moldova">Moldova</option>
+                <option value="monaco">Monaco</option>
+                <option value="mongolia">Mongolia</option>
+                <option value="montenegro">Montenegro</option>
+                <option value="morocco">Morocco</option>
+                <option value="mozambique">Mozambique</option>
+                <option value="myanmar">Myanmar</option>
+                <option value="namibia">Namibia</option>
+                <option value="nauru">Nauru</option>
+                <option value="nepal">Nepal</option>
+                <option value="netherlands">Netherlands</option>
+                <option value="new-zealand">New Zealand</option>
+                <option value="nicaragua">Nicaragua</option>
+                <option value="niger">Niger</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="north-korea">North Korea</option>
+                <option value="north-macedonia">North Macedonia</option>
+                <option value="norway">Norway</option>
+                <option value="oman">Oman</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="palau">Palau</option>
+                <option value="panama">Panama</option>
+                <option value="papua-new-guinea">Papua New Guinea</option>
+                <option value="paraguay">Paraguay</option>
+                <option value="peru">Peru</option>
+                <option value="philippines">Philippines</option>
+                <option value="poland">Poland</option>
+                <option value="portugal">Portugal</option>
+                <option value="qatar">Qatar</option>
+                <option value="romania">Romania</option>
+                <option value="russia">Russia</option>
+                <option value="rwanda">Rwanda</option>
+                <option value="saint-kitts-and-nevis">Saint Kitts and Nevis</option>
+                <option value="saint-lucia">Saint Lucia</option>
+                <option value="saint-vincent-and-the-grenadines">Saint Vincent and the Grenadines</option>
+                <option value="samoa">Samoa</option>
+                <option value="san-marino">San Marino</option>
+                <option value="sao-tome-and-principe">Sao Tome and Principe</option>
+                <option value="saudi-arabia">Saudi Arabia</option>
+                <option value="senegal">Senegal</option>
+                <option value="serbia">Serbia</option>
+                <option value="seychelles">Seychelles</option>
+                <option value="sierra-leone">Sierra Leone</option>
+                <option value="singapore">Singapore</option>
+                <option value="slovakia">Slovakia</option>
+                <option value="slovenia">Slovenia</option>
+                <option value="solomon-islands">Solomon Islands</option>
+                <option value="somalia">Somalia</option>
+                <option value="south-africa">South Africa</option>
+                <option value="south-korea">South Korea</option>
+                <option value="south-sudan">South Sudan</option>
+                <option value="spain">Spain</option>
+                <option value="sri-lanka">Sri Lanka</option>
+                <option value="sudan">Sudan</option>
+                <option value="suriname">Suriname</option>
+                <option value="sweden">Sweden</option>
+                <option value="switzerland">Switzerland</option>
+                <option value="syria">Syria</option>
+                <option value="taiwan">Taiwan</option>
+                <option value="tajikistan">Tajikistan</option>
+                <option value="tanzania">Tanzania</option>
+                <option value="thailand">Thailand</option>
+                <option value="timor-leste">Timor-Leste</option>
+                <option value="togo">Togo</option>
+                <option value="tonga">Tonga</option>
+                <option value="trinidad-and-tobago">Trinidad and Tobago</option>
+                <option value="tunisia">Tunisia</option>
+                <option value="turkmenistan">Turkmenistan</option>
+                <option value="turkey">Turkey</option>
+                <option value="tuvalu">Tuvalu</option>
+                <option value="uganda">Uganda</option>
+                <option value="ukraine">Ukraine</option>
+                <option value="united-arab-emirates">United Arab Emirates</option>
+                <option value="united-kingdom">United Kingdom</option>
+                <option value="united-states">United States</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="uzbekistan">Uzbekistan</option>
+                <option value="vanuatu">Vanuatu</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="vietnam">Vietnam</option>
+                <option value="yemen">Yemen</option>
+                <option value="zambia">Zambia</option>
+                <option value="zimbabwe">Zimbabwe</option>
+            </select>
+            
+              
+            </div>
+              <div class="p-2">
+                  <label for="message" class="hidden lg:block text-sm font-medium text-white">Message</label>
+                  <textarea id="message" placeholder="Enter your Message" name="Message" rows="4"  class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white"></textarea>
+              </div>
+              </div>
+            </div>
+            <div class="flex justify-center items-center">
+              <button type="submit" id="book-appointment-btn" class="m-auto bg-orange-600 text-white p-3 rounded-md hover:bg-[#174f54] font-bold  transition duration-200">Book Appointment</button>
+            </div>    
+              
+          </form>
       </div>
-    </aside>
+      </section>  
+    </section>
   </section>
 </section>
