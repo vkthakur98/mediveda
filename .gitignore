@@ -1,3 +1,6 @@
 /.parcel-cache
 /dist
 /node_modules
+/deleteadmin.php
+/delete.js
+/src/robots.txt
