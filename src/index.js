@@ -6,6 +6,7 @@ import { bookAppointment } from "./scripts/book_appointment.js";
 import { mobile_navigation } from "./scripts/mobile_navigation.js";
 import { patientCounter, expCounter, startCounter} from "./scripts/counter.js"
 import disease_router from "./scripts/disease_router.js";
+import updateIsdCode from "./scripts/updateIsdCode.js";
 
 
 
@@ -170,7 +171,7 @@ function loadContent(page) {
             // console.log('Password:', password);
   
             try {
-              const response = await fetch("checkinputs.php", {
+              const response = await fetch("https://mediveda.in/checkinputs.php", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
@@ -220,7 +221,8 @@ function loadContent(page) {
         startScrolling();
         disease_router();
         operateAppointmentWindow();
-        bookAppointment(); 
+        bookAppointment();
+        updateIsdCode(); 
         document.addEventListener("scroll", showGoToTop);
         document.getElementsByClassName("disease") 
         }
