@@ -12,6 +12,9 @@ export function bookAppointment() {
         const state = document.getElementById('state').value;
         const country = document.getElementById('country').value;
         const message = document.getElementById('message').value;
+        const fullDate = new Date();
+        const date = fullDate.getFullYear() + "-" + (fullDate.getMonth() + 1) + "-" + fullDate.getDate();
+
 
         console.log(phone)
 
@@ -24,7 +27,8 @@ export function bookAppointment() {
             PhoneNumber: phone,
             State: state,
             Country: country,
-            Message: message
+            Message: message,
+            Date: date
         };
     
         console.log(data);

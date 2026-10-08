@@ -1,209 +1,369 @@
-<div id="message-window" class="animate-fade-down hidden fixed rounded-sm lg:rounded-xl left-0 lg:left-[40vw]  top-0 lg:top-1 h-[110px] w-[100vw] lg:w-[auto] bg-gray-200 z-30 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]">
-  <div class="rounded-none lg:rounded-tr-xl lg:rounded-tl-xl p-2 bg-[#006D77] text-white" id="message-window-header">
+<div
+  id="message-window"
+  class="animate-fade-down hidden fixed rounded-sm lg:rounded-xl left-0 lg:left-[40vw] top-0 lg:top-1 h-[110px] w-[100vw] lg:w-[auto] bg-gray-200 z-30 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]"
+>
+  <div
+    class="rounded-none lg:rounded-tr-xl lg:rounded-tl-xl p-2 bg-[#006D77] text-white"
+    id="message-window-header"
+  >
     Message
   </div>
   <div class="p-2">
-    <p><i id="message-icon" class="fa-solid fa-check p-2 bg-green-700 text-white rounded-[50%]"></i><span class="pl-2" id="message-content">Your appointment has been booked.</span></p>
+    <p>
+      <i
+        id="message-icon"
+        class="fa-solid fa-check p-2 bg-green-700 text-white rounded-[50%]"
+      ></i
+      ><span class="pl-2" id="message-content"
+        >Your appointment has been booked.</span
+      >
+    </p>
   </div>
 </div>
-<div id="err-message-window" class="animate-fade-down hidden fixed rounded-sm lg:rounded-xl left-0 lg:left-[40vw]  top-0 lg:top-1 h-[140px] w-[100vw] lg:w-[auto] bg-gray-200 z-30 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]">
-  <div class="rounded-none lg:rounded-tr-xl lg:rounded-tl-xl p-2 bg-red-500 text-white" id="message-window-header">
+<div
+  id="err-message-window"
+  class="animate-fade-down hidden fixed rounded-sm lg:rounded-xl left-0 lg:left-[40vw] top-0 lg:top-1 h-[140px] w-[100vw] lg:w-[auto] bg-gray-200 z-30 shadow-[3px_0px_10px_0px_rgba(0,0,0,0.5)]"
+>
+  <div
+    class="rounded-none lg:rounded-tr-xl lg:rounded-tl-xl p-2 bg-red-500 text-white"
+    id="message-window-header"
+  >
     Message
   </div>
   <div class="p-2">
-    <p><i id="message-icon" class=" fa-solid fa-xmark pl-[10px] pr-[10px] pt-[8px] pb-[8px] bg-red-500 text-white rounded-[50%]"></i><span class="pl-2 text-red-500" id="err-message-content">Error</span></p>
+    <p>
+      <i
+        id="message-icon"
+        class="fa-solid fa-xmark pl-[10px] pr-[10px] pt-[8px] pb-[8px] bg-red-500 text-white rounded-[50%]"
+      ></i
+      ><span class="pl-2 text-red-500" id="err-message-content">Error</span>
+    </p>
     <div class="flex justify-center">
-      <button class="mt-2 bg-red-500 text-white p-2 rounded-md hover:bg-red-600" id="err-message-window-closer">Close</button>
+      <button
+        class="mt-2 bg-red-500 text-white p-2 rounded-md hover:bg-red-600"
+        id="err-message-window-closer"
+      >
+        Close
+      </button>
     </div>
   </div>
 </div>
 
 <section>
-    <div
-      class="h-[600px] w-[100vw] bg-[url('background-main.jpg')] bg-cover"
-    >
-      <div class="bg-[rgba(0,0,0,0.5)] h-[600px] p-5 lg:p-20">
-        <div data-aos="slide-right" data-aos-once="true" class="mt-16">
-          <span   class="font-cursive text-[#ffc3c3] text-[20px] mt-[30px]">
-            Welcome to Mediveda
-          </span>
-          <h1
-            class="text-[40px] lg:text-[65px] w-auto lg:w-[1000px] font-verdana font-bold text-white"
-          >
-          Unlock Wellness with Ayurvedic Treatment
-          </h1>
-          <h5 class="text-[#efcece] w-auto lg:w-[700px] ">
-            Ayurveda treatment is a holistic approach to health and well-being
-            based on the principles of Ayurvedic medicine. It aims to restore
-            balance and harmony in the body.
-          </h5>
-
-          <div>
-            <br />
-            <button
-              aria-hidden 006d77
-              class="p-4 rounded-md bg-[#006d77] text-white tracking-[2px] text-[15px] hover:bg-[#fbb85b] transition-[6s]"
-              id="appointment-btn"
-            >
-              BOOK AN APPOINTMENT
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="overflow-x-hidden lg:overflow-x-visible">
-    <div class=" block ml-0 lg:flex lg:justify-center lg:items-center lg:-mt-32 lg:ml-[500px]" data-aos="slide-left" data-aos-once="true">
-        <div class="bg-[#ffa16f] lg:w-[430px] p-7">
-            <div class="flex justify-center p-4">
-                <div class=" bg-white h-[70px] w-[70px] rounded-[50%]">
-                    <img src="../images/meditation-changed.png" class="h-[70px] w-[70px]">
-                </div>
-            </div>
-            <h1 class="flex justify-center font-bold text-[22px] text-white">Holistic Approach</h1>
-            <p class="text-white p-4 text-center">
-                Ayurveda considers the whole person, including the body, mind, and spirit, in the diagnosis and treatment of diseases.</p>
-        </div>
-        <div class="bg-[#006d77] lg:w-[430px] p-7">
-            <div class="flex justify-center p-4">
-                <div class=" bg-white h-[70px] w-[70px] rounded-[50%]">
-                    <img src="../images/flower icon changed.png" class="h-[70px] w-[70px] rounded-[50%]">
-                </div>
-            </div>
-            <h1 class="flex justify-center font-bold text-[22px] text-white">Focus on Prevention</h1>
-            <p class="text-white p-4 text-center">
-                
-						Ayurveda emphasizes the importance of prevention and maintenance of health. It offers guidance on diet, and lifestyle.</p>
-        </div>
-    </div>
-
-  </section>
-  <section class="block lg:flex lg:justify-center lg:items-center">
-    <aside data-aos="slide-right" data-aos-once="true">
-      <div class="p-12 lg:flex lg:justify-center lg:items-center lg:p-10">
-        <img
-          src="../images/ayurveda-treatment-2.jpg"
-          class="h-[270px] w-[270px] lg:h-[430px] lg:w-[550px]"
-        />
-      </div>
-      <div
-        class="-mt-32 -ml-[-20px] absolute lg:-mt-40 lg:-ml-10 p-2 lg:absolute lg:p-3 bg-[#E5E5E5]"
-      >
-        <img
-          src="../images/ayurved-medicine.jpg"
-          class="h-[100px] w-[90px] lg:h-[200px] lg:w-[200px]"
-        /> 
-        <h1 class="absolute text-[20px] lg:text-[30px] -mt-[30px] ml-[100px] w-[200px] lg:ml-[220px] lg:-mt-[100px] lg:w-[350px] "><span class="font-bold text-[20px] lg:text-[50px]">25</span> years of experience</h1> 
-      </div>
-    </aside>
-    <aside class="w-auto lg:w-[40vw]" id="aboutus">
-      <div>
-        <span class="p-4 text-[20px] font-cursive font-bold text-[#238072]"
-          >About Mediveda</span
-        >
+  <div class="h-[600px] w-[100vw] bg-[url('background-main.jpg')] bg-cover">
+    <div class="bg-[rgba(0,0,0,0.5)] h-[600px] p-5 lg:p-20">
+      <div data-aos="slide-right" data-aos-once="true" class="mt-16">
+        <span class="font-cursive text-[#ffc3c3] text-[20px] mt-[30px]">
+          Welcome to Mediveda
+        </span>
         <h1
-          data-aos="slide-up"
-          data-aos-once="true"
-          class="p-4 text-[25px] lg:text-[45px] lg-p-0 font-bold"
+          class="text-[40px] lg:text-[65px] w-auto lg:w-[1000px] font-verdana font-bold text-white"
         >
-          Totally Effective Approach for A Better Life
+          Unlock Wellness with Ayurvedic Treatment
         </h1>
-        <p class="p-4">
-          We, "Mediveda", are well trusted Ayurvedic sanatorium that is preeminent for treating patients affected by all kinds of kidney problems everywhere in the world. We provide a 100% herbal medicines and proper balance weight loss plan to our patients. The patient is fantastically precious for the personalized effect, being concerned mindset and 24x7 assistance through our well-qualified fitness counsellors and medical doctors.
-        </p>
-        <div class="flex">
+        <h5 class="text-[#efcece] w-auto lg:w-[700px]">
+          Ayurveda treatment is a holistic approach to health and well-being
+          based on the principles of Ayurvedic medicine. It aims to restore
+          balance and harmony in the body.
+        </h5>
+
+        <div>
+          <br />
           <button
             aria-hidden
-            class="ml-4 p-3 text-[15px] rounded-md text-white tracking-[2px] lg:rounded-md lg:p-4 bg-[#006d77] lg:font-bold lg:text-white hover:bg-[#fbb85b] transition"
+            006d77
+            class="p-4 rounded-md bg-[#006d77] text-white tracking-[2px] text-[15px] hover:bg-[#fbb85b] transition-[6s]"
+            id="appointment-btn"
           >
-            <a href="about">MORE ABOUT US</a>
+            BOOK AN APPOINTMENT
           </button>
-          <a href="tel:9718405242" class="block lg:hidden"
-            ><button
-              aria-hidden
-              class="ml-4 p-3 text-[15px] w-36 rounded-md text-white tracking-[2px] lg:rounded-md lg:p-4 bg-[#433878] lg:font-bold lg:text-white transition"
-            >
-              Call Us
-            </button></a
-          >
         </div>
       </div>
-    </aside>
-  </section>
-  
-  <section class="mt-0 lg:mt-20">
-    <div id="diseases">
-      <span
-        class="flex justify-center p-4 text-[20px] font-cursive font-bold text-[#238072]"
-        >Diseases we cure</span
-      >
-      <data id="data"></data>
-      <h1 class="flex justify-center p-4 text-[22px] w-[100vw]  lg:text-[40px] font-bold" data-aos="slide-up" data-aos-once="true">Healing with Nature: Ayurveda for Complete Health Solutions!</h1>
-      <div class="flex justify-center items-center text-gray-500 w-[100vw]">
-        <p class="w-[100vw] lg:w-[50vw] text-center pl-4 pr-4 pt-1 pb-2 lg:pl-0 lg:pr-0 lg:pt-0 lg:pb-0 ">Ayurvedic medicine offers a range of services to promote health and treat various health conditions. Here are some diseases listed below we cure:</p></div>
-      <div class="grid grid-cols-2 lg:grid-cols-7 p-0 lg:p-4 overflow-hidden">
-         
-          <div link="azoospermia-ayurvedic-treatment" data-aos="slide-right" data-aos-once="true" class="disease-link-list bg-[#006D77] cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
-            <div class="p-4 ">
-              <div class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center">
-                <img src="../images/services/mi.webp" class="w-[70px] h-[70px]" alt="">
-              </div>
-              <div class="text-center text-white">Male <br> Infertility</div>
-            </div> 
-          </div>
-          
-        
-        <div link="chronic-liver-disorder" data-aos="slide-right" data-aos-once="true" class="disease-link-list bg-[#006D77]  cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
-          <div class="p-4 ">
-            <div class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center">
-              <img src="../images/services/ls.webp" class="w-[70px] h-[70px]" alt="">
-            </div>
-            <div class="text-center text-white">Liver <br> Disorders</div>
-          </div> 
-      </div>
-      <div link="jointneuralpain/arthritis"  data-aos="slide-right" data-aos-once="true" class="disease-link-list bg-[#006D77]  cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
-        <div class="p-4 ">
-          <div class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center">
-            <img src="../images/services/at.webp" class="w-[70px] h-[70px]" alt="">
-          </div>
-          <div class="text-center text-white">Joint/<br>Neural Pain</div>
-        </div> 
     </div>
-    <div link="skindisorders/psoriasis"  class="disease-link-list bg-[#006D77]  cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
-      <div class="p-4 ">
-        <div class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center">
-          <img src="../images/services/sc.webp" class="w-[70px] h-[70px]" alt="">
-        </div>
-        <div class="text-center text-white">Skin <br> Disorders</div>
-      </div> 
   </div>
-  <div  link="kidneydisorders/pkd" data-aos="slide-left"  data-aos-once="true" class="disease-link-list bg-[#006D77]  cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
-    <div class="p-4 ">
-      <div class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center">
-        <img src="../images/services/kd.webp" class="w-[70px] h-[70px]" alt="">
+</section>
+<section class="overflow-x-hidden lg:overflow-x-visible">
+  <div
+    class="block ml-0 lg:flex lg:justify-center lg:items-center lg:-mt-32 lg:ml-[500px]"
+    data-aos="slide-left"
+    data-aos-once="true"
+  >
+    <div class="bg-[#ffa16f] lg:w-[430px] p-7">
+      <div class="flex justify-center p-4">
+        <div class="bg-white h-[70px] w-[70px] rounded-[50%]">
+          <img
+            src="../images/meditation-changed.png"
+            class="h-[70px] w-[70px]"
+          />
+        </div>
       </div>
-      <div class="text-center text-white">Kidney<br> Disorders</div>
-    </div> 
-</div>
-<div  link="femaleinfertility/pcod" data-aos="slide-left"  data-aos-once="true" class="disease-link-list bg-[#006D77]  cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
-  <div class="p-4 ">
-    <div class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center">
-      <img src="../images/services/fi.webp" class="w-[70px] h-[70px]" alt="">
+      <h1 class="flex justify-center font-bold text-[22px] text-white">
+        Holistic Approach
+      </h1>
+      <p class="text-white p-4 text-center">
+        Ayurveda considers the whole person, including the body, mind, and
+        spirit, in the diagnosis and treatment of diseases.
+      </p>
     </div>
-    <div class="text-center text-white">Female <br> Infertility</div>
-  </div> 
-</div>
-<div link="lifestyledisorders/varicocele"  data-aos="slide-left"  data-aos-once="true" class="disease-link-list bg-[#006D77]  cursor-pointer w-[185px] h-[180px]  lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white">
-  <div class="p-4 ">
-    <div class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center">
-      <img src="../images/services/ld.webp" class="w-[70px] h-[70px]" alt="">
+    <div class="bg-[#006d77] lg:w-[430px] p-7">
+      <div class="flex justify-center p-4">
+        <div class="bg-white h-[70px] w-[70px] rounded-[50%]">
+          <img
+            src="../images/flower icon changed.png"
+            class="h-[70px] w-[70px] rounded-[50%]"
+          />
+        </div>
+      </div>
+      <h1 class="flex justify-center font-bold text-[22px] text-white">
+        Focus on Prevention
+      </h1>
+      <p class="text-white p-4 text-center">
+        Ayurveda emphasizes the importance of prevention and maintenance of
+        health. It offers guidance on diet, and lifestyle.
+      </p>
     </div>
-    <div class="text-center text-white">Lifestyle <br> Disorders</div>
-  </div> 
-</div>
+  </div>
+</section>
+<section class="block lg:flex lg:justify-center lg:items-center">
+  <aside data-aos="slide-right" data-aos-once="true">
+    <div class="p-12 lg:flex lg:justify-center lg:items-center lg:p-10">
+      <img
+        src="../images/ayurveda-treatment-2.jpg"
+        class="h-[270px] w-[270px] lg:h-[430px] lg:w-[550px]"
+      />
+    </div>
+    <div
+      class="-mt-32 -ml-[-20px] absolute lg:-mt-40 lg:-ml-10 p-2 lg:absolute lg:p-3 bg-[#E5E5E5]"
+    >
+      <img
+        src="../images/ayurved-medicine.jpg"
+        class="h-[100px] w-[90px] lg:h-[200px] lg:w-[200px]"
+      />
+      <h1
+        class="absolute text-[20px] lg:text-[30px] -mt-[30px] ml-[100px] w-[200px] lg:ml-[220px] lg:-mt-[100px] lg:w-[350px]"
+      >
+        <span class="font-bold text-[20px] lg:text-[50px]">25</span> years of
+        experience
+      </h1>
+    </div>
+  </aside>
+  <aside class="w-auto lg:w-[40vw]" id="aboutus">
+    <div>
+      <span class="p-4 text-[20px] font-cursive font-bold text-[#238072]"
+        >About Mediveda</span
+      >
+      <h1
+        data-aos="slide-up"
+        data-aos-once="true"
+        class="p-4 text-[25px] lg:text-[45px] lg-p-0 font-bold"
+      >
+        Totally Effective Approach for A Better Life
+      </h1>
+      <p class="p-4">
+        We, "Mediveda", are well trusted Ayurvedic sanatorium that is preeminent
+        for treating patients affected by all kinds of kidney problems
+        everywhere in the world. We provide a 100% herbal medicines and proper
+        balance weight loss plan to our patients. The patient is fantastically
+        precious for the personalized effect, being concerned mindset and 24x7
+        assistance through our well-qualified fitness counsellors and medical
+        doctors.
+      </p>
+      <div class="flex">
+        <button
+          aria-hidden
+          class="ml-4 p-3 text-[15px] rounded-md text-white tracking-[2px] lg:rounded-md lg:p-4 bg-[#006d77] lg:font-bold lg:text-white hover:bg-[#fbb85b] transition"
+        >
+          <a href="about">MORE ABOUT US</a>
+        </button>
+        <a href="tel:9718405242" class="block lg:hidden"
+          ><button
+            aria-hidden
+            class="ml-4 p-3 text-[15px] w-36 rounded-md text-white tracking-[2px] lg:rounded-md lg:p-4 bg-[#433878] lg:font-bold lg:text-white transition"
+          >
+            Call Us
+          </button></a
+        >
+      </div>
+    </div>
+  </aside>
+</section>
 
+<section class="mt-0 lg:mt-20">
+  <div id="diseases">
+    <span
+      class="flex justify-center p-4 text-[20px] font-cursive font-bold text-[#238072]"
+      >Diseases we cure</span
+    >
+    <data id="data"></data>
+    <h1
+      class="flex justify-center p-4 text-[22px] w-[100vw] lg:text-[40px] font-bold"
+      data-aos="slide-up"
+      data-aos-once="true"
+    >
+      Healing with Nature: Ayurveda for Complete Health Solutions!
+    </h1>
+    <div class="flex justify-center items-center text-gray-500 w-[100vw]">
+      <p
+        class="w-[100vw] lg:w-[50vw] text-center pl-4 pr-4 pt-1 pb-2 lg:pl-0 lg:pr-0 lg:pt-0 lg:pb-0"
+      >
+        Ayurvedic medicine offers a range of services to promote health and
+        treat various health conditions. Here are some diseases listed below we
+        cure:
+      </p>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-7 p-0 lg:p-4 overflow-hidden">
+      <div
+        link="azoospermia-ayurvedic-treatment"
+        data-aos="slide-right"
+        data-aos-once="true"
+        class="disease-link-list bg-[#006D77] cursor-pointer w-[185px] h-[180px] lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white"
+      >
+        <div class="p-4">
+          <div
+            class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center"
+          >
+            <img
+              src="../images/services/mi.webp"
+              class="w-[70px] h-[70px]"
+              alt=""
+            />
+          </div>
+          <div class="text-center text-white">
+            Male <br />
+            Infertility
+          </div>
+        </div>
+      </div>
 
-        <!-- <div class="bg-white cursor-pointer h-[320px] w-[310px] p-4 ml-auto mr-auto mt-2 mb-auto  border-2 rounded-md  lg:m-0 lg:h-[350px]   lg:w-[450px] lg:p-4  overflow-hidden border-[#F0C48A] hover:shadow-2xl" data-aos="slide-right" data-aos-once="true" >
+      <div
+        link="chronic-liver-disorder"
+        data-aos="slide-right"
+        data-aos-once="true"
+        class="disease-link-list bg-[#006D77] cursor-pointer w-[185px] h-[180px] lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white"
+      >
+        <div class="p-4">
+          <div
+            class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center"
+          >
+            <img
+              src="../images/services/ls.webp"
+              class="w-[70px] h-[70px]"
+              alt=""
+            />
+          </div>
+          <div class="text-center text-white">
+            Liver <br />
+            Disorders
+          </div>
+        </div>
+      </div>
+      <div
+        link="jointneuralpain/arthritis"
+        data-aos="slide-right"
+        data-aos-once="true"
+        class="disease-link-list bg-[#006D77] cursor-pointer w-[185px] h-[180px] lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white"
+      >
+        <div class="p-4">
+          <div
+            class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center"
+          >
+            <img
+              src="../images/services/at.webp"
+              class="w-[70px] h-[70px]"
+              alt=""
+            />
+          </div>
+          <div class="text-center text-white">Joint/<br />Neural Pain</div>
+        </div>
+      </div>
+      <div
+        link="skindisorders/psoriasis"
+        class="disease-link-list bg-[#006D77] cursor-pointer w-[185px] h-[180px] lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white"
+      >
+        <div class="p-4">
+          <div
+            class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center"
+          >
+            <img
+              src="../images/services/sc.webp"
+              class="w-[70px] h-[70px]"
+              alt=""
+            />
+          </div>
+          <div class="text-center text-white">
+            Skin <br />
+            Disorders
+          </div>
+        </div>
+      </div>
+      <div
+        link="kidneydisorders/pkd"
+        data-aos="slide-left"
+        data-aos-once="true"
+        class="disease-link-list bg-[#006D77] cursor-pointer w-[185px] h-[180px] lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white"
+      >
+        <div class="p-4">
+          <div
+            class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center"
+          >
+            <img
+              src="../images/services/kd.webp"
+              class="w-[70px] h-[70px]"
+              alt=""
+            />
+          </div>
+          <div class="text-center text-white">
+            Kidney<br />
+            Disorders
+          </div>
+        </div>
+      </div>
+      <div
+        link="femaleinfertility/pcod"
+        data-aos="slide-left"
+        data-aos-once="true"
+        class="disease-link-list bg-[#006D77] cursor-pointer w-[185px] h-[180px] lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white"
+      >
+        <div class="p-4">
+          <div
+            class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center"
+          >
+            <img
+              src="../images/services/fi.webp"
+              class="w-[70px] h-[70px]"
+              alt=""
+            />
+          </div>
+          <div class="text-center text-white">
+            Female <br />
+            Infertility
+          </div>
+        </div>
+      </div>
+      <div
+        link="lifestyledisorders/varicocele"
+        data-aos="slide-left"
+        data-aos-once="true"
+        class="disease-link-list bg-[#006D77] cursor-pointer w-[185px] h-[180px] lg:w-[200px] flex justify-center p-2 border-[10px] border-double border-white"
+      >
+        <div class="p-4">
+          <div
+            class="bg-white rounded-[50%] p-2 w-[80px] h-[80px] flex justify-center items-center"
+          >
+            <img
+              src="../images/services/ld.webp"
+              class="w-[70px] h-[70px]"
+              alt=""
+            />
+          </div>
+          <div class="text-center text-white">
+            Lifestyle <br />
+            Disorders
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="bg-white cursor-pointer h-[320px] w-[310px] p-4 ml-auto mr-auto mt-2 mb-auto  border-2 rounded-md  lg:m-0 lg:h-[350px]   lg:w-[450px] lg:p-4  overflow-hidden border-[#F0C48A] hover:shadow-2xl" data-aos="slide-right" data-aos-once="true" >
           <div>
             <img src="../images/herbpot.png" class="h-[70px] w-[70px] lg:h-[100px] lg:w-[100px]" />
             <div>
@@ -239,8 +399,8 @@
               </div>  
             </div>
           </div> -->
-        </div>
-        <!-- <div class="block lg:flex lg:justify-around p-0 lg:p-4 overflow-hidden">
+    </div>
+    <!-- <div class="block lg:flex lg:justify-around p-0 lg:p-4 overflow-hidden">
           <div class="bg-white cursor-pointer h-[320px] w-[310px] p-4 ml-auto mr-auto mt-2 mb-auto  border-2 rounded-md  lg:m-0 lg:h-[350px]   lg:w-[450px] lg:p-4  overflow-hidden border-[#F0C48A] hover:shadow-2xl" data-aos="slide-right" data-aos-once="true" >
             <div>
               <img src="../images/herbpot.png" class="h-[70px] w-[70px] lg:h-[100px] lg:w-[100px]" />
@@ -279,7 +439,7 @@
               </div>
             </div>
           </div> -->
-          <!-- <div class="block lg:flex lg:justify-around p-0 lg:p-4 overflow-hidden">
+    <!-- <div class="block lg:flex lg:justify-around p-0 lg:p-4 overflow-hidden">
             <div class="bg-white cursor-pointer h-[320px] w-[310px] p-4 ml-auto mr-auto mt-2 mb-auto  border-2 rounded-md  lg:m-0 lg:h-[350px]   lg:w-[450px] lg:p-4  overflow-hidden border-[#F0C48A] hover:shadow-2xl" data-aos="slide-right" data-aos-once="true" >
               <div>
                 <img src="../images/herbpot.png" class="h-[70px] w-[70px] lg:h-[100px] lg:w-[100px]" />
@@ -317,155 +477,361 @@
                 </div>
               </div>
             </div> -->
-      </div>
-  </section>
-  <section class="mt-4">
-    <div class="h-[600px] w-[100vw] bg-[url('https://cdn.pixabay.com/photo/2023/08/29/18/29/ai-generated-8221936_960_720.png')] bg-cover relative bg-fixed  ">
-      <div class="bg-[rgba(0,0,0,0.5)] h-[600px] w-[100vw] flex justify-center items-center">
-        <div class="w-[100vw] p-10 lg:p-0 lg:w-[50vw]">
-          <h1 class="text-[30px]  lg:text-[50px] text-white font-bold font-sans">Rooted in Tradition, Blossoming in Health: Experience Ayurveda</h1><br>
-          <p class="text-[#ebe8e8]">The aim of Ayurvedic medicine is to restore balance and harmony through a holistic approach that encompasses various aspects of an individual’s life, herbal remedies, detoxification, meditation, and more.</p>
-          <div class="flex justify-center items-center">
-            <button
-              aria-hidden
-              class="p-4 rounded-md mt-0 lg:mt-4 bg-[#006d77] text-white tracking-[3px] text-[15px] hover:bg-[#fbb85b] transition-[6s]"
-              id="appointment-btn2"
-            >
-              BOOK AN APPOINTMENT
-            </button>
-          </div>
-        </div>  
-      </div>  
-    </div>   
-  </section>
-  <section>
-    <div class="block mt-5 lg:flex lg:justify-center lg:items-center lg:mt-10">
-      <div class="w-[100vw] lg:w-[40vw]">
-        <h1 class="text-[20px] font-cursive font-bold text-[#238072] pl-5 pt-0 pr-5 pb-2 lg:p-0"
-          >Why choose us</h1>
-        <h1 data-aos="slide-up" data-aos-once="true" class="text-[30px] lg:text-[40px] pl-5 pt-0 pr-5 pb-2 lg:p-0 font-bold">Solve Your Problem with The Power of Nature</h1>
-        <p class="mt-4 text-gray-600 pl-5 pt-0 pr-5 pb-2 lg:p-0">Ayurveda has gained popularity worldwide as an alternative and complementary system of medicine. It is important to note that Ayurvedic treatments should be administered by qualified and experienced practitioners who have a deep understanding of the principles and methods.</p>
-        <div class="mt-4 w-[100vw] pl-5 pt-0 pr-5 pb-2 lg:p-0 block lg:flex lg:justify-between lg:items-center lg:w-[610px] ">
-          <div>
-            <div class="p-2 pl-0"><span><i class="fa fa-check text-[orange] pr-2 "></i>Authentic Ayurvedic Tradition</span></div>
-            <div class="p-2 pl-0"><span><i class="fa fa-check text-[orange] pr-2 "></i>Qualified and Experienced Practitioners</span></div>
-            <div class="p-2 pl-0"><span><i class="fa fa-check text-[orange] pr-2 "></i>Ongoing Education and Support</span></div>
-            <div class="p-2 pl-0"><span><i class="fa fa-check text-[orange] pr-2 "></i>Comprehensive Wellness Approach</span></div>
-            <div class="p-2 pl-0"><span><i class="fa fa-check text-[orange] pr-2 "></i>Emphasis on Prevention</span></div>
-          </div>
-          <div>
-            <div class="p-2 pl-0"><span><i class="fa fa-check text-[orange] pr-2 "></i>Natural and Holistic Healing</span></div>
-            <div class="p-2 pl-0"><span><i class="fa fa-check text-[orange] pr-2 "></i>Positive Testimonials and Results</span></div>
-            <div class="p-2 pl-0"><span><i class="fa fa-check text-[orange] pr-2 "></i>Compassionate and Supportive</span></div>
-            <div class="p-2 pl-0"><span><i class="fa fa-check text-[orange] pr-2 "></i>Personalized Treatment Plans</span></div>
-            <div class="p-2 pl-0"><span><i class="fa fa-check text-[orange] pr-2 "></i>Integration of Modern Science</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="sm:ml-[0px] lg:ml-[50px]">
-        <img src="../images/ayur-treatment.jpg" class="p-5 lg:p-0 h-[200px] w-[100vw] lg:h-[350px]  lg:w-[600px]" />
+  </div>
+</section>
+<section class="mt-4">
+  <div
+    class="h-[600px] w-[100vw] bg-[url('https://cdn.pixabay.com/photo/2023/08/29/18/29/ai-generated-8221936_960_720.png')] bg-cover relative bg-fixed"
+  >
+    <div
+      class="bg-[rgba(0,0,0,0.5)] h-[600px] w-[100vw] flex justify-center items-center"
+    >
+      <div class="w-[100vw] p-10 lg:p-0 lg:w-[50vw]">
+        <h1 class="text-[30px] lg:text-[50px] text-white font-bold font-sans">
+          Rooted in Tradition, Blossoming in Health: Experience Ayurveda
+        </h1>
+        <br />
+        <p class="text-[#ebe8e8]">
+          The aim of Ayurvedic medicine is to restore balance and harmony
+          through a holistic approach that encompasses various aspects of an
+          individual’s life, herbal remedies, detoxification, meditation, and
+          more.
+        </p>
         <div class="flex justify-center items-center">
-          <div class="flex-col justify-center items-center">
-            <div id="target" class="flex items-center">
-              <h1  id="p-counter" class="text-[40px] font-bold pl-3 pr-3 pb-0 lg:p-0"></h1><sup class="text-orange-600 font-mono text-[30px]">+</sup>
-            </div>
-            <p class="text-[20px] lg:text-[25px] -ml-0 lg:-ml-5 font-bold font-sans p-3 pt-0">Happy Patients</p>
-          </div>
-          
-          <div class="flex-col justify-center items-center">
-            <div class="flex justify-center items-center">
-              <h1 id="c-counter" class="text-[40px] font-bold pl-3 pr-3 pb-0 lg:p-0 "></h1><sup class="text-orange-600 font-mono text-[25px]">yrs</sup>
-            </div>    
-            <p class="text-[20px] lg:text-[25px] font-bold font-sans p-3 pt-0">Of Experience</p>
-          </div>
-        </div>  
-                </div>
-    </div>
-  </section>
-  <section>
-    <div id="slider" class="flex justify-evenly  items-center mt-5 w-[90vw] m-auto overflow-x-hidden lg:w-[100vw]">
-      <div class="slide p-5  lg:p-10 bg-white transition  ease-in-out duration-custom ">
-        <div>
-          <div class="w-[80vw] lg:w-[350px]">
-            <p>"Ayurvedic therapies have brought me a sense of peace and tranquility that I've never experienced before."</p>
-          </div>
-          <div class="mt-4 flex justify-center">
-            <img src="../images//users/indian-woman-cropped.jpg" class="h-[70px] w-[70px] lg:h-[80px] lg:w-[80px] rounded-[50%]" />
-            <div>
-              <span class="ml-3 lg:ml-8 text-[20px] lg:text-[25px] font-bold">Smriti Sharma</span>
-              <p class="ml-3 lg:ml-8 text-[#006D77]">Interior Designer</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="slide p-5  lg:p-10 bg-white transition duration-custom ease-in-out ">
-        <div>
-        <div class="w-[80vw] lg:w-[350px]">
-          <p>"I'm grateful for Ayurveda's focus on preventive health and its impact on my well-being.Thanks to mediveda."</p>
-        </div>
-        <div class="mt-4 flex justify-center">
-          <img src="../images//users/indian_men_pfp.jpeg" class="h-[70px] w-[70px] lg:h-[80px] lg:w-[80px] rounded-[50%]" />
-          <div>
-            <span class="ml-3 lg:ml-8 text-[20px] lg:text-[25px] font-bold">Gaurav Aggarwal</span>
-            <p class="ml-3 lg:ml-8 text-[#006D77]">Software Engineer</p>
-          </div>
-        </div>
-        </div>
-      </div>
-      <div class="slide p-5  lg:p-10 bg-white  transition ease-in-out duration-custom">
-        <div class="w-[80vw] lg:w-[350px]">
-          <p>"I'm amazed at how Ayurvedic herbs have boosted my immunity, and the best thing there is no side effects."</p>
-        </div>
-        <div class="mt-4 flex justify-center">
-          <img src="../images/users/indian-woman-f-m.jpg" class="h-[70px] w-[70px] lg:h-[80px] lg:w-[80px] rounded-[50%]" />
-          <div>
-            <span class="ml-3 lg:ml-8 text-[20px] lg:text-[25px] font-bold">Shreya Dewan</span>
-            <p class="ml-3 lg:ml-8 text-[#006D77]">Fashion Model</p>
-          </div>
+          <button
+            aria-hidden
+            class="p-4 rounded-md mt-0 lg:mt-4 bg-[#006d77] text-white tracking-[3px] text-[15px] hover:bg-[#fbb85b] transition-[6s]"
+            id="appointment-btn2"
+          >
+            BOOK AN APPOINTMENT
+          </button>
         </div>
       </div>
     </div>
-  </section>
-  <section class="block lg:flex lg:justify-center lg:items-center">
-    <aside class="w-auto lg:w-[50vw]">
-      <div class="p-5 lg:p-10">
-        <img  src="../images/appoint2.avif" class="h-[200px] w-[90vw] lg:w-[45vw] lg:h-[450px]"/>
-      </div>
-    </aside>
-    <aside class="w-auto lg:w-[50vw]">
-      <span class="p-4 text-[20px] font-cursive font-bold text-[#238072]"
-      >Appointment</span>
-      <h1 class="pr-4 pt-4 pl-4 pb-2 text-[28px] lg:text-[50px] font-bold">
-        Make Your Appointment
+  </div>
+</section>
+<section>
+  <div class="block mt-5 lg:flex lg:justify-center lg:items-center lg:mt-10">
+    <div class="w-[100vw] lg:w-[40vw]">
+      <h1
+        class="text-[20px] font-cursive font-bold text-[#238072] pl-5 pt-0 pr-5 pb-2 lg:p-0"
+      >
+        Why choose us
       </h1>
-      <div class="pt-2 pr-4 pb-4 pl-4">
-        <span>
-          Make sure to note down the appointment date, time, and location provided by the clinic. Set reminders on your calendar or set an alarm to ensure you are punctual and do not miss your appointment.
-        </span>
+      <h1
+        data-aos="slide-up"
+        data-aos-once="true"
+        class="text-[30px] lg:text-[40px] pl-5 pt-0 pr-5 pb-2 lg:p-0 font-bold"
+      >
+        Solve Your Problem with The Power of Nature
+      </h1>
+      <p class="mt-4 text-gray-600 pl-5 pt-0 pr-5 pb-2 lg:p-0">
+        Ayurveda has gained popularity worldwide as an alternative and
+        complementary system of medicine. It is important to note that Ayurvedic
+        treatments should be administered by qualified and experienced
+        practitioners who have a deep understanding of the principles and
+        methods.
+      </p>
+      <div
+        class="mt-4 w-[100vw] pl-5 pt-0 pr-5 pb-2 lg:p-0 block lg:flex lg:justify-between lg:items-center lg:w-[610px]"
+      >
+        <div>
+          <div class="p-2 pl-0">
+            <span
+              ><i class="fa fa-check text-[orange] pr-2"></i>Authentic Ayurvedic
+              Tradition</span
+            >
+          </div>
+          <div class="p-2 pl-0">
+            <span
+              ><i class="fa fa-check text-[orange] pr-2"></i>Qualified and
+              Experienced Practitioners</span
+            >
+          </div>
+          <div class="p-2 pl-0">
+            <span
+              ><i class="fa fa-check text-[orange] pr-2"></i>Ongoing Education
+              and Support</span
+            >
+          </div>
+          <div class="p-2 pl-0">
+            <span
+              ><i class="fa fa-check text-[orange] pr-2"></i>Comprehensive
+              Wellness Approach</span
+            >
+          </div>
+          <div class="p-2 pl-0">
+            <span
+              ><i class="fa fa-check text-[orange] pr-2"></i>Emphasis on
+              Prevention</span
+            >
+          </div>
+        </div>
+        <div>
+          <div class="p-2 pl-0">
+            <span
+              ><i class="fa fa-check text-[orange] pr-2"></i>Natural and
+              Holistic Healing</span
+            >
+          </div>
+          <div class="p-2 pl-0">
+            <span
+              ><i class="fa fa-check text-[orange] pr-2"></i>Positive
+              Testimonials and Results</span
+            >
+          </div>
+          <div class="p-2 pl-0">
+            <span
+              ><i class="fa fa-check text-[orange] pr-2"></i>Compassionate and
+              Supportive</span
+            >
+          </div>
+          <div class="p-2 pl-0">
+            <span
+              ><i class="fa fa-check text-[orange] pr-2"></i>Personalized
+              Treatment Plans</span
+            >
+          </div>
+          <div class="p-2 pl-0">
+            <span
+              ><i class="fa fa-check text-[orange] pr-2"></i>Integration of
+              Modern Science</span
+            >
+          </div>
+        </div>
       </div>
-      <div class="pt-0 pr-4 pl-3 pb-4" id="contact-us">
-      <div class="flex justify-start items-center mt-7" data-aos="zoom-in" data-aos-once="true">
-        <div class="w-[60px] h-[60px] flex justify-center items-center bg-[#ffa16f] text-[30px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3">
+    </div>
+    <div class="sm:ml-[0px] lg:ml-[50px]">
+      <img
+        src="../images/ayur-treatment.jpg"
+        class="p-5 lg:p-0 h-[200px] w-[100vw] lg:h-[350px] lg:w-[600px]"
+      />
+      <div class="flex justify-center items-center">
+        <div class="flex-col justify-center items-center">
+          <div id="target" class="flex items-center">
+            <h1
+              id="p-counter"
+              class="text-[40px] font-bold pl-3 pr-3 pb-0 lg:p-0"
+            ></h1>
+            <sup class="text-orange-600 font-mono text-[30px]">+</sup>
+          </div>
+          <p
+            class="text-[20px] lg:text-[25px] -ml-0 lg:-ml-5 font-bold font-sans p-3 pt-0"
+          >
+            Happy Patients
+          </p>
+        </div>
+
+        <div class="flex-col justify-center items-center">
+          <div class="flex justify-center items-center">
+            <h1
+              id="c-counter"
+              class="text-[40px] font-bold pl-3 pr-3 pb-0 lg:p-0"
+            ></h1>
+            <sup class="text-orange-600 font-mono text-[25px]">yrs</sup>
+          </div>
+          <p class="text-[20px] lg:text-[25px] font-bold font-sans p-3 pt-0">
+            Of Experience
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div
+    id="slider"
+    class="flex justify-evenly items-center mt-5 w-[90vw] m-auto overflow-x-hidden lg:w-[100vw]"
+  >
+    <div
+      class="slide p-5 lg:p-10 bg-white transition ease-in-out duration-custom"
+    >
+      <div>
+        <div class="w-[80vw] lg:w-[350px]">
+          <p>
+            "I had been struggling with fertility issues for years. After trying
+            various treatments, I turned to Mediveda, and it was the best
+            decision of my life. Their Ayurvedic approach not only improved my
+            reproductive health but also brought balance to my overall
+            well-being. Thank you, Mediveda!"
+          </p>
+        </div>
+        <div class="mt-4 flex justify-center">
+          <img
+            src="../images//users/indian_men_pfp.jpeg"
+            class="h-[70px] w-[70px] lg:h-[80px] lg:w-[80px] rounded-[50%]"
+          />
+          <div>
+            <span class="ml-3 lg:ml-8 text-[20px] lg:text-[25px] font-bold"
+              >Rajeev Sharma</span
+            >
+            <p class="ml-3 lg:ml-8 text-[#006D77]">Delhi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="slide p-5 h-[320px] lg:p-10 bg-white transition duration-custom ease-in-out"
+    >
+      <div>
+        <div class="w-[80vw] lg:w-[350px]">
+          <p>
+            "Baar-baar fail hone ke baad, Mediveda ka Ayurvedic ilaaj kaam aaya.
+            Ab hum maa-baap ban rahe hain!"
+          </p>
+        </div>
+        <div class="mt-4 flex justify-center">
+          <img
+            src="../images//users/indian-woman-cropped.jpg"
+            class="h-[70px] w-[70px] lg:h-[80px] lg:w-[80px] rounded-[50%]"
+          />
+          <div>
+            <span class="ml-3 lg:ml-8 text-[20px] lg:text-[25px] font-bold"
+              >Nikhil and Priya</span
+            >
+            <p class="ml-3 lg:ml-8 text-[#006D77]">Indore</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="slide p-5 h-[320px] lg:p-10 bg-white transition ease-in-out duration-custom"
+    >
+      <div class="w-[80vw] lg:w-[350px]">
+        <p>
+          "Mujhe digestion aur liver dono mein dikkat thi. Mediveda ke treatment
+          se bahut farak pada."
+        </p>
+      </div>
+      <div class="mt-4 flex justify-center">
+        <img
+          src="../images/users/young-man.jpg"
+          class="h-[70px] w-[70px] lg:h-[80px] lg:w-[80px] rounded-[50%]"
+        />
+        <div>
+          <span class="ml-3 lg:ml-8 text-[20px] lg:text-[25px] font-bold"
+            >Anil J</span
+          >
+          <p class="ml-3 lg:ml-8 text-[#006D77]">Udaipur</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="block lg:flex lg:justify-center lg:items-center">
+  <aside class="w-auto lg:w-[50vw]">
+    <div class="p-5 lg:p-10 mt-5 lg:mt-10">
+      <div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.1194681025545!2d77.12256140000001!3d28.536128599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d379442d141%3A0xdc6c4ed5b99eb3f7!2sMediveda!5e0!3m2!1sen!2sin!4v1774970667495!5m2!1sen!2sin" class=" lg:w-[700px]  w-[100%] h-[450px]" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+  </aside>
+  <aside class="w-auto lg:w-[50vw]">
+    <span class="p-4 text-[20px] font-cursive font-bold text-[#238072]"
+      >Appointment</span
+    >
+    <h1 class="pr-4 pt-4 pl-4 pb-2 text-[28px] lg:text-[50px] font-bold">
+      Make Your Appointment
+    </h1>
+    <div class="pt-2 pr-4 pb-4 pl-4">
+      <span>
+        Make sure to note down the appointment date, time, and location provided
+        by the clinic. Set reminders on your calendar or set an alarm to ensure
+        you are punctual and do not miss your appointment.
+      </span>
+    </div>
+    <div class="pt-0 pr-4 pl-3 pb-4" id="contact-us">
+      <div
+        class="flex justify-start items-center mt-7"
+        data-aos="zoom-in"
+        data-aos-once="true"
+      >
+        <div
+          class="w-[60px] h-[60px] flex justify-center items-center bg-[#ffa16f] text-[30px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3"
+        >
           <i class="fa-solid fa-headset"></i>
         </div>
         <div class="ml-2">
           <h1 class="font-bold text-[20px]">Customer Service</h1>
-          <span class="text-[#238072]">+91 9718405242</span>
+          <span class="text-[#238072]">+91 9718405242, 9205908647</span>
         </div>
       </div>
-      <div class="flex justify-start items-center mt-7" data-aos="zoom-in" data-aos-once="true">
-        <div class="w-[60px] h-[60px] flex justify-center items-center bg-[#ffa16f] text-[30px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3">
+      <div
+        class="flex justify-start items-center mt-7"
+        data-aos="zoom-in"
+        data-aos-once="true"
+      >
+        <div
+          class="w-[60px] h-[60px] flex justify-center items-center bg-[#ffa16f] text-[30px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3"
+        >
           <i class="fa-regular fa-clock"></i>
         </div>
         <div class="ml-2">
           <h1 class="font-bold text-[20px]">Opening Hours</h1>
-          <span class="text-[#238072]">Monday - Friday( 08:00 Am - 08:00 Pm)</span>
+          <span class="text-[#238072]"
+            >Monday - Friday( 08:00 Am - 08:00 Pm)</span
+          >
+        </div>
+      </div>
+      <div
+        class="flex justify-start items-center mt-7"
+        data-aos="zoom-in"
+        data-aos-once="true"
+      >
+        <div
+          class="w-[60px] h-[60px] flex justify-center items-center bg-[#ffa16f] text-[30px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3"
+        >
+          <i class="fa fa-map-marker"></i>
+        </div>
+        <div class="ml-2">
+          <h1 class="font-bold text-[20px]">Location</h1>
+          <span class="text-[#238072]"
+            >Plot No.- 42, Udyog Vihar, Sector - 18, Sarhol, Nearby Honda & Tata Service Centre, Gurugram, Haryana - 122015</span
+          >
         </div>
       </div>
     </div>
-    </aside>
-  </section>
-  <!-- <section class="overflow-x-hidden">
+  </aside>
+</section>
+<section class="p-5">
+  <div class="flex justify-center items-center">
+    <div class="flex justify-center">
+      <div
+        class="flex flex-col lg:flex-row items-center bg-white shadow-xl rounded-2xl p-6 lg:p-10 space-y-6 lg:space-y-0 lg:space-x-10 max-w-6xl mx-auto"
+      >
+        <img
+          src="../images/Doctor.png"
+          alt="Doctor"
+          class="w-[80%] lg:w-[30%] rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+        />
+
+        <div class="text-center lg:text-left">
+          <h2 class="text-2xl lg:text-3xl font-semibold text-gray-800 mb-4">
+            Meet Dr. Ujjwal
+          </h2>
+          <h3 class="text-1xl lg:text-2xl font-semibold text-gray-800 mb-4">
+            | Ayurvedic Doctor | Male Infertility & Chronic Disease Expert
+          </h3>
+          <p class="text-gray-600 text-base leading-relaxed">
+            Dr. Ujjwal is a highly experienced Ayurvedic physician dedicated to
+            treating the root cause of diseases through time-tested herbal
+            formulations and personalized care. With years of expertise in
+            managing conditions like male infertility, skin disorders, kidney &
+            liver issues, diabetes, and arthritis, he follows a holistic and
+            result-oriented approach that blends traditional Ayurveda with
+            modern insights.
+          </p>
+          <br />
+          <i class="text-gray-600 text-base leading-relaxed">
+            “Healing doesn’t start with the body – it begins with understanding
+            the patient’s lifestyle and imbalance.” — Dr. Ujjwal
+          </i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <section class="overflow-x-hidden">
     <div>
       <span class="flex justify-center p-4 text-[20px] font-cursive font-bold text-[#238072]"
         >Our Services</span
@@ -552,96 +918,198 @@
       </section>
     </div>
   </section> -->
-  <section class="p-5 lg:p-16 bg-white overflow-x-hidden">
-    <div class="block lg:flex lg:justify-around lg:items-center">
-      <aside class="w-[90vw] lg:w-[50vw]">
-        <span class="p-4 text-[20px] font-cursive font-bold text-[#238072]"
-          >Our Work Process</span>
-          <h1 class=" p-4 text-[40px] font-bold">Our Ayurvedic Approach</h1>
-      </aside>
-      <aside class="w-[90vw] lg:w-[50vw]">
-        <p class="mt-5">
-          At our Ayurveda center, we follow a unique and personalized approach to healing. Our expert practitioners begin each treatment process by conducting a thorough analysis of the patient’s body type, medical history, and current health conditions.
-        </p>
-      </aside>
-    </div>
-    <div class="block lg:flex lg:justify-between lg:items-center mt-5 lg:mt-10">
-      <div class="w-[85vw] ml-auto mr-auto mt-6 lg:mt-0 lg:w-[300px] p-10 bg-[#006D77] " data-aos="slide-left" data-aos-once="true" data-aos-delay="100"  >
-        <div class="flex justify-center items-center">
-          <div class="w-[60px] h-[60px] flex justify-center items-center bg-[#ffa16f] text-[30px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3">
-            <i class="fa-solid fa-clipboard-list"></i>
-          </div>
+<section class="p-5 lg:p-16 bg-white overflow-x-hidden">
+  <div class="block lg:flex lg:justify-around lg:items-center">
+    <aside class="w-[90vw] lg:w-[50vw]">
+      <span class="p-4 text-[20px] font-cursive font-bold text-[#238072]"
+        >Our Work Process</span
+      >
+      <h1 class="p-4 text-[40px] font-bold">Our Ayurvedic Approach</h1>
+    </aside>
+    <aside class="w-[90vw] lg:w-[50vw]">
+      <p class="mt-5">
+        At our Ayurveda center, we follow a unique and personalized approach to
+        healing. Our expert practitioners begin each treatment process by
+        conducting a thorough analysis of the patient’s body type, medical
+        history, and current health conditions.
+      </p>
+    </aside>
+  </div>
+  <div class="block lg:flex lg:justify-between lg:items-center mt-5 lg:mt-10">
+    <div
+      class="w-[85vw] ml-auto mr-auto mt-6 lg:mt-0 lg:w-[300px] p-10 bg-[#006D77]"
+      data-aos="slide-left"
+      data-aos-once="true"
+      data-aos-delay="100"
+    >
+      <div class="flex justify-center items-center">
+        <div
+          class="w-[60px] h-[60px] flex justify-center items-center bg-[#ffa16f] text-[30px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3"
+        >
+          <i class="fa-solid fa-clipboard-list"></i>
         </div>
-        <h1 class="text-center text-[20px] font-bold text-white p-2 tracking-wide">Make Appointment</h1>
-        <p class="text-center text-white p-2">
-          You must make an appointment in advance, to choose the service and order medicines.
-        </p>
+      </div>
+      <h1
+        class="text-center text-[20px] font-bold text-white p-2 tracking-wide"
+      >
+        Make Appointment
+      </h1>
+      <p class="text-center text-white p-2">
+        You must make an appointment in advance, to choose the service and order
+        medicines.
+      </p>
     </div>
 
-    <div class="w-[85vw] ml-auto mr-auto mt-6 lg:mt-0 lg:w-[300px] p-10 bg-[#E5E5E5]" data-aos="slide-left" data-aos-once="true" data-aos-delay="250">
+    <div
+      class="w-[85vw] ml-auto mr-auto mt-6 lg:mt-0 lg:w-[300px] p-10 bg-[#E5E5E5]"
+      data-aos="slide-left"
+      data-aos-once="true"
+      data-aos-delay="250"
+    >
       <div class="flex justify-center items-center">
-        <div class="w-[60px] h-[60px] flex justify-center items-center bg-[#ffa16f] text-[30px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3">
+        <div
+          class="w-[60px] h-[60px] flex justify-center items-center bg-[#ffa16f] text-[30px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3"
+        >
           <i class="fa-solid fa-person-circle-question"></i>
         </div>
       </div>
-      <h1 class="text-center text-[20px] font-bold p-2 tracking-wide">Consultation</h1>
+      <h1 class="text-center text-[20px] font-bold p-2 tracking-wide">
+        Consultation
+      </h1>
       <p class="text-center p-2">
-        The next stage involves a thorough consultation with an experienced Ayurveda practitioner.
+        The next stage involves a thorough consultation with an experienced
+        Ayurveda practitioner.
       </p>
-  </div>
+    </div>
 
-  <div class="w-[85vw] ml-auto mr-auto mt-6 lg:mt-0 lg:w-[300px] p-10 bg-[#E5E5E5]" data-aos="slide-left" data-aos-once="true" data-aos-delay="500">
-    <div class="flex justify-center items-center">
-      <div class="w-[60px] h-[60px] flex justify-center items-center bg-[#ffa16f] text-[30px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3">
-        <i class="fa-solid fa-people-line"></i>
+    <div
+      class="w-[85vw] ml-auto mr-auto mt-6 lg:mt-0 lg:w-[300px] p-10 bg-[#E5E5E5]"
+      data-aos="slide-left"
+      data-aos-once="true"
+      data-aos-delay="500"
+    >
+      <div class="flex justify-center items-center">
+        <div
+          class="w-[60px] h-[60px] flex justify-center items-center bg-[#ffa16f] text-[30px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3"
+        >
+          <i class="fa-solid fa-people-line"></i>
+        </div>
       </div>
+      <h1 class="text-center text-[20px] font-bold p-2 tracking-wide">
+        Treatment Planning
+      </h1>
+      <p class="text-center p-2">
+        The Ayurveda practitioner creates a personalized treatment plan for the
+        patient.
+      </p>
     </div>
-    <h1 class="text-center text-[20px] font-bold p-2 tracking-wide">Treatment Planning</h1>
-    <p class="text-center p-2">
-      The Ayurveda practitioner creates a personalized treatment plan for the patient.
-    </p>
-</div>
-<div class="w-[85vw] ml-auto mr-auto mt-6 lg:mt-0 lg:w-[300px] p-10 bg-[#E5E5E5]" data-aos="slide-left" data-aos-once="true" data-aos-delay="1000">
-  <div class="flex justify-center items-center">
-    <div class="w-[60px] h-[60px] flex justify-center items-center bg-[#ffa16f] text-[30px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3">
-      <i class="fa-solid fa-hand-holding-heart"></i>
+    <div
+      class="w-[85vw] ml-auto mr-auto mt-6 lg:mt-0 lg:w-[300px] p-10 bg-[#E5E5E5]"
+      data-aos="slide-left"
+      data-aos-once="true"
+      data-aos-delay="1000"
+    >
+      <div class="flex justify-center items-center">
+        <div
+          class="w-[60px] h-[60px] flex justify-center items-center bg-[#ffa16f] text-[30px] text-white font-bold rounded-[50%] pt-1 pb-1 pr-3 pl-3"
+        >
+          <i class="fa-solid fa-hand-holding-heart"></i>
+        </div>
+      </div>
+      <h1 class="text-center text-[20px] font-bold p-2 tracking-wide">
+        Maintainance
+      </h1>
+      <p class="text-center p-2">
+        These visits allow for assessment of progress, adjustments to the
+        treatment.
+      </p>
     </div>
   </div>
-  <h1 class="text-center text-[20px] font-bold p-2 tracking-wide">Maintainance</h1>
-  <p class="text-center p-2">
-    These visits allow for assessment of progress, adjustments to the treatment.
-  </p>
-</div>
-    </div>
-  </section>
-  <section id="go-to-top" class="shadow-lg fixed h-[50px] w-[50px] hidden justify-center items-center  bg-[orangered]  top-[80vh] right-5 z-30 rounded-[50%]">
-    <a href="#top"><i class="fa-solid fa-arrow-up text-white text-[20px]"></i></a>
 </section>
-<section id="appointment-window" class="hidden   justify-center items-center w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.5)] top-0 left-0 fixed">
+<section
+  id="go-to-top"
+  class="shadow-lg fixed h-[50px] w-[50px] hidden justify-center items-center bg-[orangered] top-[80vh] right-5 z-30 rounded-[50%]"
+>
+  <a href="#top"><i class="fa-solid fa-arrow-up text-white text-[20px]"></i></a>
+</section>
+<section
+  id="appointment-window"
+  class="hidden justify-center items-center w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.5)] top-0 left-0 fixed"
+>
   <section class="animate-fade-down -mt-[70px]">
-    <div class="p-3 bg-[#d8590a] flex items-center justify-between text-2xl rounded-tl-lg rounded-tr-lg text-white ">
-      <span>Book an Appointment</span><span class="cursor-pointer" id="apmnt-window-closer">&times;</span>
+    <div
+      class="p-3 bg-[#d8590a] flex items-center justify-between text-2xl rounded-tl-lg rounded-tr-lg text-white"
+    >
+      <span>Book an Appointment</span
+      ><span class="cursor-pointer" id="apmnt-window-closer">&times;</span>
     </div>
-    <div class="bg-[#006D77]  shadow-lg p-2  transition-transform transform rounded-bl-lg rounded-br-lg">
-      <form id="appointment-form" class="space-y-4" action="SaveAppointment.php"  method="Post">
-        <div class=" block lg:flex lg:justify-center w-[90vw] lg:w-[55vw]">
+    <div
+      class="bg-[#006D77] shadow-lg p-2 transition-transform transform rounded-bl-lg rounded-br-lg"
+    >
+      <form
+        id="appointment-form"
+        class="space-y-4"
+        action="SaveAppointment.php"
+        method="Post"
+      >
+        <div class="block lg:flex lg:justify-center w-[90vw] lg:w-[55vw]">
           <div>
             <div class="p-2">
-              <label for="name" class="hidden lg:block text-sm font-medium text-white">First Name</label>
-              <input type="text" id="first_name" placeholder="Enter your First Name" name="FirstName" required class=" mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] bg-white rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
-          </div>
-          <div class="p-2">
-            <label for="name" class="hidden lg:block text-sm font-medium text-white">Last Name</label>
-            <input type="text" id="last_name" placeholder="Enter your Last Name" name="LastName" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] bg-white rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent" />
-        </div>
-          <div class="p-2">
-              <label for="email" class="hidden lg:block text-sm font-medium text-white">Email</label>
-              <input  id="email" placeholder="Enter your Email" name="Email" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
-          </div>
-          <div class="p-2">
-              <label for="phone" class="hidden lg:block text-sm font-medium text-white">Phone Number</label>
+              <label
+                for="name"
+                class="hidden lg:block text-sm font-medium text-white"
+                >First Name</label
+              >
+              <input
+                type="text"
+                id="first_name"
+                placeholder="Enter your First Name"
+                name="FirstName"
+                required
+                class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] bg-white rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent"
+              />
+            </div>
+            <div class="p-2">
+              <label
+                for="name"
+                class="hidden lg:block text-sm font-medium text-white"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                id="last_name"
+                placeholder="Enter your Last Name"
+                name="LastName"
+                required
+                class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] bg-white rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-transparent"
+              />
+            </div>
+            <div class="p-2">
+              <label
+                for="email"
+                class="hidden lg:block text-sm font-medium text-white"
+                >Email</label
+              >
+              <input
+                id="email"
+                placeholder="Enter your Email"
+                name="Email"
+                required
+                class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white"
+              />
+            </div>
+            <div class="p-2">
+              <label
+                for="phone"
+                class="hidden lg:block text-sm font-medium text-white"
+                >Phone Number</label
+              >
               <div class="flex">
-                <select class="p-2 mt-[5px] w-[70px] rounded-tl-md rounded-bl-md lg:w-[75px]" name="countries" id="isd-code">
+                <select
+                  class="p-2 mt-[5px] w-[70px] rounded-tl-md rounded-bl-md lg:w-[75px]"
+                  name="countries"
+                  id="isd-code"
+                >
                   <option value="Select">+00</option>
                   <option value="+93">(+93) Afghanistan</option>
                   <option value="+355">(+355) Albania</option>
@@ -686,7 +1154,9 @@
                   <option value="+53">(+53) Cuba</option>
                   <option value="+357">(+357) Cyprus</option>
                   <option value="+420">(+420) Czech Republic</option>
-                  <option value="+243">(+243) Democratic Republic of the Congo</option>
+                  <option value="+243">
+                    (+243) Democratic Republic of the Congo
+                  </option>
                   <option value="+45">(+45) Denmark</option>
                   <option value="+253">(+253) Djibouti</option>
                   <option value="+1-767">(+1-767) Dominica</option>
@@ -788,7 +1258,9 @@
                   <option value="+250">(+250) Rwanda</option>
                   <option value="+1-869">(+1-869) Saint Kitts and Nevis</option>
                   <option value="+1-758">(+1-758) Saint Lucia</option>
-                  <option value="+1-784">(+1-784) Saint Vincent and the Grenadines</option>
+                  <option value="+1-784">
+                    (+1-784) Saint Vincent and the Grenadines
+                  </option>
                   <option value="+685">(+685) Samoa</option>
                   <option value="+378">(+378) San Marino</option>
                   <option value="+239">(+239) Sao Tome and Principe</option>
@@ -837,235 +1309,289 @@
                   <option value="+967">(+967) Yemen</option>
                   <option value="+260">(+260) Zambia</option>
                   <option value="+263">(+263) Zimbabwe</option>
-              </select>
-              
-                  <input type="number" id="phone" placeholder="Enter your Phone Number" name="PhoneNumber" required class="mt-1 block w-full lg:w-[330px] p-2 border border-[#006D77] rounded-tr-md rounded-br-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
-              </div>              
-          </div>
+                </select>
+
+                <input
+                  type="number"
+                  id="phone"
+                  placeholder="Enter your Phone Number"
+                  name="PhoneNumber"
+                  required
+                  class="mt-1 block w-full lg:w-[330px] p-2 border border-[#006D77] rounded-tr-md rounded-br-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white"
+                />
+              </div>
+            </div>
           </div>
           <div>
-          <!-- <div>
+            <!-- <div>
               <label for="date" class="block text-sm font-medium text-gray-700">Appointment Date</label>
               <input type="date" id="date" name="date" required class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500" />
           </div> -->
-          <div class="p-2">
-            <label for="State" class="hidden lg:block text-sm font-medium text-white">State</label>
-            <input type="text" id="state" placeholder="Enter your State"   name="State" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" />
-        </div>
-        <div class="p-2">
-          <label for="Country" class="hidden lg:block text-sm font-medium text-white">Country</label>
-          <!-- <input type="text" id="country" placeholder="Enter your Country" name="Country" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" /> -->
-          <select required class="p-2 mt-[5px] w-full rounded-md lg:w-[400px]" name="countries" id="country">
-            <option value="Select">Select Country</option>
-<option value="Afghanistan">Afghanistan</option>
-<option value="Albania">Albania</option>
-<option value="Algeria">Algeria</option>
-<option value="Andorra">Andorra</option>
-<option value="Angola">Angola</option>
-<option value="Antigua-and-barbuda">Antigua and Barbuda</option>
-<option value="Argentina">Argentina</option>
-<option value="Armenia">Armenia</option>
-<option value="Australia">Australia</option>
-<option value="Austria">Austria</option>
-<option value="Azerbaijan">Azerbaijan</option>
-<option value="Bahamas">Bahamas</option>
-<option value="Bahrain">Bahrain</option>
-<option value="Bangladesh">Bangladesh</option>
-<option value="Barbados">Barbados</option>
-<option value="Belarus">Belarus</option>
-<option value="Belgium">Belgium</option>
-<option value="Belize">Belize</option>
-<option value="Benin">Benin</option>
-<option value="Bhutan">Bhutan</option>
-<option value="Bolivia">Bolivia</option>
-<option value="Bosnia-and-herzegovina">Bosnia and Herzegovina</option>
-<option value="Botswana">Botswana</option>
-<option value="Brazil">Brazil</option>
-<option value="Brunei">Brunei</option>
-<option value="Bulgaria">Bulgaria</option>
-<option value="Burkina-faso">Burkina Faso</option>
-<option value="Burundi">Burundi</option>
-<option value="Cabo-verde">Cabo Verde</option>
-<option value="Cambodia">Cambodia</option>
-<option value="Cameroon">Cameroon</option>
-<option value="Canada">Canada</option>
-<option value="Central-african-republic">Central African Republic</option>
-<option value="Chile">Chile</option>
-<option value="China">China</option>
-<option value="Colombia">Colombia</option>
-<option value="Comoros">Comoros</option>
-<option value="Congo">Congo</option>
-<option value="Costa-rica">Costa Rica</option>
-<option value="Croatia">Croatia</option>
-<option value="Cuba">Cuba</option>
-<option value="Cyprus">Cyprus</option>
-<option value="Czech-republic">Czech Republic</option>
-<option value="Democratic-republic-of-the-congo">Democratic Republic of the Congo</option>
-<option value="Denmark">Denmark</option>
-<option value="Djibouti">Djibouti</option>
-<option value="Dominica">Dominica</option>
-<option value="Dominican-republic">Dominican Republic</option>
-<option value="Ecuador">Ecuador</option>
-<option value="Egypt">Egypt</option>
-<option value="El-salvador">El Salvador</option>
-<option value="Equatorial-guinea">Equatorial Guinea</option>
-<option value="Eritrea">Eritrea</option>
-<option value="Estonia">Estonia</option>
-<option value="Eswatini">Eswatini</option>
-<option value="Ethiopia">Ethiopia</option>
-<option value="Fiji">Fiji</option>
-<option value="Finland">Finland</option>
-<option value="France">France</option>
-<option value="Gabon">Gabon</option>
-<option value="Gambia">Gambia</option>
-<option value="Georgia">Georgia</option>
-<option value="Germany">Germany</option>
-<option value="Ghana">Ghana</option>
-<option value="Greece">Greece</option>
-<option value="Grenada">Grenada</option>
-<option value="Guatemala">Guatemala</option>
-<option value="Guinea">Guinea</option>
-<option value="Guinea-bissau">Guinea-Bissau</option>
-<option value="Guyana">Guyana</option>
-<option value="Haiti">Haiti</option>
-<option value="Honduras">Honduras</option>
-<option value="Hungary">Hungary</option>
-<option value="Iceland">Iceland</option>
-<option value="India">India</option>
-<option value="Indonesia">Indonesia</option>
-<option value="Iran">Iran</option>
-<option value="Iraq">Iraq</option>
-<option value="Ireland">Ireland</option>
-<option value="Israel">Israel</option>
-<option value="Italy">Italy</option>
-<option value="Ivory-coast">Ivory Coast</option>
-<option value="Jamaica">Jamaica</option>
-<option value="Japan">Japan</option>
-<option value="Jordan">Jordan</option>
-<option value="Kazakhstan">Kazakhstan</option>
-<option value="Kenya">Kenya</option>
-<option value="Kiribati">Kiribati</option>
-<option value="Kosovo">Kosovo</option>
-<option value="Kuwait">Kuwait</option>
-<option value="Kyrgyzstan">Kyrgyzstan</option>
-<option value="Laos">Laos</option>
-<option value="Latvia">Latvia</option>
-<option value="Lebanon">Lebanon</option>
-<option value="Lesotho">Lesotho</option>
-<option value="Liberia">Liberia</option>
-<option value="Libya">Libya</option>
-<option value="Liechtenstein">Liechtenstein</option>
-<option value="Lithuania">Lithuania</option>
-<option value="Luxembourg">Luxembourg</option>
-<option value="Madagascar">Madagascar</option>
-<option value="Malawi">Malawi</option>
-<option value="Malaysia">Malaysia</option>
-<option value="Maldives">Maldives</option>
-<option value="Mali">Mali</option>
-<option value="Malta">Malta</option>
-<option value="Marshall-islands">Marshall Islands</option>
-<option value="Mauritania">Mauritania</option>
-<option value="Mauritius">Mauritius</option>
-<option value="Mexico">Mexico</option>
-<option value="Micronesia">Micronesia</option>
-<option value="Moldova">Moldova</option>
-<option value="Monaco">Monaco</option>
-<option value="Mongolia">Mongolia</option>
-<option value="Montenegro">Montenegro</option>
-<option value="Morocco">Morocco</option>
-<option value="Mozambique">Mozambique</option>
-<option value="Myanmar">Myanmar</option>
-<option value="Namibia">Namibia</option>
-<option value="Nauru">Nauru</option>
-<option value="Nepal">Nepal</option>
-<option value="Netherlands">Netherlands</option>
-<option value="New-zealand">New Zealand</option>
-<option value="Nicaragua">Nicaragua</option>
-<option value="Niger">Niger</option>
-<option value="Nigeria">Nigeria</option>
-<option value="North-korea">North Korea</option>
-<option value="North-macedonia">North Macedonia</option>
-<option value="Norway">Norway</option>
-<option value="Oman">Oman</option>
-<option value="Pakistan">Pakistan</option>
-<option value="Palau">Palau</option>
-<option value="Panama">Panama</option>
-<option value="Papua-new-guinea">Papua New Guinea</option>
-<option value="Paraguay">Paraguay</option>
-<option value="Peru">Peru</option>
-<option value="Philippines">Philippines</option>
-<option value="Poland">Poland</option>
-<option value="Portugal">Portugal</option>
-<option value="Qatar">Qatar</option>
-<option value="Romania">Romania</option>
-<option value="Russia">Russia</option>
-<option value="Rwanda">Rwanda</option>
-<option value="Saint-kitts-and-nevis">Saint Kitts and Nevis</option>
-<option value="Saint-lucia">Saint Lucia</option>
-<option value="Saint-vincent-and-the-grenadines">Saint Vincent and the Grenadines</option>
-<option value="Samoa">Samoa</option>
-<option value="San-marino">San Marino</option>
-<option value="Sao-tome-and-principe">Sao Tome and Principe</option>
-<option value="Saudi-arabia">Saudi Arabia</option>
-<option value="Senegal">Senegal</option>
-<option value="Serbia">Serbia</option>
-<option value="Seychelles">Seychelles</option>
-<option value="Sierra-leone">Sierra Leone</option>
-<option value="Singapore">Singapore</option>
-<option value="Slovakia">Slovakia</option>
-<option value="Slovenia">Slovenia</option>
-<option value="Solomon-islands">Solomon Islands</option>
-<option value="Somalia">Somalia</option>
-<option value="South-africa">South Africa</option>
-<option value="South-korea">South Korea</option>
-<option value="South-sudan">South Sudan</option>
-<option value="Spain">Spain</option>
-<option value="Sri-lanka">Sri Lanka</option>
-<option value="Sudan">Sudan</option>
-<option value="Suriname">Suriname</option>
-<option value="Sweden">Sweden</option>
-<option value="Switzerland">Switzerland</option>
-<option value="Syria">Syria</option>
-<option value="Taiwan">Taiwan</option>
-<option value="Tajikistan">Tajikistan</option>
-<option value="Tanzania">Tanzania</option>
-<option value="Thailand">Thailand</option>
-<option value="Timor-leste">Timor-Leste</option>
-<option value="Togo">Togo</option>
-<option value="Tonga">Tonga</option>
-<option value="Trinidad-and-tobago">Trinidad and Tobago</option>
-<option value="Tunisia">Tunisia</option>
-<option value="Turkmenistan">Turkmenistan</option>
-<option value="Turkey">Turkey</option>
-<option value="Tuvalu">Tuvalu</option>
-<option value="Uganda">Uganda</option>
-<option value="Ukraine">Ukraine</option>
-<option value="United-arab-emirates">United Arab Emirates</option>
-<option value="United-kingdom">United Kingdom</option>
-<option value="United-states">United States</option>
-<option value="Uruguay">Uruguay</option>
-<option value="Uzbekistan">Uzbekistan</option>
-<option value="Vanuatu">Vanuatu</option>
-<option value="Venezuela">Venezuela</option>
-<option value="Vietnam">Vietnam</option>
-<option value="Yemen">Yemen</option>
-<option value="Zambia">Zambia</option>
-<option value="Zimbabwe">Zimbabwe</option>
-        </select>
-        
-          
-        </div>
-          <div class="p-2">
-              <label for="message" class="hidden lg:block text-sm font-medium text-white">Message</label>
-              <textarea id="message" placeholder="Enter your Message" name="Message" rows="4"  class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white"></textarea>
-          </div>
+            <div class="p-2">
+              <label
+                for="State"
+                class="hidden lg:block text-sm font-medium text-white"
+                >State</label
+              >
+              <input
+                type="text"
+                id="state"
+                placeholder="Enter your State"
+                name="State"
+                required
+                class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white"
+              />
+            </div>
+            <div class="p-2">
+              <label
+                for="Country"
+                class="hidden lg:block text-sm font-medium text-white"
+                >Country</label
+              >
+              <!-- <input type="text" id="country" placeholder="Enter your Country" name="Country" required class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white" /> -->
+              <select
+                required
+                class="p-2 mt-[5px] w-full rounded-md lg:w-[400px]"
+                name="countries"
+                id="country"
+              >
+                <option value="Select">Select Country</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Angola">Angola</option>
+                <option value="Antigua-and-barbuda">Antigua and Barbuda</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Benin">Benin</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Bosnia-and-herzegovina">
+                  Bosnia and Herzegovina
+                </option>
+                <option value="Botswana">Botswana</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Brunei">Brunei</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burkina-faso">Burkina Faso</option>
+                <option value="Burundi">Burundi</option>
+                <option value="Cabo-verde">Cabo Verde</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Canada">Canada</option>
+                <option value="Central-african-republic">
+                  Central African Republic
+                </option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Comoros">Comoros</option>
+                <option value="Congo">Congo</option>
+                <option value="Costa-rica">Costa Rica</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech-republic">Czech Republic</option>
+                <option value="Democratic-republic-of-the-congo">
+                  Democratic Republic of the Congo
+                </option>
+                <option value="Denmark">Denmark</option>
+                <option value="Djibouti">Djibouti</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican-republic">Dominican Republic</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Egypt">Egypt</option>
+                <option value="El-salvador">El Salvador</option>
+                <option value="Equatorial-guinea">Equatorial Guinea</option>
+                <option value="Eritrea">Eritrea</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Eswatini">Eswatini</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Gambia">Gambia</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Greece">Greece</option>
+                <option value="Grenada">Grenada</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guinea">Guinea</option>
+                <option value="Guinea-bissau">Guinea-Bissau</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Haiti">Haiti</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iran">Iran</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Ivory-coast">Ivory Coast</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Kosovo">Kosovo</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Laos">Laos</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Lesotho">Lesotho</option>
+                <option value="Liberia">Liberia</option>
+                <option value="Libya">Libya</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Malawi">Malawi</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Mali">Mali</option>
+                <option value="Malta">Malta</option>
+                <option value="Marshall-islands">Marshall Islands</option>
+                <option value="Mauritania">Mauritania</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Micronesia">Micronesia</option>
+                <option value="Moldova">Moldova</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Mozambique">Mozambique</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Namibia">Namibia</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="New-zealand">New Zealand</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Niger">Niger</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="North-korea">North Korea</option>
+                <option value="North-macedonia">North Macedonia</option>
+                <option value="Norway">Norway</option>
+                <option value="Oman">Oman</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palau">Palau</option>
+                <option value="Panama">Panama</option>
+                <option value="Papua-new-guinea">Papua New Guinea</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Romania">Romania</option>
+                <option value="Russia">Russia</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Saint-kitts-and-nevis">
+                  Saint Kitts and Nevis
+                </option>
+                <option value="Saint-lucia">Saint Lucia</option>
+                <option value="Saint-vincent-and-the-grenadines">
+                  Saint Vincent and the Grenadines
+                </option>
+                <option value="Samoa">Samoa</option>
+                <option value="San-marino">San Marino</option>
+                <option value="Sao-tome-and-principe">
+                  Sao Tome and Principe
+                </option>
+                <option value="Saudi-arabia">Saudi Arabia</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sierra-leone">Sierra Leone</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Solomon-islands">Solomon Islands</option>
+                <option value="Somalia">Somalia</option>
+                <option value="South-africa">South Africa</option>
+                <option value="South-korea">South Korea</option>
+                <option value="South-sudan">South Sudan</option>
+                <option value="Spain">Spain</option>
+                <option value="Sri-lanka">Sri Lanka</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Syria">Syria</option>
+                <option value="Taiwan">Taiwan</option>
+                <option value="Tajikistan">Tajikistan</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Timor-leste">Timor-Leste</option>
+                <option value="Togo">Togo</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Trinidad-and-tobago">Trinidad and Tobago</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Turkmenistan">Turkmenistan</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Tuvalu">Tuvalu</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United-arab-emirates">
+                  United Arab Emirates
+                </option>
+                <option value="United-kingdom">United Kingdom</option>
+                <option value="United-states">United States</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Zambia">Zambia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+              </select>
+            </div>
+            <div class="p-2">
+              <label
+                for="message"
+                class="hidden lg:block text-sm font-medium text-white"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                placeholder="Enter your Message"
+                name="Message"
+                rows="4"
+                class="mt-1 block w-full lg:w-[400px] p-2 border border-[#006D77] rounded-md focus:ring focus:ring-blue-300 focus:border-blue-500 bg-white"
+              ></textarea>
+            </div>
           </div>
         </div>
         <div class="flex justify-center items-center">
-          <button type="submit" id="book-appointment-btn" class="m-auto bg-orange-600 text-white p-3 rounded-md hover:bg-[#174f54] font-bold  transition duration-200">Schedule Appointment</button>
-        </div>    
-          
+          <button
+            type="submit"
+            id="book-appointment-btn"
+            class="m-auto bg-orange-600 text-white p-3 rounded-md hover:bg-[#174f54] font-bold transition duration-200"
+          >
+            Schedule Appointment
+          </button>
+        </div>
       </form>
-  </div>
-  </section>  
+    </div>
+  </section>
 </section>

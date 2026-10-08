@@ -140,16 +140,19 @@ function loadContent(page) {
     "psoriasis-ayurvedic-treatment": "./diseases/skin-disorders/Psoriasis.html",
     "vitiligo-ayurvedic-treatment": "./diseases/skin-disorders/Vitiligo.html",
     "warts-ayurvedic-treatment": "./diseases/skin-disorders/Warts.html",
+    "terms-and-conditions": "./pages/termsandcondition.html",
+    "privacy-policy": "./pages/privacypolicy.html",
     "": "./pages/main.html" // Home page
   };
 
   
   // Fetch the content based on the path, fallback to home if no match
   const pagePath = pageMap[page] || pageMap[""];  
+  console.log(pagePath)
   fetch(pagePath)
     .then((response) => response.text())
     .then((data) => {
-        if(pagePath === "./pages/about.html" || pagePath==="./pages/payment.html" || pagePath==="./pages/contactus.html"){
+        if(pagePath === "./pages/about.html" || pagePath==="./pages/payment.html" || pagePath==="./pages/contactus.html" || pagePath==="./pages/termsandcondition.html" || pagePath==="./pages/privacypolicy.html"){
         contentDiv.innerHTML = data;
         document.getElementById("loader_main").classList.add("hidden");
         document.getElementById("loader_main").classList.remove("flex");
